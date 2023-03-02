@@ -1,0 +1,47 @@
+{
+  "userData": {
+    "count": 5,
+    "items": [
+      {
+        "cardNumber": "**2227",
+        "cvv": "499",
+        "money": "4051",
+        "bankName": "BelarusBank",
+        "phoneNumber": "+375291401013",
+        "ID": 1
+      },
+      {
+        "cardNumber": "**9623",
+        "cvv": "368",
+        "money": "361",
+        "bankName": "AlfaBank",
+        "phoneNumber": "+375334534294",
+        "ID": 2
+      },
+      {
+        "cardNumber": "**8323",
+        "cvv": "626",
+        "money": "254",
+        "bankName": "BNBBank",
+        "phoneNumber": "+375291181013",
+        "ID": 3
+      },
+      {
+        "cardNumber": "**1761",
+        "cvv": "912",
+        "money": "1000",
+        "bankName": "BelarusBank",
+        "phoneNumber": "+375298463521",
+        "ID": 4
+      },
+      {
+        "cardNumber": "**1918",
+        "cvv": "524",
+        "money": "876",
+        "bankName": "AlfaBank",
+        "phoneNumber": "+375299463434",
+        "ID": 5
+      }
+    ]
+  }
+}
