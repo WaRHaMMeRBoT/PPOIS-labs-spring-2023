@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+  <table>
+    <stock>
+      <name>Daniil Kimstach</name>
+      <course>2</course>
+      <group>121702</group>
+      <all_works>10</all_works>
+      <completed_works>2</completed_works>
+      <language>Python</language>
+    </stock>
+  </table>

@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+  <table>
+    <stock>
+      <name>Bradley Roland</name>
+      <course>4</course>
+      <group>121701</group>
+      <all_works>6</all_works>
+      <completed_works>3</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Freda Ray</name>
+      <course>1</course>
+      <group>121701</group>
+      <all_works>5</all_works>
+      <completed_works>2</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Jonathan Fulton</name>
+      <course>4</course>
+      <group>121703</group>
+      <all_works>5</all_works>
+      <completed_works>2</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Mary Schweiger</name>
+      <course>3</course>
+      <group>121703</group>
+      <all_works>9</all_works>
+      <completed_works>3</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Manuel Copeland</name>
+      <course>1</course>
+      <group>121701</group>
+      <all_works>9</all_works>
+      <completed_works>3</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Louis Golson</name>
+      <course>1</course>
+      <group>121701</group>
+      <all_works>10</all_works>
+      <completed_works>1</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Douglas Russell</name>
+      <course>4</course>
+      <group>121702</group>
+      <all_works>10</all_works>
+      <completed_works>1</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Karen Peterson</name>
+      <course>1</course>
+      <group>121703</group>
+      <all_works>10</all_works>
+      <completed_works>5</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Kristopher Richards</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>9</all_works>
+      <completed_works>1</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Whitney Shoup</name>
+      <course>3</course>
+      <group>121703</group>
+      <all_works>6</all_works>
+      <completed_works>4</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Richard Harris</name>
+      <course>2</course>
+      <group>121703</group>
+      <all_works>10</all_works>
+      <completed_works>3</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Michael Burger</name>
+      <course>4</course>
+      <group>121702</group>
+      <all_works>6</all_works>
+      <completed_works>5</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Stephanie Barger</name>
+      <course>2</course>
+      <group>121702</group>
+      <all_works>9</all_works>
+      <completed_works>3</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Chanel Evans</name>
+      <course>3</course>
+      <group>121702</group>
+      <all_works>7</all_works>
+      <completed_works>3</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Martha Sadat</name>
+      <course>1</course>
+      <group>121701</group>
+      <all_works>8</all_works>
+      <completed_works>3</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Michael Staub</name>
+      <course>2</course>
+      <group>121702</group>
+      <all_works>6</all_works>
+      <completed_works>0</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Robert Robinson</name>
+      <course>4</course>
+      <group>121702</group>
+      <all_works>7</all_works>
+      <completed_works>1</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Gina Espinoza</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>5</all_works>
+      <completed_works>2</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>James Morin</name>
+      <course>2</course>
+      <group>121703</group>
+      <all_works>8</all_works>
+      <completed_works>2</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Bruno Johnston</name>
+      <course>1</course>
+      <group>121701</group>
+      <all_works>7</all_works>
+      <completed_works>5</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Allison Wallace</name>
+      <course>1</course>
+      <group>121702</group>
+      <all_works>10</all_works>
+      <completed_works>3</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Frankie Blake</name>
+      <course>2</course>
+      <group>121702</group>
+      <all_works>6</all_works>
+      <completed_works>3</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>William Swain</name>
+      <course>4</course>
+      <group>121703</group>
+      <all_works>5</all_works>
+      <completed_works>5</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Philip Wright</name>
+      <course>4</course>
+      <group>121702</group>
+      <all_works>5</all_works>
+      <completed_works>4</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Betsy Kaczmarek</name>
+      <course>3</course>
+      <group>121701</group>
+      <all_works>6</all_works>
+      <completed_works>3</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Linda Suchan</name>
+      <course>4</course>
+      <group>121703</group>
+      <all_works>10</all_works>
+      <completed_works>0</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Laura Teague</name>
+      <course>3</course>
+      <group>121702</group>
+      <all_works>7</all_works>
+      <completed_works>1</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Hallie Miller</name>
+      <course>3</course>
+      <group>121703</group>
+      <all_works>10</all_works>
+      <completed_works>0</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Jennifer Trujillo</name>
+      <course>4</course>
+      <group>121701</group>
+      <all_works>10</all_works>
+      <completed_works>4</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Donald Culliton</name>
+      <course>3</course>
+      <group>121702</group>
+      <all_works>8</all_works>
+      <completed_works>2</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Jill Kelly</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>10</all_works>
+      <completed_works>4</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Barbara Moorman</name>
+      <course>1</course>
+      <group>121701</group>
+      <all_works>9</all_works>
+      <completed_works>5</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Joe Rose</name>
+      <course>3</course>
+      <group>121701</group>
+      <all_works>9</all_works>
+      <completed_works>4</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Esther Miller</name>
+      <course>4</course>
+      <group>121701</group>
+      <all_works>8</all_works>
+      <completed_works>2</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Theresa Brown</name>
+      <course>2</course>
+      <group>121702</group>
+      <all_works>9</all_works>
+      <completed_works>1</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Bessie White</name>
+      <course>4</course>
+      <group>121702</group>
+      <all_works>8</all_works>
+      <completed_works>3</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Mabel Zambrano</name>
+      <course>4</course>
+      <group>121702</group>
+      <all_works>10</all_works>
+      <completed_works>1</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Elbert Wolff</name>
+      <course>2</course>
+      <group>121703</group>
+      <all_works>6</all_works>
+      <completed_works>0</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Carol Johnson</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>9</all_works>
+      <completed_works>2</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Cheryl Leyva</name>
+      <course>4</course>
+      <group>121701</group>
+      <all_works>7</all_works>
+      <completed_works>4</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Carmelo Malloy</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>5</all_works>
+      <completed_works>5</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Sara Roman</name>
+      <course>3</course>
+      <group>121701</group>
+      <all_works>6</all_works>
+      <completed_works>2</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Latasha Alsdon</name>
+      <course>2</course>
+      <group>121702</group>
+      <all_works>5</all_works>
+      <completed_works>0</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Linda Flatt</name>
+      <course>2</course>
+      <group>121702</group>
+      <all_works>7</all_works>
+      <completed_works>3</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Ronald Notter</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>9</all_works>
+      <completed_works>5</completed_works>
+      <language>Java</language>
+    </stock>
+    <stock>
+      <name>Anthony Blocher</name>
+      <course>4</course>
+      <group>121703</group>
+      <all_works>9</all_works>
+      <completed_works>4</completed_works>
+      <language>C#</language>
+    </stock>
+    <stock>
+      <name>Adria Watkins</name>
+      <course>1</course>
+      <group>121701</group>
+      <all_works>10</all_works>
+      <completed_works>0</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Brian Rebman</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>6</all_works>
+      <completed_works>5</completed_works>
+      <language>Python</language>
+    </stock>
+    <stock>
+      <name>Beatrice Webster</name>
+      <course>2</course>
+      <group>121701</group>
+      <all_works>7</all_works>
+      <completed_works>5</completed_works>
+      <language>C++</language>
+    </stock>
+    <stock>
+      <name>Jimmy Frick</name>
+      <course>3</course>
+      <group>121701</group>
+      <all_works>9</all_works>
+      <completed_works>5</completed_works>
+      <language>Java</language>
+    </stock>
+  </table>

@@ -1,0 +1,148 @@
+#:kivy 2.0.0
+<MyTextField@MDTextField>:
+    size_hint: 0.4, 0.1
+    input_type: "text"
+
+
+<MyNumberField@MyTextField>:
+    input_type: "number"
+    input_filter: "int"
+    max_text_length: 5
+
+<DialogContent>:
+
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "300dp"
+
+
+<SaveDialogContent>:
+    height: "50dp"
+
+    path: save_path
+
+    MyTextField:
+        id: save_path
+        hint_text: "enter file name"
+
+
+<UploadDialogContent>:
+    height: "50dp"
+
+    path: upload_path
+
+    MyTextField:
+        id: upload_path
+        hint_text: "enter file name"
+
+
+<InputDialogContent>:
+
+    height: "460dp"
+    name: input_name
+    course: input_course
+    group: input_group
+    all_works: input_all_works
+    completed_works: input_completed_works
+    language: input_language
+
+    MyTextField:
+        id: input_name
+        hint_text: "Enter Student's Name"
+
+    MyTextField:
+        id: input_course
+        hint_text: "Enter student's course"
+
+    MyTextField:
+        id: input_group
+        hint_text: "Enter student's group"
+
+    MyNumberField:
+        id: input_all_works
+        hint_text: "Enter all works number"
+
+    MyTextField:
+        id: input_completed_works
+        hint_text: "Enter number of completed works"
+
+    MyTextField:
+        id: input_language
+        hint_text: "Enter student's programming language"
+
+
+<FilterDialogContent>:
+    
+    height: "460dp"
+
+
+    name: filter_name
+    course: filter_course
+    group: filter_group
+    all_works: filter_all_works
+    completed_works: filter_completed_works
+    language: filter_language
+
+    MyTextField:
+        id: filter_name
+        hint_text: "Enter student's name"
+
+    MyTextField:
+        id: filter_course
+        hint_text: "Enter student's course"
+
+    MyTextField:
+        id: filter_group
+        hint_text: "Enter student's group"
+
+    MyTextField:
+        id: filter_all_works
+        hint_text: "Enter student's all works number"
+
+    MyTextField:
+        id: filter_completed_works
+        hint_text: "Enter student's completed works number"
+
+    MyTextField:
+        id: filter_language
+        hint_text: "Enter students language"
+
+
+<DeleteDialogContent>:
+    
+    height: "480dp"
+
+    name: delete_name
+    course: delete_course
+    group: delete_group
+    all_works: delete_all_works
+    completed_works: delete_completed_works
+    language: delete_language
+
+    MyTextField:
+        id: delete_name
+        hint_text: "Enter student's name"
+
+    MyTextField:
+        id: delete_course
+        hint_text: "Enter student's course"
+
+    MyTextField:
+        id: delete_group
+        hint_text: "Enter student's group"
+
+    MyTextField:
+        id: delete_all_works
+        hint_text: "Enter number of works"
+
+    MyTextField:
+        id: delete_completed_works
+        hint_text: "Enter number of completed works"
+
+
+    MyTextField:
+        id: delete_language
+        hint_text: "Enter programming language"
+
+
