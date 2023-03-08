@@ -31,6 +31,8 @@ class Controller(MDScreenManager):
 
     def transition_to_marks(self, instance_table, instance_row):
         identifier = self.get_screen("menu").data_table.row_data[instance_row.index // 3][0]
+        print(f'{instance_row.index},    {identifier}')
+        print(self.get_student_marks(identifier))
         self.get_screen("marks").data_table.row_data = self.get_student_marks(identifier)
         self.current = 'marks'
 
@@ -103,8 +105,8 @@ class Controller(MDScreenManager):
 
     def add_person(self, obj):
         name = self.dialog.content_cls.ids.name.text
-        id = self.dialog.content_cls.ids.id.text
-        group = self.dialog.content_cls.ids.group.text
+        id = int(self.dialog.content_cls.ids.id.text)
+        group = int(self.dialog.content_cls.ids.group.text)
         person = Model.Person(name=name, group=group, identifier=id)
         self.model.add_person(person)
         self.close_dialog(self.dialog)

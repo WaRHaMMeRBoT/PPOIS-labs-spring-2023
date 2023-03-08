@@ -1,1657 +1,1663 @@
 {
-  "students": [
-    {
-      "id": 12170001,
-      "name": "Gleb Levkov",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 10
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 10
-        }
-      ]
-    },
-    {
-      "id": 12170002,
-      "name": "Vladimir Moshchuk",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 10
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170003,
-      "name": "Egor Vasilkov",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170004,
-      "name": "John Wright",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 2
-        },
-        {
-          "name": "AOIS",
-          "mark": 4
-        },
-        {
-          "name": "MAOIS",
-          "mark": 5
-        }
-      ]
-    },
-    {
-      "id": 12170005,
-      "name": "Emily Smith",
-      "group": 121701,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170006,
-      "name": "Jared Owens",
-      "group": 121702,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170007,
-      "name": "Diane Carlson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170008,
-      "name": "Mary Ruiz",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170009,
-      "name": "Paul Harris",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170010,
-      "name": "Patricia Saunders",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170011,
-      "name": "Claire Curry",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170012,
-      "name": "Ellen Santiago",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170013,
-      "name": "Peter Floyd",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170014,
-      "name": "Claire Cook",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170015,
-      "name": "Frederick Smith",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170016,
-      "name": "Peter Davis",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170017,
-      "name": "Norma Montgomery",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170018,
-      "name": "Jesse Patrick",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170019,
-      "name": "James Hall",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170020,
-      "name": "William Williams",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170021,
-      "name": "Harold Blair",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170022,
-      "name": "Mark Strickland",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170023,
-      "name": "Jeremy Elliott",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170024,
-      "name": "Patricia Rogers",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170025,
-      "name": "Jeff Carr",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170026,
-      "name": "Albert Mason",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170027,
-      "name": "Oscar Ward",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170028,
-      "name": "Dorothy Ferguson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170029,
-      "name": "Heron Brooks",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170030,
-      "name": "Harry Cole",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170031,
-      "name": "Christopher Sanchez",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170032,
-      "name": "Sheila Young",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170033,
-      "name": "Cynthia Hayes",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170034,
-      "name": "Alma Dunn",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170035,
-      "name": "Robert Thompson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170036,
-      "name": "Sheila Tucker",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170037,
-      "name": "Christina Martinez",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170038,
-      "name": "Linda Cooper",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170039,
-      "name": "Teresa Spencer",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170040,
-      "name": "Alfred McKinney",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170041,
-      "name": "Nicholas Davis",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170042,
-      "name": "Vernon Smith",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170043,
-      "name": "Ruth Kennedy",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170044,
-      "name": "Arthur Jackson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170045,
-      "name": "James Brown",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170046,
-      "name": "Gerald Manning",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170047,
-      "name": "Ricky Anderson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170048,
-      "name": "Stephanie Warner",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170049,
-      "name": "Gina Hill",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170050,
-      "name": "Cody Cruz",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170051,
-      "name": "Sarah Barnes",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170052,
-      "name": "Jason Barker",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170053,
-      "name": "Elizabeth Taylor",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170054,
-      "name": "Margaret Vasquez",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170055,
-      "name": "Darrell Walker",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170056,
-      "name": "Esther Diaz",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170057,
-      "name": "Richard Bell",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170058,
-      "name": "Arthur Phillips",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170059,
-      "name": "Jessica Santos",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170060,
-      "name": "Patricia Cole",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170061,
-      "name": "Clinton Rodriguez",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170062,
-      "name": "Chad Torres",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170063,
-      "name": "Larry West",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170064,
-      "name": "Larry Ramirez",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170065,
-      "name": "Richard Brooks",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170066,
-      "name": "Michael Sanders",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170067,
-      "name": "John Schwartz",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170068,
-      "name": "Douglas Williams",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170069,
-      "name": "Catherine Hopkins",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170070,
-      "name": "James Allen",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170071,
-      "name": "Mary Wright",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170072,
-      "name": "Barry Ellis",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170073,
-      "name": "Donald Robinson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170074,
-      "name": "Henry Martin",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170075,
-      "name": "Laura Robinson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170076,
-      "name": "Carrie Hicks",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170077,
-      "name": "Lori Hall",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170078,
-      "name": "Carolyn Stevenson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170079,
-      "name": "Keith Gibson",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170080,
-      "name": "Kenneth Murphy",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170081,
-      "name": "Jennifer Alvarez",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170082,
-      "name": "John Price",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170083,
-      "name": "Natalie Ramirez",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170084,
-      "name": "Brandon Graham",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170085,
-      "name": "Catherine Brown",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    },
-    {
-      "id": 12170090,
-      "name": "Robert Martin",
-      "group": 121704,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 10
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 10
-        }
-      ]
-    },
-    {
-      "id": 12170086,
-      "name": "Bessie Leonard",
-      "group": 121703,
-      "courses": [
-        {
-          "name": "PPOIS",
-          "mark": 8
-        },
-        {
-          "name": "AOIS",
-          "mark": 10
-        },
-        {
-          "name": "MAOIS",
-          "mark": 8
-        }
-      ]
-    }
-  ]
+    "students": [
+        {
+            "id": 12170001,
+            "name": "Gleb Levkov",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 10
+                }
+            ]
+        },
+        {
+            "id": 12170002,
+            "name": "Vladimir Moshchuk",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170003,
+            "name": "Egor Vasilkov",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170004,
+            "name": "John Wright",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 2
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 4
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 5
+                }
+            ]
+        },
+        {
+            "id": 12170005,
+            "name": "Emily Smith",
+            "group": 121701,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170006,
+            "name": "Jared Owens",
+            "group": 121702,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170007,
+            "name": "Diane Carlson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170008,
+            "name": "Mary Ruiz",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170009,
+            "name": "Paul Harris",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170010,
+            "name": "Patricia Saunders",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170011,
+            "name": "Claire Curry",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170012,
+            "name": "Ellen Santiago",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170013,
+            "name": "Peter Floyd",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170014,
+            "name": "Claire Cook",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170015,
+            "name": "Frederick Smith",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170016,
+            "name": "Peter Davis",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170017,
+            "name": "Norma Montgomery",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170018,
+            "name": "Jesse Patrick",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170019,
+            "name": "James Hall",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170020,
+            "name": "William Williams",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170021,
+            "name": "Harold Blair",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170022,
+            "name": "Mark Strickland",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170023,
+            "name": "Jeremy Elliott",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170024,
+            "name": "Patricia Rogers",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170025,
+            "name": "Jeff Carr",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170026,
+            "name": "Albert Mason",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170027,
+            "name": "Oscar Ward",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170028,
+            "name": "Dorothy Ferguson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170029,
+            "name": "Heron Brooks",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170030,
+            "name": "Harry Cole",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170031,
+            "name": "Christopher Sanchez",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170032,
+            "name": "Sheila Young",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170033,
+            "name": "Cynthia Hayes",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170034,
+            "name": "Alma Dunn",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170035,
+            "name": "Robert Thompson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170036,
+            "name": "Sheila Tucker",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170037,
+            "name": "Christina Martinez",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170038,
+            "name": "Linda Cooper",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170039,
+            "name": "Teresa Spencer",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170040,
+            "name": "Alfred McKinney",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170041,
+            "name": "Nicholas Davis",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170042,
+            "name": "Vernon Smith",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170043,
+            "name": "Ruth Kennedy",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170044,
+            "name": "Arthur Jackson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170045,
+            "name": "James Brown",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170046,
+            "name": "Gerald Manning",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170047,
+            "name": "Ricky Anderson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170048,
+            "name": "Stephanie Warner",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170049,
+            "name": "Gina Hill",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170050,
+            "name": "Cody Cruz",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170051,
+            "name": "Sarah Barnes",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170052,
+            "name": "Jason Barker",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170053,
+            "name": "Elizabeth Taylor",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170054,
+            "name": "Margaret Vasquez",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170055,
+            "name": "Darrell Walker",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170056,
+            "name": "Esther Diaz",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170057,
+            "name": "Richard Bell",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170058,
+            "name": "Arthur Phillips",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170059,
+            "name": "Jessica Santos",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170060,
+            "name": "Patricia Cole",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170061,
+            "name": "Clinton Rodriguez",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170062,
+            "name": "Chad Torres",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170063,
+            "name": "Larry West",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170064,
+            "name": "Larry Ramirez",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170065,
+            "name": "Richard Brooks",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170066,
+            "name": "Michael Sanders",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170067,
+            "name": "John Schwartz",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170068,
+            "name": "Douglas Williams",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170069,
+            "name": "Catherine Hopkins",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170070,
+            "name": "James Allen",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170071,
+            "name": "Mary Wright",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170072,
+            "name": "Barry Ellis",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170073,
+            "name": "Donald Robinson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170074,
+            "name": "Henry Martin",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170075,
+            "name": "Laura Robinson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170076,
+            "name": "Carrie Hicks",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170077,
+            "name": "Lori Hall",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170078,
+            "name": "Carolyn Stevenson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170079,
+            "name": "Keith Gibson",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170080,
+            "name": "Kenneth Murphy",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170081,
+            "name": "Jennifer Alvarez",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170082,
+            "name": "John Price",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170083,
+            "name": "Natalie Ramirez",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170084,
+            "name": "Brandon Graham",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170085,
+            "name": "Catherine Brown",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170090,
+            "name": "Robert Martin",
+            "group": 121704,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 10
+                }
+            ]
+        },
+        {
+            "id": 12170086,
+            "name": "Bessie Leonard",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170098,
+            "name": "Glebkun",
+            "group": 1217004,
+            "courses": []
+        }
+    ]
 }
