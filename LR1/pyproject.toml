@@ -2,7 +2,7 @@
 name = "ppois-poetry"
 version = "0.1.0"
 description = ""
-authors = ["ardonplay ardonplay2@icloud.com"]
+authors = ["ardonplay <ardonplay2@icloud.com>"]
 readme = "README.md"
 packages = [{include = "LR1"}]
 
