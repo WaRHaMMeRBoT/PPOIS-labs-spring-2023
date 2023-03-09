@@ -5,6 +5,7 @@
  <code>brew install poetry</code>
  2. For arch:
  <code>sudo pacman -S poetry</code>
+ 3. For other: google it
 
 ## How to run
 ```sh
