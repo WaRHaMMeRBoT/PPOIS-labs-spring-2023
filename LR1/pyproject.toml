@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pois-sem4-lab1"
+version = "0.1.0"
+description = ""
+authors = ["egorvasilkov <valoshka2003@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pois_sem4_lab1"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
