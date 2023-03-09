@@ -1,11 +1,9 @@
-from locale import currency
-from random import randint, randrange
-from Entity import Entity
-from Stats import Stats
-from Status import Status
-from Coordinates import Coordinates
-from Object import Object
 import random
+from Object import Object
+from Coordinates import Coordinates
+from Status import Status
+from Stats import Stats
+from Entity import Entity
 
 
 class Animal(Entity):
@@ -237,8 +235,8 @@ class Animal(Entity):
         y = currentCords.y
 
         self.status = Status.Idling
-        newX = max(min(randint(x - speed / 2, x + speed / 2), field.height - 1), 0)
-        newY = max(min(randint(y - speed / 2, y + speed / 2), field.width - 1), 0)
+        newX = max(min(random.randint(x - speed / 2, x + speed / 2), field.height - 1), 0)
+        newY = max(min(random.randint(y - speed / 2, y + speed / 2), field.width - 1), 0)
         field.tryMoveEntity(currentCords, Coordinates(newX, newY))
 
     def __search(self, field, function):
@@ -264,3 +262,4 @@ class Animal(Entity):
 
     def __isMeat(self, tile):
         return (tile.object == Object.meat)
+    

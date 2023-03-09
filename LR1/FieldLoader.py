@@ -5,14 +5,12 @@ from Tiger import Tiger
 from Object import Object
 from Wall import Wall
 from Tree import Tree
-from Tile import Tile
-from Coordinates import Coordinates
 
 
 class FieldLoader:
-    staticmethod
+    @staticmethod
     def load(fileName: str):
-        with open(fileName,'r') as f:
+        with open(fileName,'r',encoding='utf-8') as f:
             line = f.readline()
             splittedLine = line.split(' ')
             GameState.CONST_REPOPULATION_CHANCE = int(splittedLine[0])
@@ -26,7 +24,6 @@ class FieldLoader:
             GameState.CONST_FRUIT_TREE_PROXIMITY_APPEAR_CHANCE = int(splittedLine[8])
             GameState.CONST_FRUIT_DISAPPEAR_CHANCE = int(splittedLine[9])
             GameState.CONST_MEAT_DISAPPEAR_CHANCE = int(splittedLine[10])
-            GameState.__iteration = int(splittedLine[11])
             height = int(splittedLine[12])
             width = int(splittedLine[13])
             field = Field(height, width)
@@ -58,9 +55,9 @@ class FieldLoader:
             return field
                     
 
-    staticmethod
+    @staticmethod
     def save(field: Field):
-        with open('save','w') as f:
+        with open('save','w', encoding='utf-8') as f:
             f.write(str(GameState.CONST_REPOPULATION_CHANCE))
             f.write(" ")
             f.write(str(GameState.CONST_TREE_GROWTH_CHANCE))

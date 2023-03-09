@@ -1,8 +1,6 @@
 from dataclasses import Field
 from enum import Enum
-from itertools import chain
 from random import randrange
-from tkinter import Place
 from typing import List
 from GameState import GameState
 from Gazelle import Gazelle
@@ -14,6 +12,7 @@ from Coordinates import Coordinates
 from Entity import Entity
 from Tiger import Tiger
 
+
 class DisplayedSprite(Enum):
     empty = 0,
     fruit = 1,
@@ -23,6 +22,7 @@ class DisplayedSprite(Enum):
     wall = 5,
     gazelle = 6,
     tiger = 7
+
 
 class Tile:
     def __init__(self, cords: Coordinates, field):
@@ -51,7 +51,6 @@ class Tile:
     @property
     def displayedSprite(self):
         return self.__displayedSprite
-
 
     def trySpawnCycle(self, field):
         if (self.entity == None and self.object == None):
@@ -83,7 +82,6 @@ class Tile:
                 self.__tryRemoveEntity(GameState.CONST_TREE_DEATH_CHANCE)
             elif (isinstance(self.entity, Wall)):
                 self.__tryRemoveEntity(GameState.CONST_WALL_DISAPPEAR_CHANCE)
-
 
     def __tryRepopulate(self, species: List[str]):
         if (randrange(100000) <= GameState.CONST_REPOPULATION_CHANCE):
@@ -135,7 +133,7 @@ class Tile:
             self.removeEntity()
             return True
         return False
-    
+
     def killEntity(self):
         if (isinstance(self.entity, Animal)):
             if (self.entity.isCarnivorous == False):

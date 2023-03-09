@@ -1,16 +1,18 @@
-﻿from Field import Field
-from Tile import DisplayedSprite
+﻿from Tile import DisplayedSprite
 from os import system
 
-class Graphics:
-    __dictionary = dict(Empty = ' ', Fruit = "σ", Meat = "●", Bush = "≈", Tree = "Ï", Wall = "█", Gazelle = "G", Tiger = "T")
 
-    staticmethod
+class Graphics:
+    __dictionary = dict(Empty=' ', Fruit="σ", Meat="●",
+                        Bush="≈", Tree="Ï", Wall="█", Gazelle="G", Tiger="T")
+
+    @staticmethod
     def getDictionary():
         return Graphics.__dictionary
 
+
 class View:
-    staticmethod
+    @staticmethod
     def draw(field):
         View.clear()
         for i in range(0, field.height, 1):
@@ -33,12 +35,7 @@ class View:
                 elif (tile.displayedSprite == DisplayedSprite.bush):
                     symbol = Graphics.getDictionary()['Bush']
                 print(symbol, end='', sep='')
-    
-    staticmethod
+
+    @staticmethod
     def clear():
         _ = system('cls')
-                
-
-
-
-

@@ -13,7 +13,3 @@ class Status(Enum):
     Running = 6,
 
     LookingForMate = 7
-
-
-
-

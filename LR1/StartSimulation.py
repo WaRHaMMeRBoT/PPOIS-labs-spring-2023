@@ -34,7 +34,8 @@ for i in range(1, len(sys.argv)):
         GameState.CONST_FRUIT_APPEAR_CHANCE = int(sys.argv[i + 1])
         i += 1
     elif (sys.argv[i] == "-fatc"):
-        GameState.CONST_FRUIT_TREE_PROXIMITY_APPEAR_CHANCE = int(sys.argv[i + 1])
+        GameState.CONST_FRUIT_TREE_PROXIMITY_APPEAR_CHANCE = int(
+            sys.argv[i + 1])
         i += 1
     elif (sys.argv[i] == "-fdc"):
         GameState.CONST_FRUIT_DISAPPEAR_CHANCE = int(sys.argv[i + 1])
@@ -46,5 +47,3 @@ else:
     field = Field(height, width)
 
 Simulation.start(field, iterationsToSkip)
-
-

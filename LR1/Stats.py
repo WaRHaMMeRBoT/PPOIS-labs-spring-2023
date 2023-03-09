@@ -5,6 +5,3 @@ class Stats:
         self.speed = speed
         self.damage = damage
         self.sight = sight
-
-
-
