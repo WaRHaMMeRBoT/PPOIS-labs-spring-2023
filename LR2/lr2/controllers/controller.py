@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Set
 
 from kivymd.uix.dialog import MDDialog
 from kivymd.uix.screenmanager import MDScreenManager
@@ -31,8 +31,6 @@ class Controller(MDScreenManager):
 
     def transition_to_marks(self, instance_table, instance_row):
         identifier = self.get_screen("menu").data_table.row_data[instance_row.index // 3][0]
-        print(f'{instance_row.index},    {identifier}')
-        print(self.get_student_marks(identifier))
         self.get_screen("marks").data_table.row_data = self.get_student_marks(identifier)
         self.current = 'marks'
 
@@ -70,26 +68,45 @@ class Controller(MDScreenManager):
         self.dialog.open()
 
     def find(self, obj):
-        self.current_screen.data_table.row_data = self.filtration()
+        self.current_screen.data_table.row_data = self.filtration
         self.close_dialog(self.dialog)
 
+    @property
     def filtration(self) -> List[tuple]:
         filtraded_students: List[tuple] = []
+
         if self.dialog.content_cls.ids.name.text != "":
             for i in self.model.persons:
                 if i.name.__contains__(self.dialog.content_cls.ids.name.text):
                     filtraded_students.append((i.identifier, i.name, i.group))
-        else:
-            if self.dialog.content_cls.ids.group.text != "":
-                for i in self.model.persons:
-                    if i.group == int(self.dialog.content_cls.ids.group.text):
-                        filtraded_students.append((i.identifier, i.name, i.group))
+                else:
+                    if filtraded_students.count((i.identifier, i.name, i.group)) > 0:
+                        filtraded_students.remove((i.identifier, i.name, i.group))
 
-        return filtraded_students
+        if self.dialog.content_cls.ids.group.text != "":
+            print(self.dialog.content_cls.ids.group.text)
+            for i in self.model.persons:
+                if self.dialog.content_cls.ids.name.text != "":
+                    if i.group == int(
+                            self.dialog.content_cls.ids.group.text) and i.name == self.dialog.content_cls.ids.name.text:
+                        filtraded_students.append((i.identifier, i.name, i.group))
+                elif i.group == int(self.dialog.content_cls.ids.group.text):
+                   filtraded_students.append((i.identifier, i.name, i.group))
+                else:
+                    if filtraded_students.count((i.identifier, i.name, i.group)) > 0:
+                        filtraded_students.remove((i.identifier, i.name, i.group))
+
+        if self.dialog.content_cls.ids.id.text != "":
+            for i in self.model.persons:
+                if i.identifier == int(self.dialog.content_cls.ids.id.text):
+                    filtraded_students.append((i.identifier, i.name, i.group))
+                else:
+                    if filtraded_students.count((i.identifier, i.name, i.group)) > 0:
+                        filtraded_students.remove((i.identifier, i.name, i.group))
+
+        return list(set(filtraded_students))
 
     def close_dialog(self, obj):
-        print(self.dialog.content_cls.ids.name.text)
-        print(self.dialog.content_cls.ids.group.text)
         self.dialog.dismiss()
 
     def transition_to_deleting(self, obj):
