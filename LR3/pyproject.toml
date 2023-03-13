@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lr3"
+version = "0.1.0"
+description = ""
+authors = ["ardonplay <ardonplay2@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygame = "^2.2.0"
+poetry = "^1.4.0"
+
+[tool.poetry.scripts]
+app = "lr3.main:run"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
