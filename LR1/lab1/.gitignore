@@ -1,0 +1,10 @@
+# PyCharm files
+.idea/
+
+# Compiled files
+*.pyc
+*.pyo
+
+# Cache files
+__pycache__/
+.pytest_cache/
