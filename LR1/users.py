@@ -49,8 +49,3 @@ class User():
             self.user_name = file.readline().replace("\n", '')
             card_number = int(file.readline().replace("\n", ''))
             self.user_wallet = Wallet(card_number)
-
-
-
-
-
