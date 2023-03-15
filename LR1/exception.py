@@ -28,6 +28,3 @@ class Ex_n(Ex):
     def printf(self):
         print('Card number does not exist\nTry again')
         sys.exit()
-
-
-
