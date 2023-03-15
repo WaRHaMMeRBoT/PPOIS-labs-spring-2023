@@ -131,13 +131,3 @@ class Atm():
                     break
             
         return buf
-
-
-
-    
-        
-
-
-
-    
-
