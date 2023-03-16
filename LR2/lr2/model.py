@@ -36,11 +36,11 @@ class Model:
 
             students.append(person)
 
-        with open(os.getcwd() + self.json_dir, 'w') as fcc_file:
+        with open(os.path.realpath(os.path.dirname(__file__)) + self.json_dir, 'w') as fcc_file:
             json.dump({"students": students}, fcc_file, indent=4)
 
     def parse_student(self) -> List[Person]:
-        with open(os.getcwd() + self.json_dir, 'r') as fcc_file:
+        with open(os.path.realpath(os.path.dirname(__file__)) + self.json_dir, 'r') as fcc_file:
             obj = load(fcc_file)
             raw_list: List[Model.Person] = []
             index = 1
@@ -54,7 +54,7 @@ class Model:
         return raw_list
 
     def parse_marks(self, identifier) -> List[Exam]:
-        with open(os.getcwd() + "/" + "test" + '.json', 'r') as fcc_file:
+        with open(os.path.realpath(os.path.dirname(__file__)) + "/" + "test" + '.json', 'r') as fcc_file:
             obj = load(fcc_file)
             raw_list: List = []
             index = 1
