@@ -10,9 +10,13 @@ python = "^3.10"
 kivy = "^2.1.0"
 kivymd = "^1.1.1"
 tabulate = "^0.9.0"
+poetry = "^1.4.0"
 
 [tool.poetry.scripts]
 app = "lr2.main:run"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.2"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,25 +1,6 @@
 {
     "students": [
         {
-            "id": 12170001,
-            "name": "Gleb Levkov",
-            "group": 121703,
-            "courses": [
-                {
-                    "name": "PPOIS",
-                    "mark": 10
-                },
-                {
-                    "name": "AOIS",
-                    "mark": 10
-                },
-                {
-                    "name": "MAOIS",
-                    "mark": 10
-                }
-            ]
-        },
-        {
             "id": 12170002,
             "name": "Vladimir Moshchuk",
             "group": 121703,
@@ -1657,6 +1638,12 @@
             "id": 12170098,
             "name": "Glebkun",
             "group": 1217004,
+            "courses": []
+        },
+        {
+            "id": 12170095,
+            "name": "Vlad Gurenovich",
+            "group": 1217009,
             "courses": []
         }
     ]
