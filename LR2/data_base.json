@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "Product Name": "GamePad",
+      "Manufacturer Name": "ProdigyStore",
+      "Manufacturer's UCR": "987583454",
+      "Quantity In Stock": 234,
+      "Warehouse Address": "9 Timiriazeva Street"
+    },
+    {
+      "Product Name": "Tesla Model X",
+      "Manufacturer Name": "Tesla INC",
+      "Manufacturer's UCR": "758355633",
+      "Quantity In Stock": 134,
+      "Warehouse Address": "11 Baranova Street"
+    },
+    {
+      "Product Name": "Tesla Model Y",
+      "Manufacturer Name": "Tesla INC",
+      "Manufacturer's UCR": "758355633",
+      "Quantity In Stock": 241,
+      "Warehouse Address": "11 Baranova Street"
+    },
+    {
+      "Product Name": "iPhone 14",
+      "Manufacturer Name": "IGstore",
+      "Manufacturer's UCR": "324324523",
+      "Quantity In Stock": 123,
+      "Warehouse Address": "53 Soltysa Street"
+    },
+    {
+      "Product Name": "Tesla Model S",
+      "Manufacturer Name": "Tesla INC",
+      "Manufacturer's UCR": "758355633",
+      "Quantity In Stock": 75,
+      "Warehouse Address": "11 Baranova Street"
+    },
+    {
+      "Product Name": "Sofa",
+      "Manufacturer Name": "ComfortHouse",
+      "Manufacturer's UCR": "324255233",
+      "Quantity In Stock": 100,
+      "Warehouse Address": "4 Nemiga Street"
+    },
+    {
+      "Product Name": "Table",
+      "Manufacturer Name": "ComfortHouse",
+      "Manufacturer's UCR": "324255233",
+      "Quantity In Stock": 20,
+      "Warehouse Address": "4 Nemiga Street"
+    },
+    {
+      "Product Name": "PlayStaytion",
+      "Manufacturer Name": "TechnikaBy",
+      "Manufacturer's UCR": "425325345",
+      "Quantity In Stock": 25,
+      "Warehouse Address": "13 Baranova Street"
+    },
+    {
+      "Product Name": "XBox",
+      "Manufacturer Name": "TechnikaBy",
+      "Manufacturer's UCR": "425325345",
+      "Quantity In Stock": 13,
+      "Warehouse Address": "3 Baranova Street"
+    },
+    {
+      "Product Name": "IPad",
+      "Manufacturer Name": "AppleBy",
+      "Manufacturer's UCR": "453295735",
+      "Quantity In Stock": 25,
+      "Warehouse Address": "1 Center Street"
+    },
+    {
+      "Product Name": "Apple Watch",
+      "Manufacturer Name": "AppleBy",
+      "Manufacturer's UCR": "453295735",
+      "Quantity In Stock": 5,
+      "Warehouse Address": "1 Center Street"
+    },
+    {
+      "Product Name": "Electro Bycicle",
+      "Manufacturer Name": "Sportik",
+      "Manufacturer's UCR": "999453256",
+      "Quantity In Stock": 1,
+      "Warehouse Address": "76 Staronova Street"
+    },
+    {
+      "Product Name": "BMW X5",
+      "Manufacturer Name": "SportCarsBy",
+      "Manufacturer's UCR": "736453242",
+      "Quantity In Stock": 2,
+      "Warehouse Address": "6 Gafanova Street"
+    },
+    {
+      "Product Name": "Mercedes AMG",
+      "Manufacturer Name": "SportCarsBy",
+      "Manufacturer's UCR": "736453242",
+      "Quantity In Stock": 1,
+      "Warehouse Address": "6 Gafanova Street"
+    },
+    {
+      "Product Name": "1",
+      "Manufacturer Name": "11",
+      "Manufacturer's UCR": "11",
+      "Quantity In Stock": 111,
+      "Warehouse Address": "1"
+    }
+  ]
+}
