@@ -63,8 +63,9 @@ class Menu:
     def start_game(self):
         self.run()
 
-
-if __name__ == "__main__":
+def run():
     menu = Menu()
 
-    # Запускае
+if __name__ == "__main__":
+    run()
+
