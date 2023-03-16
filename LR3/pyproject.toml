@@ -9,6 +9,7 @@ readme = "README.md"
 python = "^3.10"
 pygame = "^2.2.0"
 poetry = "^1.4.0"
+pygame-menu = "^4.3.9"
 
 [tool.poetry.scripts]
 app = "lr3.main:run"
