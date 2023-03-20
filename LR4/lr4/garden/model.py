@@ -59,7 +59,7 @@ def create_dir(x, y):
 
 class Model:
     def __init__(self, garden):
-        self.weather = Weather
+        self.weather = Weather(typed="clear", time=10)
         self.x = garden.x
         self.y = garden.y
         self.garden = garden
@@ -115,10 +115,10 @@ class Model:
         etree.SubElement(square, "y").text = str(self.y)
 
         weather = etree.SubElement(root, "weather")
-        if self.weather.time == 0:
+        if self.weather.time <= 0:
             self.weather.time = 10
-            self.weather.type = "clear"
-        etree.SubElement(weather, "type").text = self.weather.type
+            self.weather.weather = "clear"
+        etree.SubElement(weather, "type").text = self.weather.weather
         etree.SubElement(weather, "time").text = str(self.weather.time - 1)
         etree.SubElement(root, 'time').text = str(self.garden.time)
         plant = etree.SubElement(root, 'plants')

@@ -22,7 +22,7 @@ class Seed:
                     if weather.time % 2 == 0:
                         self.health -= self.weatherPerception
             case "drought":
-                if self.health < 150:
+                if self.health < 100:
                     self.health += self.weatherPerception
 
     def __str__(self):

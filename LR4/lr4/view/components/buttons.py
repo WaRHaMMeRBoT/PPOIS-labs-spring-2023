@@ -6,7 +6,7 @@ from kivymd.uix.gridlayout import MDGridLayout
 from lr4.garden.plants import Seed, Plant
 
 
-def menu_buttons():
+def menu_buttons(controller):
     buttons = MDBoxLayout(spacing=20)
 
     warp_button = MDFloatingActionButton(
@@ -18,6 +18,8 @@ def menu_buttons():
         md_bg_color="#fefbff",
         icon_color="#6851a5",
     )
+    warp_button.bind(on_press=controller.warp_dialog)
+
     buttons.add_widget(
         warp_button
     )
@@ -31,9 +33,11 @@ def menu_buttons():
         md_bg_color="#fefbff",
         icon_color="#6851a5",
     )
+    weather_button.bind(on_press=controller.weather_dialog)
     buttons.add_widget(
         weather_button
     )
+    buttons.pos = (1300, 880)
     return buttons
 
 
@@ -58,7 +62,6 @@ def plants_buttons(controller):
                 buttons.add_widget(button)
                 index += 1
             elif issubclass(plants[i][j].__class__, Plant):
-                print("yep")
                 button = MDFloatingActionButton(
                     icon="/Users/ardonplay/Developer/Python/PPOIS-labs-spring-2023/LR4/lr4/view/assets/" + plants[i][
                         j].name + ".png",
@@ -87,5 +90,5 @@ def plants_buttons(controller):
                 buttons.add_widget(button)
                 button.bind(on_press=controller.get_info_of_plant)
                 index += 1
-
+    buttons.pos = (150, -150)
     return buttons

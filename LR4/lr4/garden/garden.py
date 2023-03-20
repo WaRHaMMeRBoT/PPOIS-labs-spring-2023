@@ -19,6 +19,7 @@ class Garden:
                 if self.model.matrix[i][j] is not None:
                     print(f'{self.model.matrix[i][j].time} , {self.model.matrix[i][j]}')
                     self.model.matrix[i][j].time += index
+        self.model.weather.time -= 1
         self.time += index
 
     # def spawnWeed(self):

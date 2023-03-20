@@ -1,6 +1,6 @@
 from tabulate import tabulate
 
-from lr4.garden.garden import load, Garden
+from lr4.garden.garden import load
 from lr4.garden.plants import whatThePlant, whatTheSeed
 
 
@@ -35,13 +35,14 @@ class BaseController:
         self.garden.model.save()
 
     def weather(self, type: str, time: int):
-        self.garden.model.weather.type = type
+        self.garden.model.weather.weather = type
         self.garden.model.weather.time = time
         self.garden.model.garbageCollector()
         self.garden.warp(1)
         self.garden.model.save()
 
     def warp(self, time: int):
-        self.garden.warp(time)
-        self.garden.model.garbageCollector()
+        for i in range(0, time):
+            self.garden.warp(i)
+            self.garden.model.garbageCollector()
         self.garden.model.save()
