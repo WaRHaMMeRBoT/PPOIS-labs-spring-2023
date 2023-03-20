@@ -1,4 +1,4 @@
-## Garden LR1
+## Garden LR4
 # we have some intresting suff:
 1 --init -> create .gardenrc
 
@@ -17,3 +17,5 @@
 8 --square -> set personal square of garden and initialize it
 
 
+# To run cli
+ <code>poetry run cli</code>
