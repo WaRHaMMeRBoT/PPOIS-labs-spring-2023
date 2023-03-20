@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>searchDialog</class>
+ <widget class="QDialog" name="searchDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>503</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Поиск</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/png-transparent-computer-icons-magnifying-glass-magnifier-magnifying-glass-text-interface-magnifier-thumbnail-removebg-preview.png</normaloff>icons/png-transparent-computer-icons-magnifying-glass-magnifier-magnifying-glass-text-interface-magnifier-thumbnail-removebg-preview.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 225, 230);</string>
+  </property>
+  <widget class="QDialogButtonBox" name="dialogButtonBox">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>450</y>
+     <width>171</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(199, 214, 255);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="searchTable">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1131</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1131</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(199, 214, 255);</string>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+   </property>
+   <property name="autoScroll">
+    <bool>true</bool>
+   </property>
+   <property name="dragEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>false</bool>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>40</number>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>188</number>
+   </attribute>
+   <attribute name="verticalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>Название книги</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Авторы</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Издательство</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Количество томов</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Тираж</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Выпущенно томов</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QComboBox" name="searchComboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(199, 214, 255);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Поиск...</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>по авторам</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>по издательству и авторам</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>по числу томов</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>по названию</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>по тиражу</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>по количеству выпущенных глав</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="startSearch">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>450</y>
+     <width>121</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(199, 214, 255);</string>
+   </property>
+   <property name="text">
+    <string>Начать поиск</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/png-transparent-computer-icons-magnifying-glass-magnifier-magnifying-glass-text-interface-magnifier-thumbnail-removebg-preview.png</normaloff>icons/png-transparent-computer-icons-magnifying-glass-magnifier-magnifying-glass-text-interface-magnifier-thumbnail-removebg-preview.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>dialogButtonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>searchDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dialogButtonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>searchDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
