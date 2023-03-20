@@ -19,3 +19,6 @@
 
 # To run cli
  <code>poetry run cli</code>
+ 
+ # To run app
+ <code>poetry run app</code>
