@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ppois-poetry"
+version = "0.1.0"
+description = ""
+authors = ["ardonplay <ardonplay2@icloud.com>"]
+readme = "README.md"
+packages = [{include = "lr4"}]
+
+[tool.poetry.dependencies]
+python = "3.10.10"
+lxml = "^4.9.2"
+np = "^1.0.2"
+numpy = "^1.24.2"
+tabulate = "^0.9.0"
+pillow = "^9.4.0"
+kivy = "^2.1.0"
+kivymd = "^1.1.1"
+
+[tool.poetry.scripts]
+app = "lr4.main:app"
+cli = "lr4.cli_main:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
