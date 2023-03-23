@@ -1,0 +1,3 @@
+[submodule "LR1"]
+	path = LR1
+	url = https://github.com/qaip/garden-manager
