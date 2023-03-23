@@ -141,7 +141,7 @@ class Controller:
         regex = re.compile(r"^autosave([1-9]\d*)\.json$")
         filename_indexes = [int(regex.match(file).group(1)) for file in os.listdir("./saves") if regex.match(file)]
         if not filename_indexes:
-            filename_indexes.append(1)
+            filename_indexes.append(0)
         return f"./saves/autosave{max(filename_indexes) + 1}.json"
 
     def save_library_as(self, filename) -> NoReturn:

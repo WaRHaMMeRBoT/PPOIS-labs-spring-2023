@@ -350,11 +350,9 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
     def showLoadFileDialog(self, ui_main_window, MainWindow):
         fname = QFileDialog.getOpenFileName(self, 'Загрузить файл', '/home')[0]
         MainWindow.data_controller.load_library(ui_main_window, fname)
-            #self.textEdit.setText(data)
+
 
     def showSaveFileDialog(self, MainWindow) -> NoReturn:
         fname = QFileDialog.getOpenFileName(self, 'Open file', '/home')[0]
         MainWindow.data_controller.save_library_as(fname)
-
-
 

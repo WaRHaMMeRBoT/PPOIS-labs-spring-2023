@@ -303,9 +303,10 @@ class Library:
         if not filename.endswith(".json"):
             raise ValueError(f"Uploading file must be .json. Got {filename} instead")
         with open(filename, "r") as loading_file:
-            if json.load(loading_file):
+            temp = json.load(loading_file)
+            if temp:
                 return Library(
-                    books=[Book(**book_json_dict) for book_json_dict in json.load(loading_file)],
+                    books=[Book(**book_json_dict) for book_json_dict in temp],
                     filename=filename,
                     saved_flag=True)
             else:

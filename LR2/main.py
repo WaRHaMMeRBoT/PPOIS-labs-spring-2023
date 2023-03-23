@@ -11,7 +11,7 @@ from gui_lab_2 import Ui_MainWindow, MyWindow
 if __name__ == "__main__":
     import sys
 
-    books = [
+    '''books = [
         Book(authors=["Власенко Денис", "Гаврик Владислав"], name="Как сдать экзамены?", publishing_house="BSUIR Times",
              published_amount=30, volumes=2),
         Book(authors=["Аркадий Натанович Стругацкий","Борис Натанович Стругацкий"], name="Пикник на обочине", publishing_house="АСТ",
@@ -78,6 +78,8 @@ if __name__ == "__main__":
         Book(authors=["Славутий Древний"])
     ]
     lib = Library(books)
+    '''
+    lib = Library()
 
     data_controller = Controller(lib)
     app = QtWidgets.QApplication(sys.argv)
