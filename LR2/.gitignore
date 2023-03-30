@@ -1,0 +1,4 @@
+venv
+.idea
+patient.json
+*\__pycashe__
