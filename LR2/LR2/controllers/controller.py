@@ -99,6 +99,7 @@ class Controller(MDScreenManager):
     
     def find(self, obj):
         print('HERE')
+        print(self.current)
         self.current_screen.data_table.row_data = self.filtration
         self.close_dialog(self.dialog)
 
