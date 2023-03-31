@@ -1,0 +1,107 @@
+{
+	"general_params": {
+		"background_image": "./images/backgrounds/space.jpg",
+		"screen_width": 800,
+		"screen_height": 600,
+		"frame_rate": 90,
+		"effect_duration": 20,
+		"initial_lives": 3,
+		"background_music_duration": 327,
+		"sounds_effects": {
+			"brick_hit": "./sounds/sound_effects/brick_hit.mp3",
+			"wall_hit": "./sounds/sound_effects/wall_hit.mp3",
+			"paddle_hit": "./sounds/sound_effects/paddle_hit.mp3",
+			"minus_hp": "./sounds/sound_effects/minus_hp.mp3",
+			"death": "./sounds/sound_effects/sound_of_dead.mp3",
+			"effect_done": "./sounds/sound_effects/bonus_taken_effect.mp3",
+			"level_complete": "./sounds/sound_effects/win_sound_1.mp3",
+			"bonus_taken": "./sounds/sound_effects/bonus_taken_effect.mp3",
+			"start": "./sounds/sound_effects/start_game.mp3",
+			"new_record": "./sounds/sound_effects/new_record.mp3",
+			"win1": "./sounds/sound_effects/win_sound_1.mp3",
+			"win2": "./sounds/sound_effects/win_sound_2.mp3",
+			"background_music": "./sounds/background_music/menu_music.mp3"
+		},
+		"level_open_flags": {
+			"LEVEL 1": true,
+			"LEVEL 2": false,
+			"LEVEL 3": false,
+			"LEVEL 4": false,
+			"LEVEL 5": false
+		},
+        "help_messages": {
+        "general_info": "\tHello, user. Welcome to Arcanoid version 1.0. by Vodohleb04\n Добро пожаловать в мир Arcanoid. Ваша цель - разбить все кирпичи не потеряв все жизни и набрать при этом максимальное количество очков.\n Двигайте свой кирпич белого цвета, чтобы отбивать шар. Если шар упадёт, то вы потеряете одну жизнь. Сама жизнь оценивается в 5 очков. Следовательно, при потере жизни вы теряете 5 очков, а при получении - ваши очки увеличаться на 5.",
+        "bricks_info": " Существует 6 видов кирпичей:\n -Стандартный кирпич:\n  Красный цвет. Не обладает особыми свойствами и при уничтожении приносит вам 1 очко.\n -Ваш кирпич:\n  Белый цвет. Ускоряется при определённых условиях (описано в пункте \"Ускорение\").Ускоряет шар (описано в пункте \"Ускорение\"). Только на него вы можете положиться.\n -Целебный кирпич:\n  Желтый цвет. Пропитан особой жидкостью, способной добавить вам жизнь.\n -Клад:\n  Серый цвет. Содержит в себе особый предмет, который увеличивает очки за уничтожение кирпича в 5 раз.\n -Тормоз:\n  Небесный цвет. Пропитан тормозной жидкостью и замедляет ваш шар.\n -Широчайший:\n  Оранжевый цвет. Расширяет ваш кирпич за счёт неизвестного квантового эффекта. \nУчтите, что только 1 эффект может действовать в конкретный момент времени. Если вы разбиваете особый кирпич, то эффект от предыдущего прекращает действовать (жизни никто забирать не будет). Все эффекты, кроме полученной жизни временные и через какое-то время прекращают действовать.\n Destroy 'em all!!!",
+        "acceleration_info": " После разрушения кирпичей наблюдается аномалия: происходит накопление неизвестного вещества в шаре. Данная вещество никак себя не проявляет до накопления определённой концентрации. Замечено, что на различных уровнях данная концентрация отличается. По её достижению вещество разрушается с выбросом энергии, которая приводит к ускорению шара.\n Вещество постепенно передаётся и вашему кирпичу. Однако это происходит в 2 раза медленнее, чем в случае с шаром. Однако вещество полностью исчезает из ваших шара и кирпича при использовании жизни.\n Ну и никто не отменял законы передачи импульса и энергии: ваш кирпич ускоряет ваш шар в горизонтальном направлении, если движеться в одну с ним сторону, и замедляет его, если движеться в противополоржную.",
+        "levels_info": " Странный мир: вроде космос, но откуда-то взялись кирпичи и шар... Неужели шар - это душа, которая пытается вырваться из ловушки? Ваш кирпич - характер, который помогает душе добиться цели? Остальные кирпичи - олицетворение жизненных трудностей? Как говорил польский филосов Ślavik Bóber: \"В целом, возможно\".\n Всего 5 уровней. Каждый новый открывается при прохождении предыдущего. Помогите душе и характеру пройти сквозь все трудности (и это отнюдь не про игру)."
+	}
+	},
+	"objects_params": {
+		"menu_offset_x": 20,
+		"menu_offset_y": 300,
+		"menu_button_w": 86,
+		"menu_button_h": 50,
+		"menu_button_interval": 26,
+		"button_text_color": [
+			255,
+			255,
+			255
+		],
+		"button_normal_back_color": [
+			255,
+			106,
+			106
+		],
+		"button_hover_back_color": [
+			238,
+			99,
+			99
+		],
+		"button_pressed_back_color": [
+			205,
+			85,
+			85
+		],
+		"brick_width": 60,
+		"brick_height": 20,
+		"brick_color": [
+			255,
+			0,
+			0
+		],
+		"bowl_speed": 3,
+		"bowl_radius": 8,
+		"bowl_color": [
+			135,
+			206,
+			255
+		],
+		"bowl_acceleration": 1,
+		"paddle_width": 80,
+		"paddle_height": 10,
+		"paddle_color": [
+			240,
+			248,
+			255
+		],
+		"paddle_speed": 6
+	},
+	"info_panels_params": {
+		"status_offset_y": 5,
+		"text_color": [
+			255,
+			255,
+			0
+		],
+		"lives_right_offset": 85,
+		"lives_offset": 715,
+		"score_offset": 5
+	},
+	"text_message_params": {
+		"font_name": "Arial",
+		"font_size": 20,
+		"death_message_duration": 5,
+		"start_message_duration": 2,
+		"win_message_duration": 4
+	}
+}
