@@ -39,7 +39,7 @@ def menu_buttons(controller):
     buttons.add_widget(
         weather_button
     )
-    buttons.pos = (200, 410)
+    buttons.pos = (dp(600), dp(10))
     return buttons
 
 
@@ -92,5 +92,5 @@ def plants_buttons(controller):
                 buttons.add_widget(button)
                 button.bind(on_press=controller.get_info_of_plant)
                 index += 1
-    buttons.pos = (30, -100)
+    buttons.pos = (dp(30), dp(-100))
     return buttons
