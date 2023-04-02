@@ -74,8 +74,8 @@ class TelegramController:
 
     def delete_plant(self, message):
         pos = str(message.text).split()
-        if int(pos[0]) < len(self.controller.garden.model.matrix[0]) and int(pos[1]) < len(
-                self.controller.garden.model.matrix):
+        if int(pos[0]) < len(self.controller.garden.model.matrix) and int(pos[1]) < len(
+                self.controller.garden.model.matrix[0]):
             self.controller.remove(int(pos[0]), int(pos[1]))
             self.bot.send_message(message.chat.id, "Сущность удалена")
         else:
@@ -99,8 +99,8 @@ class TelegramController:
 
     def add_plant(self, message):
         pos = str(message.text).split()
-        if int(pos[0]) < len(self.controller.garden.model.matrix[0]) and int(pos[1]) < len(
-                self.controller.garden.model.matrix):
+        if int(pos[0]) < len(self.controller.garden.model.matrix) and int(pos[1]) < len(
+                self.controller.garden.model.matrix[0]):
             self.controller.add_seed(self.plant, int(pos[0]), int(pos[1]))
             self.bot.send_message(message.chat.id, "Сущность добавлена")
         else:
