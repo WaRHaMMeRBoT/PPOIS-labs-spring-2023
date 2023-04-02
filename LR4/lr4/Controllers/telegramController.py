@@ -55,9 +55,9 @@ class TelegramController:
             if 0 < int(message.text) <= 100:
                 self.controller.warp(time=int(message.text))
                 self.bot.send_message(message.chat.id, "Перемещение произведено на " + message.text + " итераций")
-                self.warp = False
             else:
                 self.bot.send_message(message.chat.id, "Ты что, Глебаш?")
+            self.warp = False
         else:
             self.bot.send_message(message.chat.id, "Неправильный ввод")
 
