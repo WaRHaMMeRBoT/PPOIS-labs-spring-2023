@@ -20,6 +20,7 @@ pytelegrambotapi = "^4.10.0"
 [tool.poetry.scripts]
 app = "lr4.main:app"
 cli = "lr4.cli_main:cli"
+telegram_bot = "lr4.Controllers.telegramController:app"
 
 [build-system]
 requires = ["poetry-core"]

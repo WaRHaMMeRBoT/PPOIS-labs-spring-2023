@@ -55,7 +55,9 @@ class TelegramController:
 
         self.bot.polling()
 
-
-if __name__ == '__main__':
+def app():
     telegram = TelegramController("5629086421:AAHmbwjKCpyVJptr-c_-3KHQezWOiQXLSxM")
     telegram.run()
+
+if __name__ == '__main__':
+   app()
