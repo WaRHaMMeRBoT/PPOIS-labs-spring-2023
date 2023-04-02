@@ -1,3 +1,5 @@
+from tokenize import String
+
 from tabulate import tabulate
 
 from lr4.garden.garden import load
@@ -11,8 +13,9 @@ class BaseController:
     def get_plants(self):
         return self.garden.model.matrix
 
-    def view(self):
+    def view(self) -> str:
         print(tabulate(self.garden.model.print()))
+        return tabulate(self.garden.model.print())
 
     def add(self, plant_name: str, x: int, y: int):
         plant = whatThePlant(plant_name)

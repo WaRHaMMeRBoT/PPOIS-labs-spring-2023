@@ -31,7 +31,7 @@ class Garden:
 
 
 def load() -> Garden:
-    tree = elementor.parse(r'.gardenrc/Entities/plants.xml')
+    tree = elementor.parse(r'../.gardenrc/Entities/plants.xml')
     root = tree.getroot()
 
     garden = Garden

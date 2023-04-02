@@ -1,3 +1,5 @@
+import os
+
 from kivy.metrics import dp
 from kivymd.uix.boxlayout import MDBoxLayout
 from kivymd.uix.button import MDFloatingActionButton
@@ -10,7 +12,7 @@ def menu_buttons(controller):
     buttons = MDBoxLayout(spacing=20)
 
     warp_button = MDFloatingActionButton(
-        icon="/Users/ardonplay/Developer/Python/PPOIS-labs-spring-2023/LR4/lr4/view/assets/tardis.png",
+        icon=os.path.realpath(os.path.dirname(__file__)) + "/../assets/tardis.png",
         icon_size=dp(40),
         type="standard",
         theme_icon_color="Custom",
@@ -25,7 +27,7 @@ def menu_buttons(controller):
     )
 
     weather_button = MDFloatingActionButton(
-        icon="/Users/ardonplay/Developer/Python/PPOIS-labs-spring-2023/LR4/lr4/view/assets/weather.png",
+        icon=os.path.realpath(os.path.dirname(__file__)) + "/../assets/weather.png",
         icon_size=dp(35),
         type="standard",
         theme_icon_color="Custom",
@@ -37,7 +39,7 @@ def menu_buttons(controller):
     buttons.add_widget(
         weather_button
     )
-    buttons.pos = (1300, 880)
+    buttons.pos = (200, 410)
     return buttons
 
 
@@ -63,7 +65,7 @@ def plants_buttons(controller):
                 index += 1
             elif issubclass(plants[i][j].__class__, Plant):
                 button = MDFloatingActionButton(
-                    icon="/Users/ardonplay/Developer/Python/PPOIS-labs-spring-2023/LR4/lr4/view/assets/" + plants[i][
+                    icon=os.path.realpath(os.path.dirname(__file__)) + "/../assets/" + plants[i][
                         j].name + ".png",
                     icon_size=dp(35),
                     id=str(index),
@@ -78,7 +80,7 @@ def plants_buttons(controller):
                 index += 1
             elif issubclass(plants[i][j].__class__, Seed):
                 button = MDFloatingActionButton(
-                    icon="/Users/ardonplay/Developer/Python/PPOIS-labs-spring-2023/LR4/lr4/view/assets/seed.png",
+                    icon=os.path.realpath(os.path.dirname(__file__)) + "/../assets/seed.png",
                     icon_size=dp(35),
                     id=str(index),
                     type="standard",
@@ -90,5 +92,5 @@ def plants_buttons(controller):
                 buttons.add_widget(button)
                 button.bind(on_press=controller.get_info_of_plant)
                 index += 1
-    buttons.pos = (150, -150)
+    buttons.pos = (30, -100)
     return buttons

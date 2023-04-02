@@ -2,7 +2,6 @@ import os
 
 from kivy.graphics import Rectangle
 from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.label import MDLabel
 from kivymd.uix.screen import MDScreen
 
 from lr4.view.components.buttons import menu_buttons, plants_buttons
