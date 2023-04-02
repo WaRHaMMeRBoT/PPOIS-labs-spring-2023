@@ -18,6 +18,7 @@ class TelegramController:
         self.add = False
         self.plant_add = False
         self.plant = ""
+
         self.plants = {
             "Помидор": "tomato",
             "Морковка": "carrot",
@@ -73,8 +74,12 @@ class TelegramController:
 
     def delete_plant(self, message):
         pos = str(message.text).split()
-        self.controller.remove(int(pos[0]), int(pos[1]))
-        self.bot.send_message(message.chat.id, "Сущность удалена")
+        if int(pos[0]) < len(self.controller.garden.model.matrix[0]) and int(pos[1]) < len(
+                self.controller.garden.model.matrix):
+            self.controller.remove(int(pos[0]), int(pos[1]))
+            self.bot.send_message(message.chat.id, "Сущность удалена")
+        else:
+            self.bot.send_message(message.chat.id, "Ну ты конечно out of bounds...")
 
     def add_plant_menu(self, message):
         buttons = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -94,8 +99,12 @@ class TelegramController:
 
     def add_plant(self, message):
         pos = str(message.text).split()
-        self.controller.add_seed(self.plant, int(pos[0]), int(pos[1]))
-        self.bot.send_message(message.chat.id, "Сущность добавлена")
+        if int(pos[0]) < len(self.controller.garden.model.matrix[0]) and int(pos[1]) < len(
+                self.controller.garden.model.matrix):
+            self.controller.add_seed(self.plant, int(pos[0]), int(pos[1]))
+            self.bot.send_message(message.chat.id, "Сущность добавлена")
+        else:
+            self.bot.send_message(message.chat.id, "Ну ты конечно out of bounds...")
 
     def init(self):
         create_dir(10, 5)
