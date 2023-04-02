@@ -51,9 +51,12 @@ class TelegramController:
 
     def warping(self, message):
         if str(message.text).isdigit():
-            self.controller.warp(time=int(message.text))
-            self.bot.send_message(message.chat.id, "Перемещение произведено на " + message.text + " итераций")
-            self.warp = False
+            if 0 < int(message.text) <= 100:
+                self.controller.warp(time=int(message.text))
+                self.bot.send_message(message.chat.id, "Перемещение произведено на " + message.text + " итераций")
+                self.warp = False
+            else:
+                self.bot.send_message(message.chat.id, "Ты что, Глебаш?")
         else:
             self.bot.send_message(message.chat.id, "Неправильный ввод")
 
