@@ -74,12 +74,13 @@ class TelegramController:
 
     def delete_plant(self, message):
         pos = str(message.text).split()
-        if int(pos[0]) < len(self.controller.garden.model.matrix) and int(pos[1]) < len(
-                self.controller.garden.model.matrix[0]):
-            self.controller.remove(int(pos[0]), int(pos[1]))
-            self.bot.send_message(message.chat.id, "Сущность удалена")
-        else:
-            self.bot.send_message(message.chat.id, "Ну ты конечно out of bounds...")
+        if len(pos) > 1:
+            if int(pos[0]) < len(self.controller.garden.model.matrix) and int(pos[1]) < len(
+                    self.controller.garden.model.matrix[0]):
+                self.controller.remove(int(pos[0]), int(pos[1]))
+                self.bot.send_message(message.chat.id, "Сущность удалена")
+            else:
+                self.bot.send_message(message.chat.id, "Ну ты конечно out of bounds...")
 
     def add_plant_menu(self, message):
         buttons = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -94,17 +95,23 @@ class TelegramController:
         self.add = True
 
     def get_plant_id(self, message):
-        self.plant = self.plants[message.text]
-        self.plant_add = True
+        if len(str(message.text).split()) == 1 and not message.text.isdigit():
+            self.plant = self.plants[message.text]
+            self.plant_add = True
+            self.bot.send_message(message.chat.id, "Введите значение: x y")
+        else:
+            self.bot.send_message(message.chat.id, "Совсем клоун?")
 
     def add_plant(self, message):
         pos = str(message.text).split()
-        if int(pos[0]) < len(self.controller.garden.model.matrix) and int(pos[1]) < len(
-                self.controller.garden.model.matrix[0]):
-            self.controller.add_seed(self.plant, int(pos[0]), int(pos[1]))
-            self.bot.send_message(message.chat.id, "Сущность добавлена")
+
+        if len(pos) > 1:
+            if int(pos[0]) < len(self.controller.garden.model.matrix) and int(pos[1]) < len(
+                    self.controller.garden.model.matrix[0]):
+                self.controller.add_seed(self.plant, int(pos[0]), int(pos[1]))
+                self.bot.send_message(message.chat.id, "Сущность добавлена")
         else:
-            self.bot.send_message(message.chat.id, "Ну ты конечно out of bounds...")
+            self.bot.send_message(message.chat.id, "Ну ты конечно крутой...")
 
     def init(self):
         create_dir(10, 5)
@@ -118,7 +125,6 @@ class TelegramController:
 
         elif self.add:
             self.get_plant_id(message)
-            self.bot.send_message(message.chat.id, "Введите значение: x y")
             self.add = False
 
         elif self.plant_add:
