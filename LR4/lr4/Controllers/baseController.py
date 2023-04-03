@@ -15,7 +15,7 @@ class BaseController:
 
     def view(self) -> str:
         print(tabulate(self.garden.model.print()))
-        return tabulate(self.garden.model.print())
+        return tabulate(self.garden.model.print(), tablefmt="grid")
 
     def add(self, plant_name: str, x: int, y: int):
         plant = whatThePlant(plant_name)

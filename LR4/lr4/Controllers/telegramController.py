@@ -16,13 +16,7 @@ class TelegramController:
         self.bot = telebot.TeleBot(token)
         init()
         self.controller = BaseController()
-        self.warp = False
-        self.weather = False
-        self.delete = False
-        self.add = False
-        self.plant_add = False
         self.plant = ""
-
         self.plants = {
             "Помидор": "tomato",
             "Морковка": "carrot",
@@ -52,18 +46,17 @@ class TelegramController:
         rainy = KeyboardButton(text="Дождь")
         buttons.add(clear, sunny, rainy)
         self.bot.send_message(message.chat.id, "Вот доступные виды погод:", reply_markup=buttons)
-        self.weather = True
+        self.bot.register_next_step_handler(message, self.weather_changer)
 
     def warping(self, message):
-        if str(message.text).isdigit():
-            if 0 < int(message.text) <= 100:
+        try:
+            if int(message.text) < 100:
                 self.controller.warp(time=int(message.text))
                 self.bot.send_message(message.chat.id, "Перемещение произведено на " + message.text + " итераций")
             else:
-                self.bot.send_message(message.chat.id, "Ты что, Глебаш?")
-            self.warp = False
-        else:
-            self.bot.send_message(message.chat.id, "Неправильный ввод")
+                raise
+        except Exception:
+            self.bot.send_message(message.chat.id, "Ты что, Глебаш?")
 
     def weather_changer(self, message):
         match message.text:
@@ -74,18 +67,15 @@ class TelegramController:
             case "Дождь":
                 self.controller.weather("rainy", 100)
         self.bot.send_message(message.chat.id, "Погода изменена на " + message.text)
-        self.weather = False
 
     def delete_plant(self, message):
         pos = str(message.text).split()
-        if len(pos) > 1 and pos[0].isdigit() and pos[1].isdigit():
-            if len(self.controller.garden.model.matrix) > int(pos[0]) >= 0 and len(
-                    self.controller.garden.model.matrix[0]) > int(pos[1]) >= 0:
-                self.controller.remove(int(pos[0]), int(pos[1]))
-                self.bot.send_message(message.chat.id, "Сущность удалена")
-            else:
-                self.bot.send_message(message.chat.id, "Ну ты конечно out of bounds...")
-        else:
+        try:
+            self.controller.remove(int(pos[0]), int(pos[1]))
+            self.bot.send_message(message.chat.id, "Сущность удалена")
+        except IndexError:
+            self.bot.send_message(message.chat.id, "Задал значения которые превышают размер сетки? А ты хорош...")
+        except Exception:
             self.bot.send_message(message.chat.id, "Глебаш, давай нормально...")
 
     def add_plant_menu(self, message):
@@ -98,62 +88,41 @@ class TelegramController:
         zucchini = KeyboardButton(text="Кабачок")
         buttons.add(tomato, carrot, potato, cucumber, zucchini, weed)
         self.bot.send_message(message.chat.id, "Выберите тип растения:", reply_markup=buttons)
-        self.add = True
+        self.bot.register_next_step_handler(message, self.get_plant_id)
 
     def get_plant_id(self, message):
-        if len(str(message.text).split()) == 1 and not message.text.isdigit():
-            if message.text in self.plants:
-                self.plant = self.plants[message.text]
-                self.plant_add = True
-                self.bot.send_message(message.chat.id, "Введите значение: x y")
-            else:
-                self.bot.send_message(message.chat.id, "Ну ты конечно мда")
-        else:
-            self.bot.send_message(message.chat.id, "Совсем клоун?")
+        try:
+            self.plant = self.plants[message.text]
+            self.bot.send_message(message.chat.id, "Введите значение: x y")
+            self.bot.register_next_step_handler(message, self.add_plant)
+        except KeyError:
+            self.bot.send_message(message.chat.id, "Ну ты конечно мда")
 
     def add_plant(self, message):
         pos = str(message.text).split()
-
-        if len(pos) > 1 and pos[0].isdigit() and pos[1].isdigit():
-            if len(self.controller.garden.model.matrix) > int(pos[0]) >= 0 and len(
-                    self.controller.garden.model.matrix[0]) > int(pos[1]) >= 0:
-                self.controller.add_seed(self.plant, int(pos[0]), int(pos[1]))
-                self.bot.send_message(message.chat.id, "Сущность добавлена")
-        else:
-            self.bot.send_message(message.chat.id, "Ну ты конечно крутой...")
+        try:
+            self.controller.add_seed(self.plant, int(pos[0]), int(pos[1]))
+            self.bot.send_message(message.chat.id, "Сущность добавлена")
+        except IndexError:
+            self.bot.send_message(message.chat.id, "Задал значения которые превышают размер сетки? А ты хорош...")
+        except Exception:
+            self.bot.send_message(message.chat.id, "Глебаш, давай нормально...")
 
     def handle_message(self, message):
-        if self.warp:
-            self.warping(message)
 
-        elif self.weather:
-            self.weather_changer(message)
-
-        elif self.add:
-            self.get_plant_id(message)
-            self.add = False
-
-        elif self.plant_add:
-            self.add_plant(message)
-            self.plant_add = False
-
-        elif self.delete:
-            self.delete_plant(message)
-            self.delete = False
-        else:
-            match message.text:
-                case "Просмотреть огород":
-                    self.bot.send_message(message.chat.id, self.controller.view())
-                case "Перемещение во времени":
-                    self.bot.send_message(message.chat.id, "Введите значение:")
-                    self.warp = True
-                case "Поменять погоду":
-                    self.weather_menu(message)
-                case "Удалить растение":
-                    self.bot.send_message(message.chat.id, "Введите значение: x y")
-                    self.delete = True
-                case "Добавить растение":
-                    self.add_plant_menu(message)
+        match message.text:
+            case "Просмотреть огород":
+                self.bot.send_message(chat_id=message.chat.id, text=self.controller.view())
+            case "Перемещение во времени":
+                self.bot.send_message(message.chat.id, "Введите значение:")
+                self.bot.register_next_step_handler(message, self.warping)
+            case "Поменять погоду":
+                self.weather_menu(message)
+            case "Удалить растение":
+                self.bot.send_message(message.chat.id, "Введите значение: x y")
+                self.bot.register_next_step_handler(message, self.delete_plant)
+            case "Добавить растение":
+                self.add_plant_menu(message)
 
     def run(self):
         @self.bot.message_handler(commands=['start'])

@@ -81,7 +81,7 @@ class Model:
                 if self.matrix[i][j] is not None:
                     details[i][j] = self.matrix[i][j].icon
                 else:
-                    details[i][j] += " "
+                    details[i][j] += "X"
         return details
 
     def findNearestWeed(self, x, y):
