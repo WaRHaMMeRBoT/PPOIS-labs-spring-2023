@@ -17,6 +17,7 @@ class TelegramController:
         init()
         self.controller = BaseController()
         self.plant = ""
+        self.counter = 0
         self.plants = {
             "Помидор": "tomato",
             "Морковка": "carrot",
@@ -36,7 +37,8 @@ class TelegramController:
         weather = KeyboardButton(text="Поменять погоду")
         delete = KeyboardButton(text="Удалить растение")
         add = KeyboardButton(text="Добавить растение")
-        buttons.add(view, warp, weather, delete, add)
+        get = KeyboardButton(text="Получить информацию о растении")
+        buttons.add(view, warp, weather, delete, add, get)
         self.bot.send_message(message.chat.id, "Список доступных команд", reply_markup=buttons)
 
     def weather_menu(self, message):
@@ -67,6 +69,7 @@ class TelegramController:
             case "Дождь":
                 self.controller.weather("rainy", 100)
         self.bot.send_message(message.chat.id, "Погода изменена на " + message.text)
+        self.help(message)
 
     def delete_plant(self, message):
         pos = str(message.text).split()
@@ -97,6 +100,7 @@ class TelegramController:
             self.bot.register_next_step_handler(message, self.add_plant)
         except KeyError:
             self.bot.send_message(message.chat.id, "Ну ты конечно мда")
+            self.help(message)
 
     def add_plant(self, message):
         pos = str(message.text).split()
@@ -107,9 +111,25 @@ class TelegramController:
             self.bot.send_message(message.chat.id, "Задал значения которые превышают размер сетки? А ты хорош...")
         except Exception:
             self.bot.send_message(message.chat.id, "Глебаш, давай нормально...")
+        self.help(message)
+
+    def get_plant(self, message):
+        self.bot.send_message(message.chat.id, "Введите x y:")
+        self.bot.register_next_step_handler(message, self.get_plant_by_x_y)
+
+    def get_plant_by_x_y(self, message):
+        pos = str(message.text).split()
+
+        try:
+            plant = self.controller.get_plants()[int(pos[0])][int(pos[0])]
+            try:
+                self.bot.send_message(message.chat.id, plant)
+            except Exception:
+                self.bot.send_message(message.chat.id, "Эта клетка пуста")
+        except IndexError:
+            self.bot.send_message(message.chat.id, "Ну ты выдал базу канеш, ну держи пустоту")
 
     def handle_message(self, message):
-
         match message.text:
             case "Просмотреть огород":
                 self.bot.send_message(chat_id=message.chat.id, text=self.controller.view())
@@ -123,15 +143,25 @@ class TelegramController:
                 self.bot.register_next_step_handler(message, self.delete_plant)
             case "Добавить растение":
                 self.add_plant_menu(message)
+            case "Получить информацию о растении":
+                self.get_plant(message)
+        print(self.counter)
+        self.counter += 1
+        if self.counter % 10 == 0:
+            self.bot.send_message(message.chat.id,
+                                  "Текущая погода: " + self.controller.garden.model.weather.weather)
+            self.counter = 0
 
     def run(self):
         @self.bot.message_handler(commands=['start'])
         def handle_start(message):
             self.start(message)
+            self.counter += 1
 
         @self.bot.message_handler(commands=['commands'])
         def handle_help(message):
             self.help(message)
+            self.counter += 1
 
         @self.bot.message_handler(func=lambda message: True)
         def handle_message(message):
