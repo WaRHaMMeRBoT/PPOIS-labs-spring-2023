@@ -45,14 +45,14 @@ class Plant(Seed):
         details += f'Length : {self.length}\n'
         return details
 
-    def setHealth(self, health):
+    def set_health(self, health):
         self.health = health
 
-    def setLength(self, length):
+    def set_length(self, length):
         self.length = length
 
 
-def whatThePlant(text) -> object:
+def what_the_plant(text) -> object:
     match text:
         case "tomato":
             return Tomato()
@@ -68,7 +68,7 @@ def whatThePlant(text) -> object:
             return Weed()
 
 
-def whatTheSeed(text) -> object:
+def what_the_seed(text) -> object:
     match text:
         case "tomato":
             return TomatoSeed()

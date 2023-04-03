@@ -1,7 +1,7 @@
 import lxml.etree as elementor
 
 from lr4.garden.model import Model, create_dir
-from lr4.garden.plants import Plant, whatThePlant, whatTheSeed, Seed
+from lr4.garden.plants import Plant, what_the_plant, what_the_seed, Seed
 
 
 class Garden:
@@ -58,7 +58,7 @@ def load() -> Garden:
                     for configs in plants:
                         match configs.tag:
                             case "name":
-                                plant = whatThePlant(configs.text)
+                                plant = what_the_plant(configs.text)
                             case "length":
                                 plant.length = int(configs.text)
                             case "time":
@@ -76,7 +76,7 @@ def load() -> Garden:
                     for configs in seeds:
                         match configs.tag:
                             case "name":
-                                seed = whatTheSeed(configs.text)
+                                seed = what_the_seed(configs.text)
                             case "time":
                                 seed.time = int(configs.text)
                             case "health":

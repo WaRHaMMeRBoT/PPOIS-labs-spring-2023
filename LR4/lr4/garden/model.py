@@ -4,7 +4,7 @@ import random
 import numpy
 from lxml import etree
 
-from lr4.garden.plants import whatThePlant, Plant, Weed
+from lr4.garden.plants import what_the_plant, Plant, Weed
 from lr4.garden.weather import Weather
 
 dictonary = [
@@ -99,7 +99,7 @@ class Model:
                 if self.matrix[i][j] is not None:
                     if not issubclass(self.matrix[i][j].__class__, Plant) and self.matrix[i][j].time >= 10:
                         time = self.matrix[i][j].time
-                        self.matrix[i][j] = whatThePlant(self.matrix[i][j].name)
+                        self.matrix[i][j] = what_the_plant(self.matrix[i][j].name)
                         self.matrix[i][j].time = time
                     self.findNearestWeed(i, j)
                     self.matrix[i][j].get_weather(self.weather)

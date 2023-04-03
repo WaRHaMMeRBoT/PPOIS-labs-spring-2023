@@ -3,7 +3,7 @@ from tokenize import String
 from tabulate import tabulate
 
 from lr4.garden.garden import load
-from lr4.garden.plants import whatThePlant, whatTheSeed
+from lr4.garden.plants import what_the_plant, what_the_seed
 
 
 class BaseController:
@@ -18,14 +18,14 @@ class BaseController:
         return tabulate(self.garden.model.print(), tablefmt="grid")
 
     def add(self, plant_name: str, x: int, y: int):
-        plant = whatThePlant(plant_name)
+        plant = what_the_plant(plant_name)
         self.garden.model.addEntity(plant, x=x, y=y)
         self.garden.model.garbageCollector()
         self.garden.warp(1)
         self.garden.model.save()
 
     def add_seed(self, seed_name: str, x: int, y: int):
-        seed = whatTheSeed(seed_name)
+        seed = what_the_seed(seed_name)
         self.garden.model.addEntity(seed, x, y)
         self.garden.model.garbageCollector()
         self.garden.warp(1)

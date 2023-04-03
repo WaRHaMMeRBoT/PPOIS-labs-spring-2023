@@ -1,8 +1,10 @@
-from telebot.types import ReplyKeyboardMarkup, KeyboardButton
+
 
 from lr4.Controllers.baseController import BaseController
 
-import telebot
+import telebot as tb
+
+from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 from lr4.garden.model import create_dir
 
@@ -13,7 +15,7 @@ def init():
 
 class TelegramController:
     def __init__(self, token):
-        self.bot = telebot.TeleBot(token)
+        self.bot = tb.TeleBot(token)
         init()
         self.controller = BaseController()
         self.plant = ""
@@ -128,6 +130,8 @@ class TelegramController:
                 self.bot.send_message(message.chat.id, "Эта клетка пуста")
         except IndexError:
             self.bot.send_message(message.chat.id, "Ну ты выдал базу канеш, ну держи пустоту")
+        except Exception:
+            self.bot.send_message(message.chat.id, "Произошла непонятность")
 
     def handle_message(self, message):
         match message.text:
