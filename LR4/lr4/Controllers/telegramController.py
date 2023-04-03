@@ -1,4 +1,7 @@
+import datetime
+import time
 
+from telebot.apihelper import ApiTelegramException
 
 from lr4.Controllers.baseController import BaseController
 
@@ -15,10 +18,13 @@ def init():
 
 class TelegramController:
     def __init__(self, token):
+        self.restricted_users = []
         self.bot = tb.TeleBot(token)
         init()
         self.controller = BaseController()
         self.plant = ""
+        self.message_times = {}
+        self.interval = 1
         self.counter = 0
         self.plants = {
             "Помидор": "tomato",
@@ -134,26 +140,41 @@ class TelegramController:
             self.bot.send_message(message.chat.id, "Произошла непонятность")
 
     def handle_message(self, message):
-        match message.text:
-            case "Просмотреть огород":
-                self.bot.send_message(chat_id=message.chat.id, text=self.controller.view())
-            case "Перемещение во времени":
-                self.bot.send_message(message.chat.id, "Введите значение:")
-                self.bot.register_next_step_handler(message, self.warping)
-            case "Поменять погоду":
-                self.weather_menu(message)
-            case "Удалить растение":
-                self.bot.send_message(message.chat.id, "Введите значение: x y")
-                self.bot.register_next_step_handler(message, self.delete_plant)
-            case "Добавить растение":
-                self.add_plant_menu(message)
-            case "Получить информацию о растении":
-                self.get_plant(message)
-        print(self.counter)
-        self.counter += 1
-        if self.counter % 10 == 0:
-            self.bot.send_message(message.chat.id,
-                                  "Текущая погода: " + self.controller.garden.model.weather.weather)
+
+        user_id = message.from_user.id
+
+        current_time = time.time()
+
+        previous_time = self.message_times.get(user_id, None)
+
+        print(self.restricted_users)
+        if previous_time and (current_time - previous_time) < self.interval:
+            self.restricted_users.append(user_id)
+            self.bot.send_message(message.chat.id, "Ну ты и клоун, тебя забанили!")
+        else:
+            self.message_times[user_id] = current_time
+
+            match message.text:
+                case "Просмотреть огород":
+                    self.bot.send_message(chat_id=message.chat.id, text=self.controller.view())
+                case "Перемещение во времени":
+                    self.bot.send_message(message.chat.id, "Введите значение:")
+                    self.bot.register_next_step_handler(message, self.warping)
+                case "Поменять погоду":
+                    self.weather_menu(message)
+                case "Удалить растение":
+                    self.bot.send_message(message.chat.id, "Введите значение: x y")
+                    self.bot.register_next_step_handler(message, self.delete_plant)
+                case "Добавить растение":
+                    self.add_plant_menu(message)
+                case "Получить информацию о растении":
+                    self.get_plant(message)
+            self.message_times[user_id] = time.time()
+            print(self.counter)
+            self.counter += 1
+            if self.counter % 10 == 0:
+                self.bot.send_message(message.chat.id,
+                                      "Текущая погода: " + self.controller.garden.model.weather.weather)
             self.counter = 0
 
     def run(self):
@@ -167,9 +188,21 @@ class TelegramController:
             self.help(message)
             self.counter += 1
 
-        @self.bot.message_handler(func=lambda message: True)
+        @self.bot.message_handler(func=lambda message: True and message.from_user.id not in self.restricted_users)
         def handle_message(message):
             self.handle_message(message)
+
+        @self.bot.message_handler(func=lambda message: True and message.from_user.id in self.restricted_users)
+        def banned_message(message):
+            self.bot.send_message(message.chat.id, "тебя забанили!")
+            current_time = time.time()
+            try:
+                index = self.restricted_users.index(message.chat.id)
+                previous_time = self.message_times.get(self.restricted_users[index], None)
+                if previous_time and (current_time - previous_time) > self.interval:
+                    self.restricted_users.remove(message.from_user.id)
+            except Exception:
+                print("ой")
 
         self.bot.polling()
 
