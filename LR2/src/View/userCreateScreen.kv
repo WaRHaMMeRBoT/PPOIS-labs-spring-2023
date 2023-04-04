@@ -1,0 +1,48 @@
+<UserCreateScreen>:
+    id: user_create_dialog
+    size_hint: 0.6, 0.7
+    radius: [20, 20, 20, 20]
+    md_bg_color: '#212121'
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        radius: root.radius
+        md_bg_color: '#212121'
+
+        MDBoxLayout:
+            size_hint: 1, 0.7
+
+            MDBoxLayout:
+                orientation: 'vertical'
+
+                MDTextField:
+                    id: name_field
+                    hint_text: "Name"
+                    halign: 'left'
+
+                MDTextField:
+                    id: surname_field
+                    hint_text: "Surname"
+                    halign: 'left'
+
+            MDBoxLayout:
+                orientation: 'vertical'
+
+                MDTextField:
+                    id: patronym_field
+                    hint_text: "Patronym"
+                    halign: 'left'
+
+                MDTextField:
+                    id: group_field
+                    hint_text: "Group"
+                    halign: 'left'
+
+        MDBoxLayout:
+            size_hint: 1, 0.3
+
+            MDRaisedButton:
+                pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+                halign: 'center'
+                text: 'Done'
+                on_press: root.apply()

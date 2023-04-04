@@ -1,0 +1,63 @@
+<SortDialog>:
+    size_hint: 0.4, 0.5
+    radius: [20, 20, 20, 20]
+    md_bg_color: '#212121'
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        md_bg_color: root.md_bg_color
+        radius: root.radius
+        padding: 20, 20
+
+        MDLabel:
+            text: 'Sort'
+            font_size: 20
+
+        MDBoxLayout:
+            size_hint: 1, None
+            height: 80
+
+            MDBoxLayout:
+                size_hint: None, None
+                size: 40, 40
+
+                MDCheckbox:
+                    id: sort_checkbox
+
+            MDDropDownItem:
+                id: sort_dropdown
+                text: root.sort_argument
+                on_release: root.sort_menu.open()
+
+        Widget:
+
+        MDLabel:
+            text: 'Filter'
+            font_size: 20
+
+        MDBoxLayout:
+            size_hint: 1, None
+            height: 80
+
+            MDBoxLayout:
+                size_hint: None, None
+                size: 40, 40
+
+                MDCheckbox:
+                    id: filter_checkbox
+
+            MDDropDownItem:
+                id: filter_dropdown
+                text: root.filter_argument
+                on_release: root.filter_menu.open()
+
+            MDTextField:
+                id: filter_textfield
+
+        Widget:
+
+        MDRaisedButton:
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            halign: 'center'
+            text: 'Done'
+            on_press: root.apply()

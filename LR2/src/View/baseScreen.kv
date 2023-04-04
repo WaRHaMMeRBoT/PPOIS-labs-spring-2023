@@ -1,0 +1,216 @@
+
+#: import MDCardSwipeLayerBox kivymd.uix.card
+#: import MDActionBottomAppBarButton kivymd.uix.toolbar.MDActionBottomAppBarButton
+
+<BaseScreen>:
+    id: base_screen
+
+    MDScreen:
+
+        MDBoxLayout:
+            orientation: 'vertical'
+
+            MDFloatLayout:
+                height: 64
+                size_hint: 1, None
+
+                MDTopAppBar:
+                    id: topbar
+                    md_bg_color: '#bdaf9a'
+                    left_action_items: [['menu', lambda x: root.toggle_button_menu(root)]]
+                    right_action_items: [['dots-vertical', lambda x: root.callback(x)]]
+                    is_active: False
+                    pos_hint: {'x': 0, 'y': 0}
+
+                MDFillRoundFlatButton:
+                    text: 'Log In'
+                    pos: root.width - 140, root.height - (self.parent.height + self.height) / 2
+                    md_bg_color: '#a69477'
+
+            MDFloatLayout:
+
+                MDScreenManager:
+                    id: content_manager
+
+                    MDScreen:
+                        name: 'homepage'
+                        md_bg_color: '#fbe7df'
+
+                        ScrollView:
+                            id: homepage_scrollview
+                            do_scroll_x: False
+
+                            MDList:
+                                spacing: 1
+                                padding: 0
+                                md_bg_color: '#fceee9'
+
+                                MDBoxLayout:
+                                    md_bg_color: '#f8d3c5'
+                                    size_hint: 1, None
+                                    height: root.ids.homepage_scrollview.height
+
+                                    MDLabel:
+                                        text: 'Main page with some info'
+                                        halign: 'center'
+                                        theme_text_color: 'Custom'
+                                        text_color: '#5F3A2C'
+
+                                MDBoxLayout:
+                                    md_bg_color: '#fbe7df'
+                                    size_hint: 1, None
+                                    height: 100
+
+                                    MDLabel:
+                                        text: '(C) Copyright 2023 ABC Entertainment inc.'
+                                        halign: 'center'
+                                        theme_text_color: 'Custom'
+                                        text_color: '#AA8274'
+
+                    MDScreen:
+                        name: 'students'
+
+                        MDBoxLayout:
+                            id: students_page_layout
+                            orientation: 'vertical'
+
+                            MDFloatLayout:
+                                id: students_list_layout
+                                md_bg_color: '#fceee9'
+                                size_hint: 1, 0.85
+                                orientation: 'vertical'
+
+                                RecycleView:
+                                    id: students_scroll_view
+                                    viewclass: 'StudentItem'
+
+                                    SelectableRecycleGridLayout:
+                                        orientation: 'vertical'
+                                        padding: 4, 3
+                                        spacing: 3
+                                        id: students_list_container
+                                        default_size: None, 80
+                                        default_size_hint: 1, None
+                                        size_hint_y: None
+                                        height: self.minimum_height
+                                        multiselect: True
+                                        touch_multiselect: True
+
+                                MDBottomAppBar:
+                                    id: bottom_appbar
+                                    scroll_cls: students_scroll_view
+                                    allow_hidden: True
+                                    md_bg_color: "#bdaf9a"
+                                    icon_color: "#492e1a"
+
+                                    action_items:
+                                        [
+                                        MDActionBottomAppBarButton(icon="magnify", on_press=root.open_sort_dialog),
+                                        MDActionBottomAppBarButton(icon="keyboard-return", on_press=root.show_data),
+                                        ]
+
+                                    MDFabBottomAppBarButton:
+                                        id: fab_button
+                                        icon: "plus"
+                                        md_bg_color: "#7c5e45"
+                                        on_release: root.open_create_user_dialog()
+
+                    MDScreen:
+                        name: 'library'
+
+                    MDScreen:
+                        name: 'info'
+
+                    MDScreen:
+                        name: 'faq'
+
+                    MDScreen:
+                        name: 'download'
+
+                    MDScreen:
+                        name: 'upload'
+
+                MDScreenManager:
+                    id: topbar_manager
+                    halign: 'top'
+                    size_hint: 1, None
+                    height: 2*((self.parent.width - 50) / 4) + 30
+                    pos_hint: {"x":0, "y": 1 - self.height / (self.parent.height + 1)}
+
+                    MDScreen:
+                        name: 'empty_screen'
+
+                    MDScreen:
+                        name: 'topbar_buttons'
+                        md_bg_color: '#a69477'
+
+                        MDStackLayout:
+                            id: topbar_layout
+                            padding: 10
+                            spacing: 10
+                            ncol: 4
+                            button_count: 5
+
+                            MDFloatingActionButton:
+                                md_bg_color: '#bdaf9a'
+                                icon: 'face-man-profile'
+                                width: (self.parent.width - 2*self.parent.padding[0] - (self.parent.ncol - 1)*self.parent.spacing[0]) / self.parent.ncol
+                                height: self.width
+                                on_press:
+                                    root.toggle_button_menu(root)
+                                    root.ids.content_manager.current = 'homepage'
+
+                            MDFloatingActionButton:
+                                md_bg_color: '#bdaf9a'
+                                icon: 'user'
+                                width: (self.parent.width - 2*self.parent.padding[0] - (self.parent.ncol - 1)*self.parent.spacing[0]) / self.parent.ncol
+                                height: self.width
+                                on_press:
+                                    root.toggle_button_menu(root)
+                                    root.ids.content_manager.current = 'students'
+
+                            MDFloatingActionButton:
+                                md_bg_color: '#bdaf9a'
+                                icon: 'book'
+                                width: (self.parent.width - 2*self.parent.padding[0] - (self.parent.ncol - 1)*self.parent.spacing[0]) / self.parent.ncol
+                                height: self.width
+                                on_press:
+                                    root.toggle_button_menu(root)
+                                    root.ids.content_manager.current = 'library'
+
+                            MDFloatingActionButton:
+                                md_bg_color: '#bdaf9a'
+                                icon: 'info'
+                                width: (self.parent.width - 2*self.parent.padding[0] - (self.parent.ncol - 1)*self.parent.spacing[0]) / self.parent.ncol
+                                height: self.width
+                                on_press:
+                                    root.toggle_button_menu(root)
+                                    root.ids.content_manager.current = 'info'
+
+                            MDFloatingActionButton:
+                                md_bg_color: '#bdaf9a'
+                                icon: 'question'
+                                width: (self.parent.width - 2*self.parent.padding[0] - (self.parent.ncol - 1)*self.parent.spacing[0]) / self.parent.ncol
+                                height: self.width
+                                on_press:
+                                    root.toggle_button_menu(root)
+                                    root.ids.content_manager.current = 'faq'
+
+                            MDFloatingActionButton:
+                                md_bg_color: '#bdaf9a'
+                                icon: 'question'
+                                width: (self.parent.width - 2*self.parent.padding[0] - (self.parent.ncol - 1)*self.parent.spacing[0]) / self.parent.ncol
+                                height: self.width
+                                on_press:
+                                    root.toggle_button_menu(root)
+                                    root.ids.content_manager.current = 'download'
+
+                            MDFloatingActionButton:
+                                md_bg_color: '#bdaf9a'
+                                icon: 'question'
+                                width: (self.parent.width - 2*self.parent.padding[0] - (self.parent.ncol - 1)*self.parent.spacing[0]) / self.parent.ncol
+                                height: self.width
+                                on_press:
+                                    root.toggle_button_menu(root)
+                                    root.ids.content_manager.current = 'upload'
+
