@@ -65,7 +65,7 @@ class TelegramController:
             else:
                 raise
         except Exception:
-            self.bot.send_message(message.chat.id, "Ты что, Глебаш?")
+            self.bot.send_message(message.chat.id, "Ты что, исомэк?")
 
         if self.log:
             self.send_messagies(message)
@@ -96,7 +96,7 @@ class TelegramController:
         except IndexError:
             self.bot.send_message(message.chat.id, "Задал значения которые превышают размер сетки? А ты хорош...")
         except Exception:
-            self.bot.send_message(message.chat.id, "Глебаш, давай нормально...")
+            self.bot.send_message(message.chat.id, f'{message.from_user.first_name}, давай нормально...')
         if self.log:
             self.send_messagies(message)
 
@@ -131,7 +131,7 @@ class TelegramController:
         except IndexError:
             self.bot.send_message(message.chat.id, "Задал значения которые превышают размер сетки? А ты хорош...")
         except Exception:
-            self.bot.send_message(message.chat.id, "Глебаш, давай нормально...")
+            self.bot.send_message(message.chat.id, f'{message.from_user.first_name}, давай нормально...')
         self.help(message)
 
     def get_plant(self, message):
