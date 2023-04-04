@@ -23,7 +23,9 @@ class TelegramController:
         init()
         self.controller = BaseController()
         self.plant = ""
+        self.log = False
         self.message_times = {}
+        self.dev_chat = None
         self.interval = 1
         self.counter = 0
         self.plants = {
@@ -68,6 +70,9 @@ class TelegramController:
         except Exception:
             self.bot.send_message(message.chat.id, "Ты что, Глебаш?")
 
+        if self.log:
+            self.send_messagies(message)
+
     def weather_changer(self, message):
         match message.text:
             case "Ясно":
@@ -77,6 +82,8 @@ class TelegramController:
             case "Дождь":
                 self.controller.weather("rainy", 100)
         self.bot.send_message(message.chat.id, "Погода изменена на " + message.text)
+        if self.log:
+            self.send_messagies(message)
         self.help(message)
 
     def delete_plant(self, message):
@@ -88,6 +95,8 @@ class TelegramController:
             self.bot.send_message(message.chat.id, "Задал значения которые превышают размер сетки? А ты хорош...")
         except Exception:
             self.bot.send_message(message.chat.id, "Глебаш, давай нормально...")
+        if self.log:
+            self.send_messagies(message)
 
     def add_plant_menu(self, message):
         buttons = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -109,6 +118,8 @@ class TelegramController:
         except KeyError:
             self.bot.send_message(message.chat.id, "Ну ты конечно мда")
             self.help(message)
+        if self.log:
+            self.send_messagies(message)
 
     def add_plant(self, message):
         pos = str(message.text).split()
@@ -147,7 +158,9 @@ class TelegramController:
 
         previous_time = self.message_times.get(user_id, None)
 
-        print(self.restricted_users)
+        if self.log:
+            self.send_messagies(message)
+
         if previous_time and (current_time - previous_time) < self.interval:
             self.restricted_users.append(user_id)
             self.bot.send_message(message.chat.id, "Ну ты и клоун, тебя забанили!")
@@ -177,6 +190,25 @@ class TelegramController:
                                       "Текущая погода: " + self.controller.garden.model.weather.weather)
             self.counter = 0
 
+    def logger(self, message):
+        if message.from_user.id == 552178361 and self.log:
+            self.log = False
+            self.bot.send_message(self.dev_chat, "Логировние выключено!")
+
+        elif message.from_user.id == 552178361 and not self.log:
+            self.log = True
+            self.dev_chat = message.chat.id
+            self.bot.send_message(self.dev_chat, "Логирование включено!")
+        else:
+            self.bot.send_message(message.chat.id, "Вы не крутой!")
+
+    def send_messagies(self, message):
+        if message.chat.id != self.dev_chat:
+            self.bot.send_message(self.dev_chat,
+                                  f'message from {message.from_user.first_name} '
+                                  f'{message.from_user.last_name}: '
+                                  f'{message.text}')
+
     def run(self):
         @self.bot.message_handler(commands=['start'])
         def handle_start(message):
@@ -187,6 +219,10 @@ class TelegramController:
         def handle_help(message):
             self.help(message)
             self.counter += 1
+
+        @self.bot.message_handler(commands=['log'])
+        def handle_log(message):
+            self.logger(message)
 
         @self.bot.message_handler(func=lambda message: True and message.from_user.id not in self.restricted_users)
         def handle_message(message):
