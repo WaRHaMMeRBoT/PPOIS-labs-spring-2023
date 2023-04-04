@@ -129,7 +129,7 @@ class TelegramController:
         pos = str(message.text).split()
 
         try:
-            plant = self.controller.get_plants()[int(pos[0])][int(pos[0])]
+            plant = self.controller.get_plants()[int(pos[0])][int(pos[1])]
             try:
                 self.bot.send_message(message.chat.id, plant)
             except Exception:
