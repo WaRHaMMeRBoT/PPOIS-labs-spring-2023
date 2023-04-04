@@ -103,7 +103,6 @@ class Model:
                         self.matrix[i][j].time = time
                     self.findNearestWeed(i, j)
                     self.matrix[i][j].get_weather(self.weather)
-                    # self.spawnWeed()
                     if self.matrix[i][j].health <= 0:
                         print(f'{type(self.matrix[i][j]).__name__} (x: {i} y: {j}) has been died')
                         self.removeEntity(i, j)
