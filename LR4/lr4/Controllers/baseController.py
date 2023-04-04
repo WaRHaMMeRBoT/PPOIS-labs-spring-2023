@@ -19,33 +19,33 @@ class BaseController:
 
     def add(self, plant_name: str, x: int, y: int):
         plant = what_the_plant(plant_name)
-        self.garden.model.addEntity(plant, x=x, y=y)
-        self.garden.model.garbageCollector()
+        self.garden.model.add_entity(plant, x=x, y=y)
+        self.garden.model.garbage_collector()
         self.garden.warp(1)
         self.garden.model.save()
 
     def add_seed(self, seed_name: str, x: int, y: int):
         seed = what_the_seed(seed_name)
-        self.garden.model.addEntity(seed, x, y)
-        self.garden.model.garbageCollector()
+        self.garden.model.add_entity(seed, x, y)
+        self.garden.model.garbage_collector()
         self.garden.warp(1)
         self.garden.model.save()
 
     def remove(self, x: int, y: int):
-        self.garden.model.removeEntity(x, y)
-        self.garden.model.garbageCollector()
+        self.garden.model.remove_entity(x, y)
+        self.garden.model.garbage_collector()
         self.garden.warp(1)
         self.garden.model.save()
 
     def weather(self, type: str, time: int):
         self.garden.model.weather.weather = type
         self.garden.model.weather.time = time
-        self.garden.model.garbageCollector()
+        self.garden.model.garbage_collector()
         self.garden.warp(1)
         self.garden.model.save()
 
     def warp(self, time: int):
         for i in range(0, time):
             self.garden.warp(i)
-            self.garden.model.garbageCollector()
+            self.garden.model.garbage_collector()
         self.garden.model.save()

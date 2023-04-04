@@ -1,5 +1,6 @@
 import os
 import random
+import shutil
 
 import numpy
 from lxml import etree
@@ -48,6 +49,7 @@ def create_xml(x, y):
 
 def create_dir(x, y):
     try:
+        shutil.rmtree(os.path.join(os.getcwd() + "/.gardenrc/"))
         os.makedirs(os.path.join(os.getcwd() + "/.gardenrc/", "Entities"))
         try:
             create_xml(x, y)
@@ -65,13 +67,13 @@ class Model:
         self.garden = garden
         self.matrix = numpy.empty((self.x, self.y), dtype="object")
 
-    def getEntity(self, x, y):
+    def get_entity(self, x, y):
         return self.matrix[x][y]
 
-    def addEntity(self, plant, x, y):
+    def add_entity(self, plant, x, y):
         self.matrix[x][y] = plant
 
-    def removeEntity(self, x, y):
+    def remove_entity(self, x, y):
         self.matrix[x][y] = None
 
     def print(self):
@@ -84,7 +86,7 @@ class Model:
                     details[i][j] += "X"
         return details
 
-    def findNearestWeed(self, x, y):
+    def find_nearest_weed(self, x, y):
         if x != len(self.matrix[0]) - 1 and y != len(self.matrix) - 1 and self.matrix[x][y] is not None:
             for i in range(-1, 2):
                 for j in range(-1, 2):
@@ -93,7 +95,8 @@ class Model:
                             if self.matrix[x + i][y + j].__class__ == Weed:
                                 self.matrix[x][y].health -= self.matrix[x + i][y + j].damage
 
-    def garbageCollector(self):
+    def garbage_collector(self) -> str:
+        output = ""
         for i in range(len(self.matrix)):
             for j in range(len(self.matrix[0])):
                 if self.matrix[i][j] is not None:
@@ -101,11 +104,13 @@ class Model:
                         time = self.matrix[i][j].time
                         self.matrix[i][j] = what_the_plant(self.matrix[i][j].name)
                         self.matrix[i][j].time = time
-                    self.findNearestWeed(i, j)
+                    self.find_nearest_weed(i, j)
                     self.matrix[i][j].get_weather(self.weather)
                     if self.matrix[i][j].health <= 0:
                         print(f'{type(self.matrix[i][j]).__name__} (x: {i} y: {j}) has been died')
-                        self.removeEntity(i, j)
+                        output += f'{type(self.matrix[i][j]).__name__} (x: {i} y: {j}) has been died \n'
+                        self.remove_entity(i, j)
+        return output
 
     def save(self):
         root = etree.Element('garden')

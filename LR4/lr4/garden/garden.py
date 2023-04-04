@@ -17,17 +17,9 @@ class Garden:
         for i in range(len(self.model.matrix)):
             for j in range(len(self.model.matrix[0])):
                 if self.model.matrix[i][j] is not None:
-                    print(f'{self.model.matrix[i][j].time} , {self.model.matrix[i][j]}')
                     self.model.matrix[i][j].time += index
         self.model.weather.time -= 1
         self.time += index
-
-    # def spawnWeed(self):
-    #     if self.time % 10 == 0:
-    #         for i in range(len(self.matrix)):
-    #             for j in range(len(self.matrix[0])):
-    #                 if self.matrix[i][j] is None:
-    #                     self.matrix[i][j] = WeedSeed()
 
 
 def load() -> Garden:
@@ -69,7 +61,7 @@ def load() -> Garden:
                                 position = []
                                 for pos in configs:
                                     position.append(pos.text)
-                                garden.model.addEntity(plant, int(position[0]), int(position[1]))
+                                garden.model.add_entity(plant, int(position[0]), int(position[1]))
             case "seeds":
                 seed = Seed
                 for seeds in child:
@@ -85,6 +77,6 @@ def load() -> Garden:
                                 position = []
                                 for pos in configs:
                                     position.append(pos.text)
-                                garden.model.addEntity(seed, int(position[0]), int(position[1]))
+                                garden.model.add_entity(seed, int(position[0]), int(position[1]))
 
     return garden

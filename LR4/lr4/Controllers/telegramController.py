@@ -53,7 +53,8 @@ class TelegramController:
         clear = KeyboardButton(text="Ясно")
         sunny = KeyboardButton(text="Солнечно")
         rainy = KeyboardButton(text="Дождь")
-        buttons.add(clear, sunny, rainy)
+        drought = KeyboardButton(text="Полив")
+        buttons.add(clear, sunny, rainy, drought)
         self.bot.send_message(message.chat.id, "Вот доступные виды погод:", reply_markup=buttons)
         self.bot.register_next_step_handler(message, self.weather_changer)
 
@@ -77,6 +78,8 @@ class TelegramController:
                     self.controller.weather("clear", 100)
                 case "Солнечно":
                     self.controller.weather("sunny", 100)
+                case "Полив":
+                    self.controller.weather("drought", 100)
                 case "Дождь":
                     self.controller.weather("rainy", 100)
                 case _:
@@ -185,7 +188,7 @@ class TelegramController:
                 case "Получить информацию о растении":
                     self.get_plant(message)
             self.message_times[user_id] = time.time()
-            print(self.counter)
+
             self.counter += 1
             if self.counter % 10 == 0:
                 self.bot.send_message(message.chat.id,
@@ -225,6 +228,11 @@ class TelegramController:
         @self.bot.message_handler(commands=['log'])
         def handle_log(message):
             self.logger(message)
+
+        @self.bot.message_handler(commands=['init'])
+        def handle_init(message):
+            init()
+            self.bot.send_message(message.chat.id, "Огород пересоздан!")
 
         @self.bot.message_handler(func=lambda message: True and message.from_user.id not in self.restricted_users)
         def handle_message(message):
