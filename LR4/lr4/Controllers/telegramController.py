@@ -130,9 +130,9 @@ class TelegramController:
 
         try:
             plant = self.controller.get_plants()[int(pos[0])][int(pos[1])]
-            try:
+            if plant:
                 self.bot.send_message(message.chat.id, plant)
-            except Exception:
+            else:
                 self.bot.send_message(message.chat.id, "Эта клетка пуста")
         except IndexError:
             self.bot.send_message(message.chat.id, "Ну ты выдал базу канеш, ну держи пустоту")
