@@ -1,7 +1,4 @@
-import datetime
 import time
-
-from telebot.apihelper import ApiTelegramException
 
 from lr4.Controllers.baseController import BaseController
 
@@ -74,14 +71,19 @@ class TelegramController:
             self.send_messagies(message)
 
     def weather_changer(self, message):
-        match message.text:
-            case "Ясно":
-                self.controller.weather("clear", 100)
-            case "Солнечно":
-                self.controller.weather("sunny", 100)
-            case "Дождь":
-                self.controller.weather("rainy", 100)
-        self.bot.send_message(message.chat.id, "Погода изменена на " + message.text)
+        try:
+            match message.text:
+                case "Ясно":
+                    self.controller.weather("clear", 100)
+                case "Солнечно":
+                    self.controller.weather("sunny", 100)
+                case "Дождь":
+                    self.controller.weather("rainy", 100)
+                case _:
+                    raise IOError
+            self.bot.send_message(message.chat.id, "Погода изменена на " + message.text)
+        except IOError:
+            self.bot.send_message(message.chat.id, "Ну это не база")
         if self.log:
             self.send_messagies(message)
         self.help(message)
