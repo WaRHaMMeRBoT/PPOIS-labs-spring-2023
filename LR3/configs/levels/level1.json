@@ -1,0 +1,15 @@
+{
+	"bowl_acceleration_interval": 8,
+	"level_records": {
+		"Crip": 66,
+		"Bimer": 59,
+		"Gorec": 57,
+		"Pacan": 83
+	},
+	"bricks_location_params": {
+		"row_count": 3,
+		"brick_width": 60,
+		"offset_y": 30
+	},
+	"max_effects_amount": 15
+}

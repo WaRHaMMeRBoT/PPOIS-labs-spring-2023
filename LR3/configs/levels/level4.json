@@ -1,0 +1,12 @@
+{
+	"bowl_acceleration_interval": 10,
+	"level_records": {
+		"Vodohleb04": 106
+	},
+	"bricks_location_params": {
+		"row_count": 7,
+		"brick_width": 60,
+		"offset_y": 30
+	},
+	"max_effects_amount": 10
+}
