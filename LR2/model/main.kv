@@ -1,0 +1,98 @@
+#:kivy 1.10.0
+
+<TextInputPopup>:
+    title: "Popup"
+    size_hint: None, None
+    size: 400, 400
+    auto_dismiss: False
+
+    BoxLayout:
+        orientation: "vertical"
+        TextInput:
+            id: txtinput
+            text: root.obj_text
+           
+
+
+        Button:
+            size_hint: 1, 0.2
+            text: "Save Changes"
+            on_release:
+                root.obj.update_changes(txtinput.text)
+                root.dismiss()
+        Button:
+            size_hint: 1, 0.2
+            text: "Cancel Changes"
+            on_release: root.dismiss()
+
+
+<SelectableButton>:
+    # Draw a background to indicate selection
+    canvas.before:
+        Color:
+            rgba: (.0, 0.9, .1, .3) if self.selected else (0, 0, 0, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+        
+<RV>:
+    BoxLayout:
+        orientation: "vertical"
+        padding:10
+
+        Button:
+            text:'0-10'
+            font_size:"50sp"
+            
+            color: [0, 255, 255, .67]
+            on_press:  RV.get_users(10,10)
+
+        GridLayout:
+            size_hint: 1, None
+            size_hint_y: None
+            height: 25
+            cols: 14
+
+            Label:
+                text: "ID"
+            Label:
+                text: "Name"
+    	    Label:
+                text: "Group"
+            Label:
+                text: "Sem1"
+            Label:
+                text: "Sem2"
+            Label:
+                text: "Sem3"
+            Label:
+                text: "Sem4"
+            Label:
+                text: "Sem5"
+            Label:
+                text: "Sem6"
+            Label:
+                text: "Sem7"
+            Label:
+                text: "Sem8"
+            Label:
+                text: "Sem9"
+            Label:
+                text: "Sem10"
+            Label:
+                text: "Total"
+        BoxLayout:
+            RecycleView:
+                viewclass: 'SelectableButton'
+                data: [{'text': str(x)} for x in root.data_items]
+                SelectableRecycleGridLayout:
+                    cols: 14
+                    default_size: None, dp(26)
+                    default_size_hint: 1, None
+                    size_hint_y: None
+                    height: self.minimum_height
+                    
+                    multiselect: True
+                    touch_multiselect: True
+
