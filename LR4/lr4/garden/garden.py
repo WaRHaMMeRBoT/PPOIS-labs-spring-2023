@@ -1,7 +1,7 @@
 import lxml.etree as elementor
 
 from lr4.garden.model import Model, create_dir
-from lr4.garden.plants import Plant, whatThePlant, whatTheSeed, Seed
+from lr4.garden.plants import Plant, what_the_plant, what_the_seed, Seed
 
 
 class Garden:
@@ -17,17 +17,9 @@ class Garden:
         for i in range(len(self.model.matrix)):
             for j in range(len(self.model.matrix[0])):
                 if self.model.matrix[i][j] is not None:
-                    print(f'{self.model.matrix[i][j].time} , {self.model.matrix[i][j]}')
                     self.model.matrix[i][j].time += index
         self.model.weather.time -= 1
         self.time += index
-
-    # def spawnWeed(self):
-    #     if self.time % 10 == 0:
-    #         for i in range(len(self.matrix)):
-    #             for j in range(len(self.matrix[0])):
-    #                 if self.matrix[i][j] is None:
-    #                     self.matrix[i][j] = WeedSeed()
 
 
 def load() -> Garden:
@@ -58,7 +50,7 @@ def load() -> Garden:
                     for configs in plants:
                         match configs.tag:
                             case "name":
-                                plant = whatThePlant(configs.text)
+                                plant = what_the_plant(configs.text)
                             case "length":
                                 plant.length = int(configs.text)
                             case "time":
@@ -69,14 +61,14 @@ def load() -> Garden:
                                 position = []
                                 for pos in configs:
                                     position.append(pos.text)
-                                garden.model.addEntity(plant, int(position[0]), int(position[1]))
+                                garden.model.add_entity(plant, int(position[0]), int(position[1]))
             case "seeds":
                 seed = Seed
                 for seeds in child:
                     for configs in seeds:
                         match configs.tag:
                             case "name":
-                                seed = whatTheSeed(configs.text)
+                                seed = what_the_seed(configs.text)
                             case "time":
                                 seed.time = int(configs.text)
                             case "health":
@@ -85,6 +77,6 @@ def load() -> Garden:
                                 position = []
                                 for pos in configs:
                                     position.append(pos.text)
-                                garden.model.addEntity(seed, int(position[0]), int(position[1]))
+                                garden.model.add_entity(seed, int(position[0]), int(position[1]))
 
     return garden

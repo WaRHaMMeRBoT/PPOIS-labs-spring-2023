@@ -130,5 +130,5 @@ dmypy.json
 
 *.DS_Store
 ._*
-
+*.gardenrc
 *.idea

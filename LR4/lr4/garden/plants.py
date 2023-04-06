@@ -1,3 +1,6 @@
+from lr4.garden.weather import Weather
+
+
 class Seed:
 
     def __init__(self, name, health, time):
@@ -7,8 +10,8 @@ class Seed:
         self.icon = "🫒"
         self.weatherPerception = 1
 
-    def get_weather(self, weather):
-        match weather.type:
+    def get_weather(self, weather: Weather):
+        match weather.weather:
             case "sunny":
                 if self.health < 100 and weather.time < 10:
                     self.health += self.weatherPerception
@@ -45,14 +48,14 @@ class Plant(Seed):
         details += f'Length : {self.length}\n'
         return details
 
-    def setHealth(self, health):
+    def set_health(self, health):
         self.health = health
 
-    def setLength(self, length):
+    def set_length(self, length):
         self.length = length
 
 
-def whatThePlant(text) -> object:
+def what_the_plant(text) -> object:
     match text:
         case "tomato":
             return Tomato()
@@ -68,7 +71,7 @@ def whatThePlant(text) -> object:
             return Weed()
 
 
-def whatTheSeed(text) -> object:
+def what_the_seed(text) -> object:
     match text:
         case "tomato":
             return TomatoSeed()
