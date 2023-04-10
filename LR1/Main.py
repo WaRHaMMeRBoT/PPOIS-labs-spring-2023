@@ -53,6 +53,9 @@ def cli():
     if args.add and args.traindb:
         add_train_db(args.add)
         print(f'Added train: {args.add} \n')
+        trains = Db_Utility.load_train_data()
+        for train in trains: 
+            print(train)
     
     if args.rm and args.traindb:
         remove_train_db(args.rm)
