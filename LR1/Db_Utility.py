@@ -44,7 +44,7 @@ def add_to_graph(graphElm:list):
         json.dump(data, f, indent=4)
 
 def del_from_graph(graphElm:list):
-    with open("D:/university/python/RailwayModelSimulation/Railway_Db.json.json") as f:
+    with open("D:/university/python/RailwayModelSimulation/Railway_Db.json") as f:
         data = json.load(f)
 
     if len(graphElm)==1:
@@ -58,11 +58,10 @@ def del_from_graph(graphElm:list):
             json.dump(data, f, indent=4)
 
     else:
-        edges = [edge for edge in data["edges"] if edge["source"]!= graphElm[0] \
-                 and edge["target"]!=graphElm[1]]
-        edges = [edge for edge in edges if edge["source"]!=graphElm[1] \
-                 and edge["target"]!=graphElm[0]]
-        data["edges"]=edges                
+        for edge in data["edges"]:
+             if edge["source"]==graphElm[0] and edge["target"]==graphElm[1]:
+                  data["edges"].remove(edge)
+                  
         with open("D:/university/python/RailwayModelSimulation/Railway_Db.json","w") as f:
             json.dump(data, f, indent=4)
  
@@ -93,8 +92,3 @@ def del_from_trains(trainElm:list):
         data["trains"]=trains
         with open("D:/university/python/RailwayModelSimulation/Railway_Db.json","w") as f:
             json.dump(data, f, indent=4)
-
-       
-
-     
-
