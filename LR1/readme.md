@@ -115,19 +115,28 @@ python main.py --auto -iterations your_value
 ```
 python main.py --graphdb
 ```
+![Image alt](https://github.com/Luci-qq/PPOIS-labs-spring-2023/blob/%D0%93%D0%B0%D0%BD%D1%87%D0%B0%D1%80_%D0%92_%D0%98/LR1/readmeFiles/graphdbExample.png)
+
 Вывод текущих поездов:
 ```
 python main.py --traindb
 ```
+![Image alt](https://github.com/Luci-qq/PPOIS-labs-spring-2023/blob/%D0%93%D0%B0%D0%BD%D1%87%D0%B0%D1%80_%D0%92_%D0%98/LR1/readmeFiles/traindb_Example.png)
+
 Добавление узла в граф:
 ```
 python main.py --graphdb -add your_node
 ```
+
 Добавление ребра в граф:
 ```
 python main.py --graphdb -add your_node_1 your_node_2 your_edge_weight
 ```
+![Image alt](https://github.com/Luci-qq/PPOIS-labs-spring-2023/blob/%D0%93%D0%B0%D0%BD%D1%87%D0%B0%D1%80_%D0%92_%D0%98/LR1/readmeFiles/graphdb_addExample.png)
+
 Добавление поезда в бд:
 ```
 python main.py --traindb -add your_train_number your_locomotive_speed your_trainCar_value
 ```
+![Image alt](https://github.com/Luci-qq/PPOIS-labs-spring-2023/blob/%D0%93%D0%B0%D0%BD%D1%87%D0%B0%D1%80_%D0%92_%D0%98/LR1/readmeFiles/traindb_addExample.png)
+
