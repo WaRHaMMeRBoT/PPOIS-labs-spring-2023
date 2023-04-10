@@ -111,6 +111,9 @@
 ```
 python main.py --auto -iterations your_value
 ```
+![Image alt](https://github.com/Luci-qq/PPOIS-labs-spring-2023/blob/%D0%93%D0%B0%D0%BD%D1%87%D0%B0%D1%80_%D0%92_%D0%98/LR1/readmeFiles/output_Example1.png)
+![Image alt](https://github.com/Luci-qq/PPOIS-labs-spring-2023/blob/%D0%93%D0%B0%D0%BD%D1%87%D0%B0%D1%80_%D0%92_%D0%98/LR1/readmeFiles/output_Example2.png)
+
 Вывод текущего графа в виде списка ребер:
 ```
 python main.py --graphdb
