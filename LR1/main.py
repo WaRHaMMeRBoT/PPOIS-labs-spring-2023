@@ -1,143 +1,88 @@
-from Make.Make import Make
-from Run.Run import Run
 import click
-import copy
+from src.cash_machine import CashMachine
+from cli2gui import Cli2Gui
+
+cash_machine = CashMachine()
+
+
+@click.group()
+def cli():
+    pass
+
 
 @click.command()
-@click.option('-w', required=True, help='File for way')
-@click.option('-p', required=True, help='File for products')
-@click.option('-s', required=True, help='Start')
-@click.option('-m', default='', help='For automatic operation')
-@click.option('-d', default=0, help='How many day')
-@click.option('-n', default=False, help='Ned generate new trains/station?')
-def main(p, w, s, m, d, n):
-    # Читаем пути
-    f = open(w, 'r')
-    way = []
-    w = []
-    temp = f.readlines()
-    for i in temp:
-        for j in range(len(i)):
-            if not i[j] == '\n' and not i[j] == ',' and not i[j] == ' ':
-                w.append(int(i[j]))
-        way.append(list(w))
-        w.clear()
-    f.close()
+@click.option('--password', help='password of your card.')
+@click.argument('password')
+def authorization(password):
+    cash_machine.authorization(password)
 
-    # Читаем продукты
-    f = open(p)
-    products = f.readlines()
-    for i in range(len(products)):
-       products[i] = products[i][0:len(products[i]) - 1]
-    f.close()
 
-    if n == False:
-        #Чтение поездов из файла
-        f = open('trains')
-        lines = f.read().splitlines()
-        f.close()
+@click.command()
+@click.argument('money', nargs=1)
+@click.argument('password', nargs=1)
+def add_money(money, password):
+    cash_machine.add_money(cash_machine.get_card_id_now(), float(money), password)
 
-        dic = {}
 
-        trains = []
+@click.command()
+def exit():
+    cash_machine.exit()
 
-        for line in lines:
-            if line == '===':
-                dic_1 = copy.deepcopy(dic)
-                trains.append(dic_1)
-                dic.clear()
-                continue
-            temp = line.split(';')
-            key = temp[0]
-            value = temp[1]
-            dic.update({key: value})
 
-        for temp in trains:
-            data_dict = eval(temp['train'])
-            temp['train'] = data_dict
-            data_list = []
-            for i in temp['list']:
-                if not i == '[' and not i == ']' and not i == ' ' and not i == ',':
-                    data_list.append(int(i))
-            temp['list'] = data_list
-            if temp['make'] == 'True':
-                temp['make'] = True
-            else:
-                temp['make'] = False
-        #Чтение станции из файла
-        f = open('station')
-        lines = f.read().splitlines()
-        f.close()
+@click.command()
+@click.argument('money', nargs=1)
+@click.argument('password', nargs=1)
+def withdraw_money(money, password):
+    cash_machine.withdraw_money(cash_machine.get_card_id_now(), float(money), password)
 
-        dic = {}
-        station = []
 
-        for line in lines:
-            if line == '===':
-                dic_1 = copy.deepcopy(dic)
-                station.append(dic_1)
-                dic.clear()
-                continue
-            temp = line.split(';')
-            key = temp[0]
-            value = temp[1]
-            dic.update({key: value})
+@click.command()
+@click.argument('money', nargs=1)
+@click.argument('card_id', nargs=1)
+@click.argument('password', nargs=1)
+def transfer_money(money, card_id, password):
+    cash_machine.transfer(cash_machine.get_card_id_now(), card_id, money, password)
 
-        for temp in station:
-            a = int(temp['number'])
-            temp['number'] = a
-            data_dict = eval(temp['storage'])
-            temp['storage'] = data_dict
-            data_list = []
-            for i in temp['queue']:
-                if not i == '[' and not i == ']' and not i == ',' and not i == ' ':
-                    data_list.append(i)
-            temp['queue'] = data_list
-            data_list1 = []
-            for i in temp['roads']:
-                if not i == '[' and not i == ']' and not i == ',' and not i == ' ':
-                    data_list1.append(int(i))
-            temp['roads'] = data_list1
-            b = int(temp['train_number'])
-            temp['train_number'] = b
 
-        task = str(str(s) + ' ' + str(m) + ' ' + str(d))
-        run = Run(station, trains, task)
-        run.handler()
-        # Запись поездоф в файл
-        f = open('trains', 'w')
-        for i in run.train_list:
-            for key, item in i.items():
-                f.write('{};{}\n'.format(key, item))
-            f.write("===\n")
-        f.close()
-        # Запись станций в файл
-        f = open('station', 'w')
-        for i in run.station_list:
-            for key, value in i.items():
-                f.write('{};{}\n'.format(key, value))
-            f.write('===\n')
-        f.close()
+@click.command()
+@click.argument('password', nargs=1)
+def get_balance(password):
+    print(cash_machine.get_balance(password))
 
-    else:
-        make = Make(products, way)
-        task = str(str(s) + ' ' + str(m) + ' ' + str(d))
-        run = Run(make.Make_Station_list(), make.Make_Trane_list(), task)
-        run.handler()
-        # Запись поездов в файл
-        f = open('trains', 'w')
-        for i in run.train_list:
-            for key, item in i.items():
-                f.write('{};{}\n'.format(key, item))
-            f.write("===\n")
-        f.close()
-        # Запись станций в файл
-        f = open('station', 'w')
-        for i in run.station_list:
-            for key, value in i.items():
-                f.write('{};{}\n'.format(key, value))
-            f.write('===\n')
-        f.close()
+
+@click.command()
+@click.argument('money', nargs=1)
+@click.argument('phone_number', nargs=1)
+@click.argument('password', nargs=1)
+def transfer_to_phone_number(money, phone_number, password):
+    cash_machine.transfer_to_phone_number(phone_number, money, password)
+
+
+@click.command()
+@click.argument('name', nargs=1)
+@click.argument('surname, nargs=1')
+def register_new_card(name, surname):
+    cash_machine.registration(name, surname)
+
+
+cli.add_command(authorization)
+cli.add_command(add_money)
+cli.add_command(exit)
+cli.add_command(withdraw_money)
+cli.add_command(transfer_money)
+cli.add_command(get_balance)
+cli.add_command(transfer_to_phone_number)
+cli.add_command(register_new_card)
+
+
+decorator_function = Cli2Gui(
+	run_function=cli,
+	auto_enable=True,
+)
+
+# The gui function can be used as a GUI entrypoint
+# Example: python -m mymodule:main.gui
+gui = decorator_function(cli)
 
 if __name__ == '__main__':
-    main()
+    gui()
