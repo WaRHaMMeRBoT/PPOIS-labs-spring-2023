@@ -1,0 +1,69 @@
+{
+    "infoBank": {
+        "name": "BelarusBank",
+        "accounts": [
+            {
+                "firstName": "Alexey",
+                "lastName": "Oleshkevich",
+                "number": "0012357915",
+                "balance": 26,
+                "cards": [
+                    {
+                        "cardNum": "5578843370548293",
+                        "cardPIN": "1234",
+                        "attempt": 0,
+                        "status": "unlock"
+                    },
+                    {
+                        "cardNum": "5578843370340865",
+                        "cardPIN": "1111",
+                        "attempt": 0,
+                        "status": "unlock"
+                    }
+                ]
+            },
+            {
+                "firstName": "Sasha",
+                "lastName": "Protas",
+                "number": "7654746458",
+                "balance": 500,
+                "cards": [
+                    {
+                        "cardNum": "5578846657848838",
+                        "cardPIN": "0000",
+                        "attempt": 0,
+                        "status": "unlock"
+                    },
+                    {
+                        "cardNum": "5578843385673476",
+                        "cardPIN": "1234",
+                        "attempt": 0,
+                        "status": "unlock"
+                    }
+                ]
+            }
+        ]
+    },
+    "infoATM": {
+        "insertedCard": "5578843370548293",
+        "cash": [
+            {
+                "nominal": 5,
+                "count": 19
+            },
+            {
+                "nominal": 10,
+                "count": 19
+            },
+            {
+                "nominal": 20,
+                "count": 16
+            },
+            {
+                "nominal": 50,
+                "count": 11
+            }
+        ],
+        "isPinEntered": "True"
+    }
+}
