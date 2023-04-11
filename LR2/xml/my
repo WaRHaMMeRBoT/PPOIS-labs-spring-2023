@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+  <table>
+    <sportsman>
+      <name>Jon Amaro</name>
+      <line_up>main</line_up>
+      <position>defender</position>
+      <titles>110</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Gloria Norman</name>
+      <line_up>n/a</line_up>
+      <position>forward</position>
+      <titles>114</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>William Stockwell</name>
+      <line_up>n/a</line_up>
+      <position>forward</position>
+      <titles>109</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Louis Marshall</name>
+      <line_up>n/a</line_up>
+      <position>forward</position>
+      <titles>112</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+  </table>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+  <table>
+    <sportsman>
+      <name>FJIF</name>
+      <line_up>kdsjf</line_up>
+      <position>fkdj</position>
+      <titles>100</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+  </table>
