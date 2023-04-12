@@ -1,16 +1,31 @@
 import pygame
 import pygame_menu
+import random
 
 from board import Board
 from constants import red_ghost_img, blue_ghost_img, pink_ghost_img, orange_ghost_img, dead_ghost_img, WIDTH, HEIGHT
-from ghosts import StaticGhost
+from ghosts import Ghost
 from static_ghosts import StaticGhost
 from pills import Pill
 from player import Player
 from score import Score
 
 
+
 class Game:
+    StaticGhostPositions = [
+        (WIDTH / 1.5 + 30, HEIGHT / 2.5),
+        (WIDTH / 1.5 + 33, HEIGHT / 1.5 - 128), 
+        (WIDTH - 125, HEIGHT / 2.5 - 15),
+        (158, HEIGHT / 2.5 - 15),
+        (435, HEIGHT / 2 + 50),
+        (432, HEIGHT / 1.5 + 80),
+        (WIDTH / 1.5 + 110, HEIGHT / 1.5 + 80),
+        (WIDTH / 1.5, HEIGHT / 1.5 + 190),
+        (WIDTH / 1.5 - 400, HEIGHT / 2 - 180),
+        
+    ]
+    # Game.StaticGhostPositions[random.randint(0,4)]
     def __init__(self, menu: pygame_menu.Menu):
         pygame.display.init()
         pygame.mixer.init()
@@ -35,11 +50,11 @@ class Game:
 
         self.ghosts = pygame.sprite.Group()
 
-        self.red = StaticGhost(red_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
-        self.blue = StaticGhost(blue_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
-        self.orange = StaticGhost(orange_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
-        self.pink = StaticGhost(pink_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
-        self.static = StaticGhost(dead_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
+        self.red = Ghost(red_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
+        self.blue = Ghost(blue_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
+        self.orange = Ghost(orange_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
+        self.pink = Ghost(pink_ghost_img, (WIDTH / 2, HEIGHT / 2.5), self.walls)
+        self.static = StaticGhost(dead_ghost_img, self.StaticGhostPositions[random.randint(-8,8)], self.walls)
 
         self.ghosts.add(self.red, self.pink, self.blue, self.orange, self.static)
 
@@ -173,7 +188,7 @@ class Game:
             pill_collide[0].kill()
             self.score += 1
 
-    def ghost_collision(self, ghost: StaticGhost):
+    def ghost_collision(self, ghost: Ghost):
         collide_right = pygame.sprite.spritecollide(ghost, self.board.right_walls_group, dokill=False)
         collide_left = pygame.sprite.spritecollide(ghost, self.board.left_walls_group, dokill=False)
         collide_down = pygame.sprite.spritecollide(ghost, self.board.down_walls_group, dokill=False)

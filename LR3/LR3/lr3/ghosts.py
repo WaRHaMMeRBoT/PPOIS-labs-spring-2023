@@ -6,7 +6,7 @@ from constants import SCALE
 from player import Player
 
 
-class StaticGhost(pygame.sprite.Sprite):
+class Ghost(pygame.sprite.Sprite):
     def __init__(self, ghost_img, pos: tuple, walls):
         pygame.sprite.Sprite.__init__(self)
         random.seed(version=2)
