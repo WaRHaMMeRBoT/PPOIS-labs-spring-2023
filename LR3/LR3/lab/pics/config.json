@@ -1,0 +1,28 @@
+{
+  "WIDTH": 1650,
+  "HEIGHT": 1050,
+  "FPS": 120,
+  "SCALE": 50,
+  "WALLS": [{"type": "HorizontalWall", "height": 50, "width":300, "posx":90, "posy":850},
+  {"type": "HorizontalWall", "height": 50, "width":180, "posx":180, "posy":740},
+            {"type": "HorizontalWall", "height": 50, "width":350, "posx":90, "posy":635},
+            {"type": "HorizontalWall", "height": 50, "width":350, "posx":1550, "posy":850},
+            {"type": "HorizontalWall", "height": 50, "width":350, "posx":1550, "posy":635},
+            {"type": "HorizontalWall", "height": 50, "width":220, "posx":1480, "posy":740},
+            {"type": "HorizontalWall", "height": 50, "width":425, "posx":535, "posy":850},
+            {"type": "HorizontalWall", "height": 40, "width":660, "posx":420, "posy":950},
+            {"type": "HorizontalWall", "height": 50, "width":685, "posx":1250, "posy":950},
+            {"type": "HorizontalWall", "height": 50, "width":410, "posx":1115, "posy":850},
+            {"type": "HorizontalWall", "height": 158, "width":410, "posx":1115, "posy":715},
+            {"type": "HorizontalWall", "height": 425, "width":685, "posx":535, "posy":715},
+            {"type": "HorizontalWall", "height": 50, "width":685, "posx":1250, "posy":950},
+            {"type": "Wall", "height": 150, "width":350, "posx":912, "posy":245},
+            {"type": "Wall", "height": 400, "width":50, "posx":585, "posy":345},
+            {"type": "Wall", "height": 400, "width":120, "posx":460, "posy":345},
+            {"type": "Wall", "height": 400, "width":50, "posx":585, "posy":345},
+            {"type": "Wall", "height": 400, "width":50, "posx":1090, "posy":345},
+            {"type": "Wall", "height": 400, "width":162, "posx":1280, "posy":345},
+            {"type": "HorizontalWall", "height": 30, "width":150, "posx":810, "posy":395},
+            {"type": "HorizontalWall", "height": 30, "width":150, "posx":840, "posy":395}
+]
+}
