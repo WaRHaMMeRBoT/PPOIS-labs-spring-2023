@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+LR3/__pycache__
+LR3/circle/
+LR3/.DS_Store
+.DS_Store
+LR3/venv
