@@ -1,3 +1,6 @@
 [submodule "LR1"]
 	path = LR1
 	url = https://github.com/qaip/garden-manager
+[submodule "LR2"]
+	path = LR2
+	url = https://github.com/qaip/mno-clients
