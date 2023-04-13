@@ -3,7 +3,7 @@ import random
 import pygame
 
 from constants import SCALE
-from player import Player
+from LR3.lab.pacman import Player
 
 
 class Ghost(pygame.sprite.Sprite):

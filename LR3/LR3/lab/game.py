@@ -4,10 +4,10 @@ import random
 
 from board import Board
 from constants import red_ghost_img, blue_ghost_img, pink_ghost_img, orange_ghost_img, dead_ghost_img, WIDTH, HEIGHT
-from ghosts import Ghost
+from LR3.lab.simple_ghosts import Ghost
 from static_ghosts import StaticGhost
 from pills import Pill
-from player import Player
+from LR3.lab.pacman import Player
 from score import Score
 
 

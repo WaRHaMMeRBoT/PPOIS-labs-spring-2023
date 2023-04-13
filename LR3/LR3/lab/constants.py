@@ -10,7 +10,7 @@ BLUE = (0, 0, 255)
 SCALE = 50
 
 game_folder = os.path.dirname(__file__)
-img_folder = os.path.join(game_folder, 'assets')
+img_folder = os.path.join(game_folder, 'pics')
 config_folder = img_folder + '/config.json'
 
 with open(img_folder + '/config.json') as f:
