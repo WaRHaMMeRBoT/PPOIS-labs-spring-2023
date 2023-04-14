@@ -1,0 +1,36 @@
+entities:
+  panda:
+    type: animal
+    max_health: 100
+    size: 5
+    speed: 1
+    dodge_chance: 0.2
+    starving: 0.01
+    eats: [flower]
+    data:
+
+  tiger:
+    type: animal
+    max_health: 50
+    size: 3
+    speed: 1
+    dodge_chance: 0.5
+    starving: 0.05
+    eats: [panda]
+    data:
+
+  flower:
+    type: plant
+    max_health: 10
+    size: 5
+    eats: []
+    data:
+
+field:
+  height: 8
+  width: 8
+  cells:
+    0:
+      1: [panda: [100, MALE], panda: [100, FEMALE]]
+    1:
+      7: [tiger: [40, MALE]]

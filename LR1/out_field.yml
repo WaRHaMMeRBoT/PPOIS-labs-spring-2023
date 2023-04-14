@@ -1,0 +1,40 @@
+entities:
+  panda:
+    data: null
+    dodge_chance: 0.2
+    eats:
+    - flower
+    max_health: 100
+    size: 5
+    speed: 1
+    starving: 0.01
+    type: animal
+  tiger:
+    data: null
+    dodge_chance: 0.5
+    eats:
+    - panda
+    max_health: 50
+    size: 3
+    speed: 1
+    starving: 0.05
+    type: animal
+field:
+  cells:
+    0:
+      4:
+      - panda:
+        - 90.0
+        - FEMALE
+    2:
+      5:
+      - tiger:
+        - 15.0
+        - MALE
+    6:
+      5:
+      - panda:
+        - 90.0
+        - MALE
+  height: 8
+  width: 8
