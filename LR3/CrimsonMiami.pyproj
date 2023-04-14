@@ -1,0 +1,99 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>298d2909-1bdf-4403-8fbd-ea8a4b7e81f8</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>CrimsonMiami.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>CrimsonMiami</Name>
+    <RootNamespace>CrimsonLand</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CrimsonMiami.py" />
+    <Compile Include="Game.py" />
+    <Compile Include="Enemies.py" />
+    <Compile Include="Entity.py" />
+    <Compile Include="Environment.py" />
+    <Compile Include="GameState.py" />
+    <Compile Include="Leaderboard_Record.py" />
+    <Compile Include="Player.py" />
+    <Compile Include="Utility.py" />
+    <Compile Include="Wave.py" />
+    <Compile Include="Weapons.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Sounds\Dust.mp3" />
+    <Content Include="Assets\Sounds\Heavy_Pistol_Sound.mp3" />
+    <Content Include="Assets\Sounds\Player_Hit.mp3" />
+    <Content Include="Assets\Sprites\ChunkyInspector2.png" />
+    <Content Include="Assets\Sprites\ChunkyInspector.png" />
+    <Content Include="Assets\Sprites\CloseSlowDead3.png" />
+    <Content Include="Assets\Sprites\CloseSlowDead2.png" />
+    <Content Include="Assets\Sprites\EnemyCloseAveragWBottle.png" />
+    <Content Include="Assets\Sprites\EnemyCloseFastWknife.png" />
+    <Content Include="Assets\Sprites\EnemyClosePoliceWStick.png" />
+    <Content Include="Assets\Sprites\EnemyCloseSlow3.png" />
+    <Content Include="Assets\Sprites\EnemyCloseSlow.png" />
+    <Content Include="Assets\Sprites\EnemyCloseSlow2.png" />
+    <Content Include="Assets\Sprites\Heavy_Bullet.png" />
+    <Content Include="Assets\Sprites\InspectorDead.png" />
+    <Content Include="Assets\Sprites\InspectorDead2.png" />
+    <Content Include="Assets\Sprites\M16.png" />
+    <Content Include="Assets\Sprites\CloseChunkyDead.png" />
+    <Content Include="Assets\Sprites\CloseFastDead.png" />
+    <Content Include="Assets\Sprites\CloseSlowDead.png" />
+    <Content Include="Assets\Sprites\Dead.png" />
+    <Content Include="Assets\Sprites\DoubleBarrel.png" />
+    <Content Include="Assets\Sprites\DoubleBarrel_laying.png" />
+    <Content Include="Assets\Sprites\EnemyCloseChunky.png" />
+    <Content Include="Assets\Sprites\EnemyCloseFast.png" />
+    <Content Include="Assets\FIGHTT3_.ttf" />
+    <Content Include="Assets\Sprites\M16_laying.png" />
+    <Content Include="Assets\Sprites\Menu_bg.jpg" />
+    <Content Include="Assets\Sprites\Pipe.png" />
+    <Content Include="Assets\Sprites\Pipe_Laying.png" />
+    <Content Include="Assets\Sprites\Pipe_Swing.png" />
+    <Content Include="Assets\Sprites\Heavy_Pistol.png" />
+    <Content Include="Assets\Sprites\Pistol.png" />
+    <Content Include="Assets\Sprites\Bullet.png" />
+    <Content Include="Assets\Sounds\M16_Sound.mp3" />
+    <Content Include="Assets\Sounds\Le_Perv.mp3" />
+    <Content Include="Assets\Sounds\DoubleBarrel_Sound.mp3" />
+    <Content Include="Assets\Sounds\Pipe_Sound.mp3" />
+    <Content Include="Assets\Sounds\Pistol_Sound.mp3" />
+    <Content Include="Assets\Sounds\Uzi_Sound.mp3" />
+    <Content Include="Assets\Sprites\PoliceDead.png" />
+    <Content Include="Assets\Sprites\Uzi.png" />
+    <Content Include="Assets\Sprites\Heavy_Pistol_Laying.png" />
+    <Content Include="Assets\Sprites\Uzi_Laying.png" />
+    <Content Include="Assets\Sprites\WaiterDead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\Sprites\" />
+    <Folder Include="Assets\Sounds\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
