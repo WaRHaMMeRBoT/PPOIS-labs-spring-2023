@@ -1,0 +1,25 @@
+{
+    "students": [
+        {
+            "identifier": 0, 
+            "studentName": "Lexa",
+            "fatherName": "Vladimir",
+            "fatherSalary": 300,
+            "motherName": "Olga",
+            "motherSalary": 400,
+            "brothersCount": 2,
+            "sistersCount": 0
+        },
+        {
+            "identifier": 1, 
+            "studentName": "Roma",
+            "fatherName": "Martin",
+            "fatherSalary": 450,
+            "motherName": "Sara",
+            "motherSalary": 500,
+            "brothersCount": 1,
+            "sistersCount": 2
+        }
+        
+    ]
+}
