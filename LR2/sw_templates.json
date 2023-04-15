@@ -1,0 +1,83 @@
+[
+    {
+        "number": 1,
+        "book_name": "qw",
+        "author_name": "qw",
+        "publishing_house": "qw1",
+        "number_of_tom": 1,
+        "number_of_editions": 2,
+        "all_editions": 2
+    },
+    {
+        "number": 2,
+        "book_name": "\u0439\u0446",
+        "author_name": "\u0446\u0446",
+        "publishing_house": "\u0439\u0446",
+        "number_of_tom": 12,
+        "number_of_editions": 2,
+        "all_editions": 24
+    },
+    {
+        "number": 3,
+        "book_name": "\u0446\u0432\u0446",
+        "author_name": "\u044b\u0447\u0444",
+        "publishing_house": "\u0444\u0432",
+        "number_of_tom": 12,
+        "number_of_editions": 2,
+        "all_editions": 24
+    },
+    {
+        "number": 4,
+        "book_name": "qw",
+        "author_name": "wqe",
+        "publishing_house": "qw",
+        "number_of_tom": 1,
+        "number_of_editions": 2,
+        "all_editions": 2
+    },
+    {
+        "number": 5,
+        "book_name": "qw",
+        "author_name": "wqe",
+        "publishing_house": "qw",
+        "number_of_tom": 1,
+        "number_of_editions": 2,
+        "all_editions": 2
+    },
+    {
+        "number": 6,
+        "book_name": "\u044b\u043f\u043c\u0432\u044b\u0441",
+        "author_name": "wqe",
+        "publishing_house": "qw",
+        "number_of_tom": 1,
+        "number_of_editions": 2,
+        "all_editions": 2
+    },
+    {
+        "number": 7,
+        "book_name": "\u0447\u043c\u043c\u0432\u044b",
+        "author_name": "\u0446\u0439\u0444\u0432\u0446",
+        "publishing_house": "\u0439\u0446\u0446\u0439",
+        "number_of_tom": 45,
+        "number_of_editions": 32,
+        "all_editions": 1440
+    },
+    {
+        "number": 8,
+        "book_name": "\u0447\u043c\u043c\u0432\u044b",
+        "author_name": "\u0446\u0439\u0444\u0432\u0446",
+        "publishing_house": "\u0446\u0439\u0443",
+        "number_of_tom": 11,
+        "number_of_editions": 32,
+        "all_editions": 352
+    },
+    {
+        "number": 9,
+        "book_name": "\u0447\u043c\u043c\u0432\u044b \u0444\u044b\u0441",
+        "author_name": "\u0446\u0439\u0444\u0432\u0446",
+        "publishing_house": "\u0446\u0439\u0443",
+        "number_of_tom": 11,
+        "number_of_editions": 32,
+        "all_editions": 352
+    }
+]
