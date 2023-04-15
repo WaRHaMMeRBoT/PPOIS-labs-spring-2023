@@ -26,7 +26,7 @@ PLANT_COLLECTION = {
 def write_state(garden: BaseGarden):
     """Dump garden's state dict in json format file"""
     data = {'weather': garden.WEATHER.__dict__, 'fields': field_serializer(garden.fields)}
-    with open('lab1/state.json', 'w') as f:
+    with open('./state.json', 'w') as f:
         json.dump(data, f, indent=4)
 
 
@@ -61,7 +61,7 @@ def field_serializer(field_list: list[Field]) -> list[dict]:
 def load_state() -> BaseGarden:
     """Deserialize json string into Garden instance"""
     fields = []
-    with open('lab1/state.json', 'r') as f:
+    with open('./state.json', 'r') as f:
         data = json.load(f)
         for data_field in data['fields']:
             weed = Weed() if data_field.get('weed') else None

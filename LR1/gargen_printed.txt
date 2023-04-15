@@ -1,0 +1,29 @@
+Weather: Cloudy
+1.
+_______________________________________________
+|	Plant: Apple Tree                          |
+|	Age: 2                                     |
+|	Fruit: None                                |
+|	Health: 48                                 |
+|	Hydration level: 70                        |
+|	Illness damage: 20                         |
+|	Pests damage: 15                           |
+|______________________________________________|
+2.
+_______________________________________________
+|	Plant: CucumberSeed                        |
+|	Age: 2                                     |
+|	Health: 58                                 |
+|	Hydration level: 70                        |
+|	Illness damage: 11                         |
+|	Pests damage: 19                           |
+|______________________________________________|
+3.
+_______________________________________________
+|	Plant: AppleSeed                           |
+|	Age: 2                                     |
+|	Health: 90                                 |
+|	Hydration level: 70                        |
+|	Illness damage: 14                         |
+|	Pests damage: 0                            |
+|______________________________________________|
