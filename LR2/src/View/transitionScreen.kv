@@ -1,0 +1,27 @@
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+
+<Root@ScreenManager>:
+    transition: FadeTransition()
+
+    MDScreen:
+        name: 'empty_black_screen'
+        md_bg_color: 'black'
+
+    MDScreen:
+        name: 'empty_white_screen'
+        md_bg_color: 'white'
+
+    MDScreen:
+        name: 'logo_screen'
+        md_bg_color: 'white'
+
+        Image:
+            source: 'assets/darkholme2.png'
+            size_hint_y: 0.9
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            allow_stretch: True
+
+    MDScreen:
+        name: 'main_screen'
+        BaseScreen:
+            id: base_screen

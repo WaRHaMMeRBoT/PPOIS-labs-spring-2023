@@ -1,0 +1,17 @@
+<-MDDataTable>:
+    background_color: '#212121'
+
+    MDCard:
+        id: container
+        orientation: "vertical"
+        elevation: root.elevation
+        size_hint: None, None
+        width: 225
+        height: 80
+
+        canvas:
+            Color:
+                rgba: root.background_color
+            Rectangle:
+                size: self.size
+                pos: self.pos

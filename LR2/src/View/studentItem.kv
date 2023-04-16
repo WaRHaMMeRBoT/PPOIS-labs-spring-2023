@@ -1,0 +1,59 @@
+<StudentItem>:
+
+    size_hint: 1, None
+    height: 80
+    md_bg_color: '#f8d3c5' if not self.selected else '#fac6b3'
+    radius: [8, 8, 8, 8]
+
+    MDFloatLayout:
+        size_hint: 1, 1
+        width: 180
+        md_bg_color: '#f8d3c5'
+        radius: [10, 10, 10, 10]
+
+
+        TwoLineAvatarListItem:
+
+            text: root.name
+            secondary_text: root.surname + ' ' + root.patronym
+
+            theme_text_color: 'Custom'
+            secondary_theme_text_color: 'Custom'
+            text_color: "#492e1a"
+            secondary_text_color: "#492e1a"
+            bg_color: root.md_bg_color
+
+            pos_hint: {'x': 0, 'y': 0}
+            size_hint: 1, 1
+            ripple_scale: 0
+            radius: [8, 8, 8, 8]
+
+            ImageLeftWidgetWithoutTouch:
+                source: root.icon
+
+        MDBoxLayout:
+            size_hint: None, 1
+            width: 100
+            md_bg_color: root.md_bg_color
+            radius: [8, 8, 8, 8]
+            pos: self.parent.x + 240, self.parent.y
+
+            MDRaisedButton:
+                text: root.group
+                width: 100
+                default_width: 100
+                font_size: 20
+                pos_hint: {'center_y': 0.5}
+                ripple_scale: 0
+                md_bg_color: '#a69477'
+
+        MDFloatingActionButton:
+            md_bg_color: '#a69477'
+            pos: (root.width) - 80, (self.parent.y) + 12
+            ripple_scale: 0
+
+        MDLabel:
+            id: mean_mark_label
+            text: root.mean_mark
+            pos: (root.width) - 65, (self.parent.y)
+            font_size: 20
