@@ -1,5 +1,36 @@
-# ППОИС
+# Лабораторная работа №1
 
-### Лабораторная работа №1
-![image](https://user-images.githubusercontent.com/91974808/218490773-855b7f65-c9ed-46d1-973b-2fca9c544ff3.png)
-![image](https://user-images.githubusercontent.com/91974808/218490879-eb228d2b-4cc1-45ea-8c3c-20f5334800af.png)
+Выполнил: Яковинич Г.И.\
+Проверил: Бутрин С.В.
+
+## Поставновка задачи
+
+**Цель**: Изучить основные возможности языка Python для разработки программных систем с интерфейсом командной строки (CLI)\
+[Требования](https://docs.google.com/document/d/1SyqTpdFJBrMapc-z3583IAib3RHDUtXu) по выполению лаборатоной работы
+
+## Реализация
+
+По требованиям к лабораторной работе было разработано CLI приложение.
+
+Документация:
+
+    usage: game of life [-h] -c COUNT [-v] [-o OUTPUT] filename
+
+    positional arguments
+       filename
+
+    options:
+      -h, --help            show this help message and exit
+      -c COUNT, --count COUNT
+                            count of steps to produce
+      -v, --verbose         print field on each step
+      -o OUTPUT, --output OUTPUT
+                            output file
+
+
+Приложение принимает на вход имя файла в формате YAML, в котором хранится состояние мира, 
+также количество итераций, которые должны быть выполнены, и имя выходного файла.
+Опционально может приниматься ключ --verbose для подробного вывода состояния на каждом шаге выполнения.
+
+## Вывод
+В процессе реализации были изучены основные возможности языка Python для разработки программных систем с интерфейсом командной строки (CLI)
