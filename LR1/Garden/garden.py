@@ -1,5 +1,5 @@
-from Models.Garden.field import Field
-from Models.Weather.weather import Weather
+from Garden.field import Field
+from Weather.weather import Weather
 
 
 class BaseGarden:

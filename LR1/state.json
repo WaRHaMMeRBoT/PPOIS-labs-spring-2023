@@ -6,33 +6,40 @@
     "fields": [
         {
             "field_pk": 0,
-            "weed": true,
+            "weed": false,
             "tree": false,
-            "seed": false
+            "seed": false,
+            "plant": "Tomato",
+            "health": 97,
+            "hydration_level": 15,
+            "age": 7,
+            "pests_damage": 0,
+            "illness_damage": 0
         },
         {
             "field_pk": 1,
             "weed": false,
-            "tree": false,
-            "seed": true,
-            "plant": "AppleSeed",
-            "health": 84,
-            "hydration_level": 70,
-            "age": 2,
+            "tree": true,
+            "seed": false,
+            "plant": "Pear Tree",
+            "health": 46,
+            "hydration_level": 15,
+            "age": 7,
             "pests_damage": 0,
-            "illness_damage": 17
+            "illness_damage": 14,
+            "fruit": "Pear"
         },
         {
             "field_pk": 2,
             "weed": false,
-            "tree": true,
-            "seed": false,
-            "plant": "Pear Tree",
-            "health": 52,
-            "hydration_level": 70,
-            "age": 2,
-            "pests_damage": 13,
-            "illness_damage": 20
+            "tree": false,
+            "seed": true,
+            "plant": "AppleSeed",
+            "health": 100,
+            "hydration_level": 100,
+            "age": 0,
+            "pests_damage": 12,
+            "illness_damage": 17
         }
     ]
 }

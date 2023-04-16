@@ -1,11 +1,11 @@
 import json
 
-from Models.Plants.weed import Weed
-from Models.Garden.field import  Field
-from Models.Plants.seeds import PearSeed, CucumberSeed, AppleSeed
-from Models.Garden.garden import BaseGarden
-from Models.Plants.vegetables import Tomato, Potato, Cucumber
-from Models.Plants.trees import AppleTree, PearTree, Apple, Peach, Pear
+from Plants.weed import Weed
+from Garden.field import  Field
+from Plants.seeds import PearSeed, CucumberSeed, AppleSeed
+from Garden.garden import BaseGarden
+from Plants.vegetables import Tomato, Potato, Cucumber
+from Plants.trees import AppleTree, PearTree, Apple, Peach, Pear
 
 PLANT_COLLECTION = {
     'Pear Tree': PearTree,
@@ -26,7 +26,7 @@ PLANT_COLLECTION = {
 def write_state(garden: BaseGarden):
     """Dump garden's state dict in json format file"""
     data = {'weather': garden.WEATHER.__dict__, 'fields': field_serializer(garden.fields)}
-    with open('./state.json', 'w') as f:
+    with open('lab1/state.json', 'w') as f:
         json.dump(data, f, indent=4)
 
 
@@ -61,7 +61,7 @@ def field_serializer(field_list: list[Field]) -> list[dict]:
 def load_state() -> BaseGarden:
     """Deserialize json string into Garden instance"""
     fields = []
-    with open('./state.json', 'r') as f:
+    with open('lab1/state.json', 'r') as f:
         data = json.load(f)
         for data_field in data['fields']:
             weed = Weed() if data_field.get('weed') else None

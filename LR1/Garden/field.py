@@ -1,7 +1,7 @@
 import random
 
-from Models.Plants.abstract_plants import Tree, Vegetable
-from Models.Plants.weed import Weed
+from Plants.abstract_plants import Tree, Vegetable
+from Plants.weed import Weed
 
 
 class Field:
@@ -49,7 +49,7 @@ class FieldAction:
         """
         if self.field.weed is not None:
             self.field.weed = None
-            self.field.plant = plant
+            self.field.plant = plant()
         return self.field
 
     def desinfect_plant(self):

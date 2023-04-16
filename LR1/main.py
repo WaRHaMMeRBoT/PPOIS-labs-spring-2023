@@ -1,13 +1,13 @@
 import random
 
-from Models.Garden.field import Field, FieldAction
-from Models.Garden.garden import BaseGarden
-from Models.Plants.trees import AppleTree, PearTree, Apple, Pear, Peach, PeachTree
-from Models.Plants.vegetables import Tomato, Potato, Cucumber
-from Controllers.print_garden import print_garden
-from Models.Plants.seeds import PearSeed, CucumberSeed, AppleSeed
-from Models.serializers import write_state, load_state
-from Views.arg_parser import parse
+from Garden.field import Field, FieldAction
+from Garden.garden import BaseGarden
+from Plants.trees import AppleTree, PearTree, Apple, Pear, Peach, PeachTree
+from Plants.vegetables import Tomato, Potato, Cucumber
+from print_garden import print_garden
+from Plants.seeds import PearSeed, CucumberSeed, AppleSeed
+from serializers import write_state, load_state
+from arg_parser import parse
 
 PLANT_COLLECTION = {
     'PearTree': PearTree,
@@ -59,8 +59,8 @@ def main():
     elif args.killplant:
         FieldAction(garden.fields[args.killplant - 1]).kill_plant()
     elif args.weeding and args.plant:
-        plant = PLANT_COLLECTION.get(args.plant)
-        FieldAction(garden.fields[args.weeding - 1]).weeding(plant())
+        plant = PLANT_COLLECTION.get(args.plant.title())
+        FieldAction(garden.fields[args.weeding - 1]).weeding(plant)
     elif args.plant:
         plant = PLANT_COLLECTION.get(args.plant)()
         garden.fields.append(Field(plant))
