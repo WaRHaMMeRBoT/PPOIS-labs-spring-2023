@@ -1,4 +1,4 @@
-from Plants.abstract_plants import Vegetable
+from Models.Plants.abstract_plants import Vegetable
 
 
 class Potato(Vegetable): ...

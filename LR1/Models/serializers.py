@@ -1,11 +1,11 @@
 import json
 
-from Plants.weed import Weed
-from Garden.field import  Field
-from Plants.seeds import PearSeed, CucumberSeed, AppleSeed
-from Garden.garden import BaseGarden
-from Plants.vegetables import Tomato, Potato, Cucumber
-from Plants.trees import AppleTree, PearTree, Apple, Peach, Pear
+from Models.Plants.weed import Weed
+from Models.Garden.field import  Field
+from Models.Plants.seeds import PearSeed, CucumberSeed, AppleSeed
+from Models.Garden.garden import BaseGarden
+from Models.Plants.vegetables import Tomato, Potato, Cucumber
+from Models.Plants.trees import AppleTree, PearTree, Apple, Peach, Pear
 
 PLANT_COLLECTION = {
     'Pear Tree': PearTree,

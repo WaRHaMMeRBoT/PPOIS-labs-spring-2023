@@ -1,9 +1,9 @@
 from abc import abstractmethod
 
-from Plants.abstract_plants import BasePlant
+from Models.Plants.abstract_plants import BasePlant
 
-from Plants.trees import AppleTree, PearTree
-from Plants.vegetables import Cucumber
+from Models.Plants.trees import AppleTree, PearTree
+from Models.Plants.vegetables import Cucumber
 
 
 class Seed(BasePlant):

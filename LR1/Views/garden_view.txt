@@ -7,19 +7,19 @@ _______________________________________________
 2.
 _______________________________________________
 |	Plant: AppleSeed                           |
-|	Age: 2                                     |
-|	Health: 84                                 |
-|	Hydration level: 70                        |
+|	Age: 0                                     |
+|	Health: 100                                |
+|	Hydration level: 100                       |
 |	Illness damage: 17                         |
 |	Pests damage: 0                            |
 |______________________________________________|
 3.
 _______________________________________________
 |	Plant: Pear Tree                           |
-|	Age: 2                                     |
+|	Age: 0                                     |
 |	Fruit: None                                |
-|	Health: 52                                 |
-|	Hydration level: 70                        |
+|	Health: 100                                |
+|	Hydration level: 100                       |
 |	Illness damage: 20                         |
 |	Pests damage: 13                           |
 |______________________________________________|

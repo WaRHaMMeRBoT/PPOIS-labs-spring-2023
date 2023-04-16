@@ -1,4 +1,4 @@
-from Plants.abstract_plants import Tree, Fruit
+from Models.Plants.abstract_plants import Tree, Fruit
 
 
 class AppleTree(Tree):

@@ -1,8 +1,8 @@
 import sys
 
-from Garden.field import Field
-from Garden.garden import BaseGarden
-from Plants.abstract_plants import BasePlant
+from Models.Garden.field import Field
+from Models.Garden.garden import BaseGarden
+from Models.Plants.abstract_plants import BasePlant
 
 
 def print_plant(plant: BasePlant, file_to_write=sys.stdout):
