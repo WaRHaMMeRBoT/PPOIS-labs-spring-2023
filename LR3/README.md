@@ -9,6 +9,7 @@
 ## Примеры
 <details>
 <summary>Развернуть</summary>
+
 ### Основное окно приложения
 ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw3/LR3/images_for_report/app.png)<br>
 
