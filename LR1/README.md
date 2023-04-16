@@ -34,3 +34,23 @@ bank_bd – хранит информацию о счетах в банке (id 
 И main-функция<br>
  ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/main/main.jpg)<br>
 </details>
+
+### Cash machine
+<details>
+<summary>Раскрыть</summary>
+В cash_machine.py мы, реализуем основную логику программы. Здесь мы производим все операции с базами данных 
+ 
+Создаем такие команды как:
+1)	авторизация <br>
+![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/authorization.jpg)<br>
+2)	пополнение баланса<br>
+ ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/add_money.jpg)<br>
+3)	снятие денег<br>
+ ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/withdraw.jpg)<br>
+4)	перевод на другую карту<br>
+ ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/transfer.jpg)<br>
+5)	получение баланса<br>
+ ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/get_balance.jpg)<br>
+6)	регистрация новой карты<br>
+ ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/register.jpg)<br>
+</details>
