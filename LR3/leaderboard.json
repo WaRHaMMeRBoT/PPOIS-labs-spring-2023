@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "name": "Telyonok",
+      "score": 200000
+    },
+    {
+      "name": "Jason",
+      "score": 180000
+    },
+    {
+      "name": "Raphael Ambrosius Costeau",
+      "score": 150000
+    },
+    {
+      "name": "Jacket",
+      "score": 100000
+    },
+    {
+      "name": "Biker",
+      "score": 80000
+    },
+    {
+      "name": "Joe",
+      "score": 60000
+    },
+    {
+      "name": "Don Juan",
+      "score": 50000
+    },
+    {
+      "name": "Beard",
+      "score": 40000
+    },
+    {
+      "name": "Corey",
+      "score": 25000
+    },
+    {
+      "name": "Girlfriend",
+      "score": 10000
+    }
+  ]
+}
