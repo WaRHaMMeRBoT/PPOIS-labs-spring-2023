@@ -46,7 +46,7 @@ bank_bd – хранит информацию о счетах в банке (id 
 2)	пополнение баланса<br>
  ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/add_money.jpg)<br>
 3)	снятие денег<br>
- ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/withdraw.jpg)<br>
+ ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/withdrow.jpg)<br>
 4)	перевод на другую карту<br>
  ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw1/LR1/images/cash_machine/transfer.jpg)<br>
 5)	получение баланса<br>
