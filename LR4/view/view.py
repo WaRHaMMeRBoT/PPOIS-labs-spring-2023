@@ -4,7 +4,6 @@ from .warp_dialog import *
 
 from kivy.metrics import dp
 from kivymd.uix.boxlayout import MDBoxLayout
-from kivymd.uix.button import MDFloatingActionButton
 from kivymd.uix.gridlayout import MDGridLayout
 
 
@@ -45,7 +44,7 @@ def plants_buttons(controller):
             if not entity[i][j].get_entity():
                 button = MDRaisedButton(
                     id=str(index),
-                    text="    ",
+                    text="",
                     theme_icon_color="Custom",
                     elevation=0,
                     md_bg_color="#fefbff",
