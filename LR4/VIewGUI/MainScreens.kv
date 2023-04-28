@@ -1,0 +1,361 @@
+<DisabledButton@Button>:
+    disabled: True
+    color: (0, 0, 0, 1)
+    background_color: (0, 0, 0, 1)
+
+
+<DenominationInputComponent>:
+    orientation: 'vertical'
+    TextInput:
+        id: input_1
+    TextInput:
+        id: input_2
+    TextInput:
+        id: input_3
+    TextInput:
+        id: input_4
+    TextInput:
+        id: input_5
+    TextInput:
+        id: input_6
+    TextInput:
+        id: input_7
+    TextInput:
+        id: input_8
+
+
+<StartScreen>:
+    name: "StartScreen"
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: 1, .6
+        pos_hint: {'center_y': 0.5}
+        DisabledButton:
+            text: "Main Actions"
+            font_size: 20
+            size_hint: .7, 1
+            pos_hint: {"center_x": 0.5}
+        Button:
+            text: "Add New User"
+            font_size: 20
+            size_hint: .7, 1
+            pos_hint: {"center_x": 0.5}
+            on_press: root.on_add_new_user_press()
+        Button:
+            text: "Work With Existing Users"
+            font_size: 20
+            size_hint: .7, 1
+            pos_hint: {"center_x": 0.5}
+            on_press: root.on_work_with_existing_users_press()
+        Button:
+            text: "Work With Last Authorized"
+            font_size: 20
+            size_hint: .7, 1
+            pos_hint: {"center_x": 0.5}
+            on_press: root.on_last_authorized_press()
+        DisabledButton:
+            text: "Dialog Window"
+            font_size: 20
+            size_hint: .7, 1
+            pos_hint: {"center_x": 0.5}
+            id: dialog_window
+
+
+<AddNewUserScreen>:
+    name: "AddNewUserScreen"
+    BoxLayout:
+        orientation: 'vertical'
+        GridLayout:
+            cols: 2
+            size_hint: 1, .5
+            DisabledButton:
+                text: "Name"
+            TextInput:
+                id: name_input
+            DisabledButton:
+                text: "Bank Bill"
+            TextInput:
+                id: bank_bill_input
+            DisabledButton:
+                text: "User Phone Bill"
+            TextInput:
+                id: user_phone_bill_input
+            DisabledButton:
+                text: "Card Password"
+            TextInput:
+                id: card_password_input
+        GridLayout:
+            cols: 3
+            DisabledButton:
+                size_hint: 1, .2
+                text: "Denominations"
+            DisabledButton:
+                size_hint: 1, .2
+                text: "User Storage"
+            DisabledButton:
+                size_hint: 1, .2
+                text: "Bank Storage"
+            BoxLayout:
+                orientation: 'vertical'
+                DisabledButton:
+                    text: root.banknotes_denominations[0]
+                DisabledButton:
+                    text: root.banknotes_denominations[1]
+                DisabledButton:
+                    text: root.banknotes_denominations[2]
+                DisabledButton:
+                    text: root.banknotes_denominations[3]
+                DisabledButton:
+                    text: root.banknotes_denominations[4]
+                DisabledButton:
+                    text: root.banknotes_denominations[5]
+                DisabledButton:
+                    text: root.banknotes_denominations[6]
+                DisabledButton:
+                    text: root.banknotes_denominations[7]
+            DenominationInputComponent:
+                id: user_storage_input
+            DenominationInputComponent:
+                id: bank_storage_input
+        BoxLayout:
+            size_hint: 1, .2
+            orientation: 'horizontal'
+            Button:
+                text: "Back"
+                on_press: root.on_back_press()
+            DisabledButton:
+                text: "Dialog Window"
+                id: dialog_window
+            Button:
+                text: "Apply Information"
+                on_press: root.on_apply_information_press()
+
+
+<PasswordCheckerScreen>:
+    name: "PasswordCheckerScreen"
+    BoxLayout:
+        orientation: 'vertical'
+        DisabledButton:
+            font_size: 20
+            size_hint: .5, 1
+            pos_hint: {"center_x": 0.5}
+            id: attempts_amount
+        TextInput:
+            font_size: 40
+            size_hint: .5, 1
+            pos_hint: {"center_x": 0.5}
+            password: True
+            id: password_input
+        DisabledButton:
+            font_size: 20
+            size_hint: .5, 1
+            pos_hint: {"center_x": 0.5}
+            id: dialog_window
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "Back"
+                id: back_button
+                on_press: root.on_back_press()
+            Button:
+                text: "Bank Call"
+                id: bank_call_button
+                on_press: root.on_bank_call_press()
+            Button:
+                text: "Apply Password"
+                id: apply_button
+                on_press: root.on_apply_password_press()
+
+
+<ActionDecisionScreen>:
+    name: "ActionDecisionScreen"
+    BoxLayout:
+        orientation: 'vertical'
+        DisabledButton:
+            text: "Increase Actions"
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "Increase Account Storage with User Cash"
+                font_size: 14
+                on_press: root.switch_const_screen("IncreaseBankStorageWithUserStorage")
+            Button:
+                text: "Increase Account Bill with User Cash"
+                font_size: 14
+                on_press: root.switch_const_screen("IncreaseBankBillWithUserStorage")
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "Increase User Phone Bill with Account Bill"
+                font_size: 14
+                on_press: root.switch_const_screen("IncreaseUserPhoneWithBankBill")
+            Button:
+                text: "Increase User Cash with Account Bill"
+                font_size: 14
+                on_press: root.switch_const_screen("IncreaseUserStorageWithBankBill")
+            Button:
+                text: "Increase User Cash with Account Storage"
+                font_size: 14
+                on_press: root.switch_const_screen("IncreaseUserStorageWithBankStorage")
+        DisabledButton:
+            text: "Show Actions"
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "Show Phone Bill"
+                font_size: 14
+                on_press: root.show_phone_bill()
+            Button:
+                text: "Show Account Bill"
+                font_size: 14
+                on_press: root.show_bank_account_bill()
+            Button:
+                text: "Show Cash Storage"
+                font_size: 14
+                on_press: root.show_cash_storage()
+            Button:
+                text: "Show Account Storage"
+                font_size: 14
+                on_press: root.show_account_storage()
+        Button:
+            text: "Back"
+            on_press: root.switch_const_screen("Start")
+
+
+<IncreaseInstanceWithStorageTemplate>:
+    GridLayout:
+        cols: 1
+        DisabledButton:
+            text: root.action_message
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1, .3
+            DisabledButton:
+                text: "Denomination"
+            DisabledButton
+                text: "Amount"
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1, 2
+            BoxLayout:
+                orientation: 'vertical'
+                DisabledButton:
+                    text: root.banknotes_denominations[0]
+                DisabledButton:
+                    text: root.banknotes_denominations[1]
+                DisabledButton:
+                    text: root.banknotes_denominations[2]
+                DisabledButton:
+                    text: root.banknotes_denominations[3]
+                DisabledButton:
+                    text: root.banknotes_denominations[4]
+                DisabledButton:
+                    text: root.banknotes_denominations[5]
+                DisabledButton:
+                    text: root.banknotes_denominations[6]
+                DisabledButton:
+                    text: root.banknotes_denominations[7]
+            DenominationInputComponent:
+                id: storage_input
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "Back"
+                on_press: root.on_back_press()
+            DisabledButton:
+                text: "Dialog Window"
+                id: dialog_window
+            Button:
+                text: "Apply Entered Denominations"
+                on_press: root.on_action_press()
+
+
+<IncreaseInstanceWithBillTemplate>
+    BoxLayout:
+        orientation: 'vertical'
+        DisabledButton:
+            text: root.action_message
+        TextInput:
+            font_size: 60
+            size_hint: .5, 1
+            pos_hint: {"center_x": 0.5}
+            id: bill_input
+        BoxLayout:
+            orientation: 'horizontal'
+            Button:
+                text: "Back"
+                on_press: root.on_back_press()
+            DisabledButton:
+                text: "Dialog Window"
+                id: dialog_window
+            Button:
+                text: "Apply Entered Bill"
+                on_press: root.on_action_press()
+
+
+<ShowBillInstanceTemplate>:
+    BoxLayout:
+        size_hint: .6, .5
+        pos_hint: {"center_y": 0.5, "center_x": 0.5}
+        orientation: 'vertical'
+        DisabledButton:
+            text: root.action_message
+        DisabledButton:
+            id: bill_output
+        Button:
+            text: "Back"
+            on_press: root.on_back_press()
+
+
+<ShowStorageInstanceTemplate>:
+    GridLayout:
+        cols: 1
+        DisabledButton:
+            text: root.action_message
+        BoxLayout:
+            DisabledButton:
+                text: "Denomination"
+            DisabledButton:
+                text: "Amount"
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint: 1, 3
+            BoxLayout:
+                orientation: 'vertical'
+                DisabledButton:
+                    id: d_1
+                DisabledButton:
+                    id: d_2
+                DisabledButton:
+                    id: d_3
+                DisabledButton:
+                    id: d_4
+                DisabledButton:
+                    id: d_5
+                DisabledButton:
+                    id: d_6
+                DisabledButton:
+                    id: d_7
+                DisabledButton:
+                    id: d_8
+            BoxLayout:
+                orientation: 'vertical'
+                DisabledButton:
+                    id: a_1
+                DisabledButton:
+                    id: a_2
+                DisabledButton:
+                    id: a_3
+                DisabledButton:
+                    id: a_4
+                DisabledButton:
+                    id: a_5
+                DisabledButton:
+                    id: a_6
+                DisabledButton:
+                    id: a_7
+                DisabledButton:
+                    id: a_8
+        Button:
+            text: "Back"
+            on_press: root.on_back_press()
