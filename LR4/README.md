@@ -12,7 +12,6 @@
 ## Основные окна работы приложения:
 <deteils>
 <summary>Раскрыть</summary>
-
 ### Диалоговое окно
 ![alt text](https://github.com/aleshkey/PPOIS-labs-spring-2023/blob/lw4/LR4/images/dialog_window.png)<br>
 
