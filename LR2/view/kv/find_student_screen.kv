@@ -1,0 +1,101 @@
+StudentsScreenManager:
+    StudentsAppMainScreen:
+        name: 'main'
+    AddStudentScreen:
+        name: 'add_student'
+    AllStudentScreen:
+        name: 'all_student'
+    FindStudentScreen:
+        name: 'find_student'
+    DeleteStudentScreen:
+        name: 'delete_student'
+<FindStudentScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        MDGridLayout:
+            cols: 7
+            rows: 2
+            padding: 50
+            spacing: 20
+            adaptive_height: True
+            pos_hint_y: 0
+            MDLabel:
+                halign: "center"
+                text: "Фамилия"
+                pos_hint: .1,1.
+            MDLabel:
+                halign: "center"
+                text: "Курс"
+            MDLabel:
+                halign: "center"
+                text: "Номер группы"
+            MDLabel:
+                halign: "center"
+                text: "Общее число работ"
+            MDLabel:
+                halign: "center"
+                text: "Число выполненных работ"
+            MDLabel:
+                halign: "center"
+                text: "Число невыполненных работ"
+            MDLabel:
+                halign: "center"
+                text: "Язык программирования"
+            MDTextField:
+                id: last_name
+                mode: "rectangle"
+                hint_text: "Фамилия студента"
+                max_text_length: 100
+                multiline: False
+                on_text: root.filter()
+            MDTextField:
+                id: year
+                mode: "rectangle"
+                hint_text: "Курс"
+                input_filter: "int"
+                multiline: False
+                on_text: root.filter()  
+            MDTextField:
+                id: group_number
+                mode: "rectangle"
+                hint_text: "Номер группы студента"
+                max_text_length: 10
+                multiline: False
+                on_text: root.filter()
+            MDTextField:
+                id: all_assignments
+                mode: "rectangle"
+                hint_text: "Общее число работ"
+                input_filter: "int"
+                multiline: False
+                on_text: root.filter()
+            MDTextField:
+                id: completed_assignments
+                mode: "rectangle"
+                hint_text: "Число выполненных работ"
+                input_filter: "int"
+                multiline: False
+                on_text: root.filter()
+            MDTextField:
+                id: uncompleted_assignments
+                mode: "rectangle"
+                hint_text: "Число невыполненных работ"
+                input_filter: "int"
+                multiline: False
+                size_hint_x: -0
+                size_hint_y: -0
+                on_text: root.filter()
+            MDRectangleFlatButton:
+                id: language_choose
+                text: 'Ничего'
+                size_hint_x: -0
+                size_hint_y: -0
+                on_release: root.languages_dropdown()
+        MDBoxLayout:
+            MDRectangleFlatButton:
+                adaptive_size: False
+                size_hint: .1,.1
+                pos_hint: {'center_x': .5, 'center_y': .07}
+                text: "Назад"
+                on_release: root.manager.current = 'main'

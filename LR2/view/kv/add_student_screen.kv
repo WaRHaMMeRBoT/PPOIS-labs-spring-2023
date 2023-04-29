@@ -1,0 +1,128 @@
+StudentsScreenManager:
+    StudentsAppMainScreen:
+        name: 'main'
+    AddStudentScreen:
+        name: 'add_student'
+    AllStudentScreen:
+        name: 'all_student'
+    FindStudentScreen:
+        name: 'find_student'
+    DeleteStudentScreen:
+        name: 'delete_student'
+<AddStudentScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 50
+        spacing: 10
+        MDLabel:
+            adaptive_size: True
+            size_hint: 1.,.1
+            text: "Добавить нового студента"
+            font_size: 48
+        MDGridLayout:
+            size_hint: 1.,.8
+            rows: 8
+            cols: 2
+            padding: 50
+            spacing: 20
+            adaptive_height: True
+            MDLabel:
+                halign: "center"
+                text: "Фамилия"
+                pos_hint: .1,1.
+            MDTextField:
+                id: last_name
+                mode: "rectangle"
+                hint_text: "Фамилия студента"
+                max_text_length: 100
+                required: True
+                multiline: False
+            MDLabel:
+                halign: "center"
+                text: "Имя"
+            MDTextField:
+                id: first_name
+                mode: "rectangle"
+                hint_text: "Имя студента"
+                max_text_length: 100
+                required: True
+                multiline: False
+            MDLabel:
+                halign: "center"
+                text: "Отчество"
+            MDTextField:
+                id: middle_name
+                mode: "rectangle"
+                hint_text: "Отчество студента (необязательно)"
+                max_text_length: 100
+                multiline: False
+            MDLabel:
+                halign: "center"
+                text: "Курс"
+            MDTextField:
+                id: year
+                mode: "rectangle"
+                hint_text: "Курс"
+                input_filter: "int"
+                required: True
+                multiline: False                
+            MDLabel:
+                halign: "center"
+                text: "Номер группы"
+            MDTextField:
+                id: group_number
+                mode: "rectangle"
+                hint_text: "Номер группы студента"
+                max_text_length: 10
+                required: True
+                multiline: False
+            MDLabel:
+                halign: "center"
+                text: "Общее число работ"
+            MDTextField:
+                id: all_assignments
+                mode: "rectangle"
+                hint_text: "Общее число работ (незаполненное поле равно нулю)"
+                input_filter: "int"
+                multiline: False
+            MDLabel:
+                halign: "center"
+                text: "Число выполненных работ"
+            MDTextField:
+                id: completed_assignments
+                mode: "rectangle"
+                hint_text: "Число выполненных работ (незаполненное поле равно нулю)"
+                input_filter: "int"
+                multiline: False
+            MDLabel:
+                halign: "center"
+                text: "Язык программирования"
+            MDTextField:
+                id: language
+                mode: "rectangle"
+                hint_text: "Язык программирования"
+                max_text_length: 100
+                required: True
+                multiline: False
+        MDBoxLayout:
+            size_hint: 1.,.1
+            orientation: 'horizontal'
+            spacing: 50
+            MDRectangleFlatButton:
+                adaptive_size: True
+                size_hint: .3,.3
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                text: "Добавить"
+                on_release: root.send_add_data()
+            MDRectangleFlatButton:
+                adaptive_size: True
+                size_hint: .3,.3
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                text: "Отмена"
+                on_release: root.manager.current = 'main'
+            MDRectangleFlatButton:
+                adaptive_size: True
+                size_hint: .3,.3
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                text: "Очистить"
+                on_release: root.flush_text_input()
