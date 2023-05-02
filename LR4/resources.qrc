@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="resources">
+    <file>resources/3766030.png</file>
+    <file>resources/align-justify.svg</file>
+    <file>resources/chevron-left.svg</file>
+    <file>resources/credit-card.svg</file>
+    <file>resources/dollar-sign.svg</file>
+    <file>resources/home.svg</file>
+    <file>resources/key.svg</file>
+    <file>resources/log-out.svg</file>
+    <file>resources/smartphone.svg</file>
+    <file>resources/user.svg</file>
+    <file>resources/user-check.svg</file>
+  </qresource>
+</RCC>

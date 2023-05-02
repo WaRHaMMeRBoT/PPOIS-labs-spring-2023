@@ -1,0 +1,60 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"BelarusBank ATM",
+			"icon":":/resources/resources/user.svg",
+			"frameless": false,
+			"transluscentBg": true
+		}
+	],
+    "QCustomSlideMenu": [
+            {
+            "name": "leftMenuContainer",
+            "defaultSize": [{
+                "width": 45,
+                "height": "parent"
+            }],
+            "collapsedSize": [{
+                "width": 45,
+                "height": "parent"
+            }],
+            "expandedSize": [{
+                "width": 200,
+                "height": "parent"
+            }],
+            "toggleButton": [{
+                "buttonName": "menuBtn",
+                "icons": [{
+                    "whenMenuIsCollapsed": ":/resources/resources/align-justify.svg",
+                    "whenMenuIsExpanded": ":/resources/resources/chevron-left.svg"
+                }]
+            }],
+            "menuTransitionAnimation": [{
+                "animationDuration": 300,
+                "animationEasingCurve": "Linear"
+            }]
+        },
+        {
+            "name": "rightContainer",
+            "defaultSize": [{
+                "width": 0,
+                "height": "parent"
+            }],
+            "collapsedSize": [{
+                "width": 0,
+                "height": "parent"
+            }],
+            "expandedSize": [{
+                "width": 275,
+                "height": "parent"
+            }],
+            "toggleButton": [{
+                "buttonName": "pushButton_3"
+            }],
+            "menuTransitionAnimation": [{
+                "animationDuration": 300,
+                "animationEasingCurve": "Linear"
+            }]
+        }
+    ]
+}
