@@ -4,3 +4,6 @@
 [submodule "LR2"]
 	path = LR2
 	url = https://github.com/qaip/mno-clients
+[submodule "LR3"]
+	path = LR3
+	url = https://github.com/qaip/arkanoid
