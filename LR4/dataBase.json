@@ -1,0 +1,229 @@
+{
+ "users": [
+  {
+   "name": "Elijah",
+   "cash": {
+    "dollars": 15.0,
+    "euros": 30.0,
+    "rubles": 30.0
+   },
+   "phone": {
+    "phoneNumber": "5647894",
+    "balance": 439.0,
+    "OwnersName": "Elijah"
+   },
+   "creditCard": {
+    "cardNumber": "4962303767714506",
+    "PIN": "4840",
+    "ExpiresDate": "9/24",
+    "CVV": 341,
+    "balance": {
+     "dollars": 15.0,
+     "euros": 25.0,
+     "rubles": 30.0
+    },
+    "OwnersName": "Elijah"
+   }
+  },
+  {
+   "name": "Liam",
+   "cash": {
+    "dollars": 12.2,
+    "euros": 39.2,
+    "rubles": 30.0
+   },
+   "phone": {
+    "phoneNumber": "4083382",
+    "balance": 525.0,
+    "OwnersName": "Liam"
+   },
+   "creditCard": {
+    "cardNumber": "1256804428450108",
+    "PIN": "6722",
+    "ExpiresDate": "11/29",
+    "CVV": 578,
+    "balance": {
+     "dollars": 2.2,
+     "euros": 33.0,
+     "rubles": 289.85
+    },
+    "OwnersName": "Liam"
+   }
+  },
+  {
+   "name": "Noah",
+   "cash": {
+    "dollars": 15.12,
+    "euros": 30.1,
+    "rubles": 30.0
+   },
+   "phone": {
+    "phoneNumber": "7094928",
+    "balance": 733.0,
+    "OwnersName": "Noah"
+   },
+   "creditCard": {
+    "cardNumber": "4789739062968816",
+    "PIN": "1234",
+    "ExpiresDate": "2/27",
+    "CVV": 653,
+    "balance": {
+     "dollars": 20.0,
+     "euros": 30.0,
+     "rubles": 20.0
+    },
+    "OwnersName": "Noah"
+   }
+  },
+  {
+   "name": "William",
+   "cash": {
+    "dollars": 15.0,
+    "euros": 30.0,
+    "rubles": 30.0
+   },
+   "phone": {
+    "phoneNumber": "8276417",
+    "balance": 534.0,
+    "OwnersName": "William"
+   },
+   "creditCard": {
+    "cardNumber": "1502854059195989",
+    "PIN": "1083",
+    "ExpiresDate": "7/27",
+    "CVV": 822,
+    "balance": {
+     "dollars": 15.0,
+     "euros": 30.0,
+     "rubles": 30.0
+    },
+    "OwnersName": "William"
+   }
+  },
+  {
+   "name": "Oliver",
+   "cash": {
+    "dollars": 65.3,
+    "euros": 30.0,
+    "rubles": 33.0
+   },
+   "phone": {
+    "phoneNumber": "4870867",
+    "balance": 493.2,
+    "OwnersName": "Oliver"
+   },
+   "creditCard": {
+    "cardNumber": "5734994204056559",
+    "PIN": "2423",
+    "ExpiresDate": "6/25",
+    "CVV": 829,
+    "balance": {
+     "dollars": 743.05,
+     "euros": 26.8,
+     "rubles": 11.3
+    },
+    "OwnersName": "Oliver"
+   }
+  },
+  {
+   "name": "Oliver",
+   "cash": {
+    "dollars": 30.0,
+    "euros": 30.0,
+    "rubles": 35.0
+   },
+   "phone": {
+    "phoneNumber": "8938829",
+    "balance": 950.0,
+    "OwnersName": "Oliver"
+   },
+   "creditCard": {
+    "cardNumber": "3609818753306968",
+    "PIN": "1431",
+    "ExpiresDate": "4/28",
+    "CVV": 728,
+    "balance": {
+     "dollars": 0.0,
+     "euros": 30.0,
+     "rubles": 25.0
+    },
+    "OwnersName": "Oliver"
+   }
+  },
+  {
+   "name": "Noah",
+   "cash": {
+    "dollars": 15.0,
+    "euros": 30.0,
+    "rubles": 30.0
+   },
+   "phone": {
+    "phoneNumber": "1317288",
+    "balance": 771.0,
+    "OwnersName": "Noah"
+   },
+   "creditCard": {
+    "cardNumber": "7784532220928582",
+    "PIN": "4701",
+    "ExpiresDate": "6/27",
+    "CVV": 651,
+    "balance": {
+     "dollars": 15.0,
+     "euros": 30.0,
+     "rubles": 30.0
+    },
+    "OwnersName": "Noah"
+   }
+  },
+  {
+   "name": "Liam",
+   "cash": {
+    "dollars": 15.0,
+    "euros": 30.0,
+    "rubles": 30.0
+   },
+   "phone": {
+    "phoneNumber": "3530376",
+    "balance": 662.0,
+    "OwnersName": "Liam"
+   },
+   "creditCard": {
+    "cardNumber": "7545564426215867",
+    "PIN": "7108",
+    "ExpiresDate": "4/29",
+    "CVV": 257,
+    "balance": {
+     "dollars": 15.0,
+     "euros": 30.0,
+     "rubles": 30.0
+    },
+    "OwnersName": "Liam"
+   }
+  },
+  {
+   "name": "Timofey",
+   "cash": {
+    "dollars": 0.0,
+    "euros": 0.0,
+    "rubles": 0.0
+   },
+   "phone": {
+    "phoneNumber": "6380908",
+    "balance": 20.0,
+    "OwnersName": "Timofey"
+   },
+   "creditCard": {
+    "cardNumber": "9213192324955599",
+    "PIN": "9182",
+    "ExpiresDate": "8/28",
+    "CVV": "319",
+    "balance": {
+     "dollars": 0.0,
+     "euros": 0.0,
+     "rubles": 0.0
+    },
+    "OwnersName": "Timofey"
+   }
+  }
+ ]
+}
