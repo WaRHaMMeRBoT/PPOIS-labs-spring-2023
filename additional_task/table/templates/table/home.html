@@ -1,0 +1,28 @@
+{% extends 'table/base.html' %}
+
+{% block content %}
+    <table class= "student_table">
+        <tr>
+          <th>ФИО студента</th>
+          <th>Курс</th>
+          <th>Группа</th>
+          <th>Общее число работ</th>
+          <th>Кол-во выпол. работ</th>
+          <th>Язык программирования</th>
+          <th>Действие</th>
+        </tr>
+        {% for item in table %}
+            <tr>
+                <td>{{item.student_name}}</td>
+                <td>{{item.student_course}}</td>
+                <td>{{item.student_group}}</td>
+                <td>{{item.student_general_works}}</td>
+                <td>{{item.student_done_works}}</td>
+                <td>{{item.student_programming_lang}}</td>
+                <td><div class="more">
+                    <p class = "link-read-more"><a href="{% url 'delete_line' item.pk%}">Удалить</a></p>
+                </div></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

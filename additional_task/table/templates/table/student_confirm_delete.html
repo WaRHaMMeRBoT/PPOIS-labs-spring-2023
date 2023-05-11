@@ -1,0 +1,14 @@
+{% extends "table/base.html" %}
+{% block content %}
+    <form method="POST" class="modal">
+        <div class="delete-dialog">
+            {% csrf_token %}
+            <h3 class="delete-head">Удаление записи</h3>
+            <h2 class="delete-head">Вы уверены, что хотите удалить эту запись?</h2>
+            <div class="form-group">
+                <button class="post-button" type="submit">Да, хочу удалить</button>
+                <a class="post-button" href="{% url 'home'%}">Отмена</a>
+            </div>
+        <div>
+    </form>
+{% endblock content %}
