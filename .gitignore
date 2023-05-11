@@ -133,3 +133,11 @@ LR3/circle/
 LR3/.DS_Store
 .DS_Store
 LR3/venv
+
+LR4/.idea
+LR4/.DS_Store
+LR4/venv
+LR4/src/__pycache__
+LR4/src/.DS_Store
+LR4/src/models/.DS_Store
+LR4/src/models/__pycache__
