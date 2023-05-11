@@ -1,0 +1,40 @@
+{% extends 'table/base.html' %}
+{% load bootstrap %}
+
+{% block content %}
+<h1 class="add-line">Фильтр студентов</h1>
+
+<div class="filter-form">
+    <form method="GET">
+        {{filter.form|bootstrap}} 
+        <button type="submit" class="post-button">Найти</button>
+    </form>     
+</div>
+<br>
+<table class= "student_table">
+    <tr>
+      <th>ФИО студента</th>
+      <th>Курс</th>
+      <th>Группа</th>
+      <th>Общее число работ</th>
+      <th>Кол-во выпол. работ</th>
+      <th>Язык программирования</th>
+      <th>Действие</th>
+    </tr>
+    {% for item in filter.qs %}
+        <tr>
+            <td>{{item.student_name}}</td>
+            <td>{{item.student_course}}</td>
+            <td>{{item.student_group}}</td>
+            <td>{{item.student_general_works}}</td>
+            <td>{{item.student_done_works}}</td>
+            <td>{{item.student_programming_lang}}</td>
+            <td><div class="more">
+                <p class = "link-read-more"><a href="{% url 'delete_line' item.pk%}">Удалить</a></p>
+            </div></td>
+        </tr>
+    {% endfor %}
+</table>
+
+
+{%endblock%}
