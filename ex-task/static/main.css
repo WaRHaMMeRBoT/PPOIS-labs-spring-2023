@@ -1,0 +1,88 @@
+*{
+    background: #141E30;
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    background: linear-gradient(to right, #243B55, #141E30);
+    margin: 0; 
+    padding: 0;
+}
+.Head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Button{
+    padding: 10px;
+    background: transparent;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.Button:hover
+{
+    background: #182636;
+}
+.Table{
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 2px;
+}
+.Searching{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: transparent;
+}
+#SearchButton{
+    background: transparent;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+th,td:hover{
+    background: #182636;
+}
+th, td{
+    color: lightgrey;
+    background: transparent;
+    padding: 8px;
+}
+.Footer{
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+}
+
+#Name:invalid,#Email:invalid, #PhoneNumber:invalid{
+    background: rgb(107, 0, 0);
+}
+.Input{
+    border: none;
+    background: transparent;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 10px;
+    border-width: 2px;
+    color:white;
+    text-align: center;
+    padding: 5px;
+    min-width: 200px;
+}
+.Input:hover{
+    background: #182636;
+}
+#SearchButton:hover{
+    background: #182636;
+}
+
