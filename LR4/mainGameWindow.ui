@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1158</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Forest Simulator 2.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>appdata/icons/bimer.jpg</normaloff>appdata/icons/bimer.jpg</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 242, 254);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 250, 230);</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="5">
+       <widget class="QPushButton" name="wakeDeadlyWordButton">
+        <property name="baseSize">
+         <size>
+          <width>108</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Пробудить смерточервя</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Смерточервь</string>
+        </property>
+        <property name="shortcut">
+         <string>W</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="periodButton">
+        <property name="baseSize">
+         <size>
+          <width>108</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Сменить временной период</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>appdata/icons/doubleR.png</normaloff>appdata/icons/doubleR.png</iconset>
+        </property>
+        <property name="shortcut">
+         <string>N</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="reduceAutoSpeedButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>108</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Замедлить течение времени (работает при при включенном автоматическом режиме)</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Замедлить</string>
+        </property>
+        <property name="shortcut">
+         <string>&lt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="autoPeriodButton">
+        <property name="baseSize">
+         <size>
+          <width>108</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Режим автоматической смены времени</string>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Авто</string>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string>A</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2" colspan="6">
+       <widget class="QTableWidget" name="worldMapTable">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(247, 255, 238);</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContents</enum>
+        </property>
+        <property name="autoScroll">
+         <bool>false</bool>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::SolidLine</enum>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>false</bool>
+        </property>
+        <row>
+         <property name="text">
+          <string>str</string>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>242</green>
+           <blue>254</blue>
+          </color>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Новая строка</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>col</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignLeading|AlignVCenter</set>
+         </property>
+         <property name="background">
+          <color>
+           <red>255</red>
+           <green>242</green>
+           <blue>254</blue>
+          </color>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Новый столбец</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>sdff</string>
+         </property>
+         <property name="background">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>224</red>
+            <green>224</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>wefsrdvgv</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>ewrfvdgrewdqedscf</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>qdwerfdtgrewdqsaedcfv</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="3">
+       <widget class="QListWidget" name="cellDataListWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(247, 255, 238);</string>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <item>
+         <property name="text">
+          <string>creature</string>
+         </property>
+         <property name="background">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>244</red>
+            <green>224</green>
+            <blue>255</blue>
+           </color>
+          </brush>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QPushButton" name="increaseAutoSpeedButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>108</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Ускорить течение времени (работает при при включенном автоматическом режиме)</string>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Ускорить</string>
+        </property>
+        <property name="shortcut">
+         <string>&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QPushButton" name="appocalipseButton">
+        <property name="baseSize">
+         <size>
+          <width>108</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>Вызвать апокалипсис</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(224, 224, 255);</string>
+        </property>
+        <property name="text">
+         <string>Апокалипсис</string>
+        </property>
+        <property name="shortcut">
+         <string>Del</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftToolBarArea</set>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="newWorldAction"/>
+   <addaction name="separator"/>
+   <addaction name="saveWorldAction"/>
+   <addaction name="separator"/>
+   <addaction name="loadWorldAction"/>
+   <addaction name="separator"/>
+   <addaction name="helpAction"/>
+   <addaction name="separator"/>
+   <addaction name="leaveWorldAction"/>
+   <addaction name="separator"/>
+   <addaction name="exitGameAction"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="newWorldAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>appdata/icons/addIcon.png</normaloff>appdata/icons/addIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Создать новый мир</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="loadWorldAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>appdata/icons/loadIcon.png</normaloff>appdata/icons/loadIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Загрузить мир</string>
+   </property>
+   <property name="toolTip">
+    <string>Загрузить мир F9</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="leaveWorldAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>appdata/icons/exitIcon.png</normaloff>appdata/icons/exitIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Покинуть мир</string>
+   </property>
+  </action>
+  <action name="exitGameAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>appdata/icons/linuxIcon.png</normaloff>appdata/icons/linuxIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Выйти на рабочий стол</string>
+   </property>
+  </action>
+  <action name="saveWorldAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>appdata/icons/saveIcon.png</normaloff>appdata/icons/saveIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить мир</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить мир F5</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="helpAction">
+   <property name="icon">
+    <iconset>
+     <normaloff>appdata/icons/question.png</normaloff>appdata/icons/question.png</iconset>
+   </property>
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+   <property name="toolTip">
+    <string>Помощь F11</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
