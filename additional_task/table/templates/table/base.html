@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'table/css/style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Таблица студентов</title>
+    {% endif %}
+</head>
+<body>
+  {% load cache %}
+  {%cache 3600 head%}
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="collapse">
+            <div class="navbar-nav">
+              <a class="nav-item" href="{% url 'home' %}">Главная</a>
+              <a class="nav-item" href="{% url 'add_student' %}">Добавить запись</a>
+              <a class="nav-item" href="{% url 'filter' %}">Фильтр</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    {%endcache%}
+    <main role="main" class="contain">
+      <div class="main_body">
+        <div class="cont">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+   </main>
+    
+  </td></tr></table>
+</td></tr>
+{% if home %}
+  <nav class = "list-pages">
+    <ul>
+      {% if page_obj.has_other_pages %}
+        {% if page_obj.has_previous %}
+          <li class="page-num">
+            <a href="?page={{ page_obj.previous_page_number }}">&lt;</a>
+          </li>
+        {% endif %}
+        {% for item in paginator.page_range %}
+          {% if page_obj.number == item %}
+            <li class = "page-num-selected">{{ item }}</li>
+          {% elif item >= page_obj.number|add:-2 and item <= page_obj.number|add:2 %}
+            <li class = "page-num">
+              <a href = "?page={{ item }}">{{ item }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+          <li class="page-num">
+            <a href="?page={{ page_obj.next_page_number }}">&gt;</a>
+          </li>
+        {% endif %}
+      {% endif %}
+    </ul>
+  </nav>
+{% endif %}
+
+<tr><td valign=top>
+	<div class="footer">
+    <p><a href="{% url 'home' %}">Таблица стдентов</a></p>
+	<p>&copy; 2023 Частичное или полное копирование информации с данного сайта для распространения на других ресурсах, в том числе и бумажных, строго запрещено.</p>
+	</div>
+</td></tr></table>
+
+    
+</body>
+</html>
