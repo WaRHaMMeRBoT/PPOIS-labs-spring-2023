@@ -1,0 +1,24 @@
+[
+    {
+        "1111": {
+            "pin": "1234",
+            "owner": "Max",
+            "balance": 13795,
+            "card_blocked": true
+        }
+    },
+    {
+        "1111": {
+            "pin": "1234",
+            "owner": "Maxim Galuga",
+            "balance": 900
+        }
+    },
+    {
+        "2222": {
+            "pin": "1234",
+            "owner": "Maxim Galuga",
+            "balance": 99500
+        }
+    }
+]
