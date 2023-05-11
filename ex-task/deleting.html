@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Base</title>
+    <link rel="stylesheet" href="/static/deleting.css">
+</head>
+<body>
+    <div class="Body">
+        <div class="DeleteContainer">
+            <h1>Deleting person</h1>
+            <div class="DeleteInputs">
+                <form action="/delete" method="post">
+                <div>
+                    <input class="Input" name="Name" id="Name" type="text" title="Введите ФИО" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" placeholder="Name">
+                    <script>
+                        var input = document.getElementById("Name");
+                        input.addEventListener("keypress", function(event) {
+                        var char = event.which || event.keyCode;
+                        if (/[^\p{L}\s]/u.test(String.fromCharCode(char))) {
+                            event.preventDefault();
+                        }
+                        });
+                    </script>
+                </div>
+                <div>
+                    <input class="Input" name="Email" id="Email" type="email" title="Введите почту" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email">
+                </div>
+                <div>
+                    <input class="Input" name = "PhoneNumber" id="PhoneNumber" type="text" pattern="\+\d{12}" title="Введите номер телефона в формате +XXXXXXXXXXXX" placeholder="Phone number">
+                    <script>
+                        var input = document.getElementById("PhoneNumber");
+                        input.addEventListener("keypress", function(event) {
+                        if (event.keyCode < 48 || event.keyCode > 57) {
+                            if (event.keyCode != 43) {
+                            event.preventDefault();
+                            }
+                        }
+                        });
+                    </script>
+                </div>
+                <div>
+                    <input id="DeleteButton" type="submit" value="Delete">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/main.css">
+    <title>Data Base</title>
+</head>
+<body>
+    <div class="Head">
+        <a href="adding.html" class="Button">Add</a>
+        <a href="deleting.html" class="Button">Delete</a>
+    </div>
+    <div class="Body">
+        <div class="TableDiv">
+            <table class="Table">
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                </tr>
+                {% for user in base %}
+                    <tr>
+                            <td>{{user[0]}}</td>
+                            <td>{{user[2]}}</td>
+                            <td>{{user[1]}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div>
+            <form action="/search" method="post">
+            <div class="Searching">
+                <input class="Input" name="Name" id="Name" type="text" title="Введите ФИО" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" placeholder="Name">
+                <script>
+                    var input = document.getElementById("Name");
+                    input.addEventListener("keypress", function(event) {
+                      var char = event.which || event.keyCode;
+                      if (/[^\p{L}\s]/u.test(String.fromCharCode(char))) {
+                        event.preventDefault();
+                      }
+                    });
+                </script>
+                <input class="Input" name="Email" id="Email" type="email" title="Введите почту" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email">
+                <input class="Input" name="PhoneNumber" id="PhoneNumber" type="text" pattern="\+\d{12}" title="Введите номер телефона в формате +XXXXXXXXXXXX" placeholder="Phone number">
+                <script>
+                    var input = document.getElementById("PhoneNumber");
+                    input.addEventListener("keypress", function(event) {
+                    if (event.keyCode < 48 || event.keyCode > 57) {
+                        if (event.keyCode != 43) {
+                        event.preventDefault();
+                        }
+                    }
+                    });
+                </script>
+            </div>
+            <div>
+                <input id="SearchButton" type="submit" value="Search">
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
