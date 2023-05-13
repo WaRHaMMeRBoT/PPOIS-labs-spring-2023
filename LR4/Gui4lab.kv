@@ -1,0 +1,189 @@
+#:kivy 1.1.0
+WindowManager:
+    # ValidateScreen:
+    #     name:'validate'
+    MenuScreen:
+        name: 'menu'
+    AddMoneyScreen:
+        name: 'add'
+    GetMoneyScreen:
+        name: 'get'
+    DisplayScreen:
+        name: 'display'
+    PayTelephoneScreen:
+        name: 'pay'
+# <ValidateScreen>:
+#     MDBoxLayout:
+#         orientation: 'vertical'
+#         padding: 20
+#         MDLabel:
+#             text: "Чтение карты"
+#             halign: "center"
+#             font_size: 28
+#         MDTextField:
+#             id: pin
+#             hint_text: "Введите Пин код "
+#             max_text_lenght : 4
+#             multiline: False
+#         MDRaisedButton:
+#             text: "Проверка"
+#             pos_hint: {'center_x': .5, 'center_y': .8}
+#             size_hint: .5,.2
+#             on_release: root.validate()
+#             font_size: 20    
+<MenuScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        MDLabel:
+            text: "ATM 2855 Беларусбанк"
+            halign: "center"
+            font_size: 32
+        MDRaisedButton:
+            text:"Cli mode"
+            pos_hint: {'center_x': .5, 'center_y': .97}
+            size_hint: .92,.05
+            on_release: root.cli()
+    MDGridLayout:
+        size_hint: 1.,.8
+        rows: 3
+        cols: 2
+        padding: 50
+        spacing: 20
+        adaptive_height: True    
+        
+        MDRaisedButton:
+            text: "Информация о всех остатках"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .5,.2
+            on_release: root.manager.current = 'display'
+            font_size: 20
+        MDRaisedButton:
+            text: "Положить деньги на счет"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .5,.2
+            on_release: root.manager.current = 'add'
+            font_size: 20
+        MDRaisedButton:
+            text: "Снять деньги со счета"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .5,.2
+            on_release: root.manager.current = 'get'
+            font_size: 20    
+        MDRaisedButton:
+            text: "Оплата телефона"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .5,.2
+            on_release: root.manager.current = 'pay'
+            font_size: 20
+              
+<AddMoneyScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 180
+        spacing: 20
+
+
+
+
+        MDTextField:
+            id : tel
+            hint_text: "Введите сумму для пополнения"
+            max_text_length: 6
+            multiline:False
+        MDRaisedButton:
+            size_hint: .2,.05
+            pos_hint: {'center_x': .5, 'center_y': .07}
+            text: "Подтвердить"
+            on_release: root.add()
+
+    MDBoxLayout:
+
+        MDRectangleFlatButton:
+            adaptive_size: False
+            size_hint: .1,.1
+            pos_hint: {'center_x': .5, 'center_y': .07}
+            text: "Назад"
+            on_release: root.manager.current = 'menu'       
+<GetMoneyScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 180
+        spacing: 20
+
+
+
+
+        MDTextField:
+            id : tel
+            hint_text: "Введите сумму для снятия"
+            max_text_length: 6
+            multiline:False
+        MDRaisedButton:
+            size_hint: .2,.05
+            pos_hint: {'center_x': .5, 'center_y': .07}
+            text: "Снять"
+            on_release: root.get()
+
+            
+        
+    MDBoxLayout:
+
+        MDRectangleFlatButton:
+            adaptive_size: False
+            size_hint: .1,.1
+            pos_hint: {'center_x': .5, 'center_y': .07}
+            text: "Назад"
+            on_release: root.manager.current = 'menu'    
+
+<DisplayScreen>:
+    
+    MDBoxLayout:
+        
+#        MDRaisedButton:
+#            adaptive_size: False
+#            size_hint: .1,.1
+#            pos_hint: {'center_x': .5, 'center_y': .92}
+#            text: "Обновить"
+#            on_release: root.update()
+       
+    MDBoxLayout:
+       
+        MDRectangleFlatButton:
+            adaptive_size: False
+            size_hint: .1,.1
+            pos_hint: {'center_x': .5, 'center_y': .07}
+            text: "Назад"
+            on_release: root.manager.current = 'menu'    
+    
+<PayTelephoneScreen>:
+    MDBoxLayout:    
+        orientation: 'vertical'
+        padding: 180
+        spacing: 20
+       
+                
+        MDTextField:
+            hint_text: "Введите номер телефона(37529*******)"
+            max_text_length: 12
+            multiline: False
+            
+        MDTextField:
+            id : tel
+            hint_text: "Введите сумму для пополнения"
+            max_text_length: 6
+            multiline:False        
+        MDRaisedButton:
+            size_hint: .2,.05
+            pos_hint: {'center_x': .5, 'center_y': .07}
+            text: "Оплатить"
+            on_release: root.pay_tel()
+    
+    MDBoxLayout:
+        MDRectangleFlatButton:
+            adaptive_size: False
+            size_hint: .1,.1
+            pos_hint: {'center_x': .5, 'center_y': .07}
+            text: "Назад"
+            on_release: root.manager.current = 'menu'    
+
