@@ -12,25 +12,7 @@ WindowManager:
         name: 'display'
     PayTelephoneScreen:
         name: 'pay'
-# <ValidateScreen>:
-#     MDBoxLayout:
-#         orientation: 'vertical'
-#         padding: 20
-#         MDLabel:
-#             text: "Чтение карты"
-#             halign: "center"
-#             font_size: 28
-#         MDTextField:
-#             id: pin
-#             hint_text: "Введите Пин код "
-#             max_text_lenght : 4
-#             multiline: False
-#         MDRaisedButton:
-#             text: "Проверка"
-#             pos_hint: {'center_x': .5, 'center_y': .8}
-#             size_hint: .5,.2
-#             on_release: root.validate()
-#             font_size: 20    
+
 <MenuScreen>:
     MDBoxLayout:
         orientation: 'vertical'
@@ -140,13 +122,6 @@ WindowManager:
     
     MDBoxLayout:
         
-#        MDRaisedButton:
-#            adaptive_size: False
-#            size_hint: .1,.1
-#            pos_hint: {'center_x': .5, 'center_y': .92}
-#            text: "Обновить"
-#            on_release: root.update()
-       
     MDBoxLayout:
        
         MDRectangleFlatButton:
