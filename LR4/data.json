@@ -1,0 +1,52 @@
+{
+  "money": 540,
+  "garden_bed_kol": 4,
+  "day": 93,
+  "weather": "hurricane",
+  "tree": [
+    {
+      "ill": false,
+      "pest": false,
+      "life_day": 8,
+      "harvest_day": 2,
+      "type": "apple"
+    },
+    {
+      "ill": false,
+      "pest": false,
+      "life_day": 8,
+      "harvest_day": 2,
+      "type": "peer"
+    }
+  ],
+  "garden_bed": [
+    {
+      "DAY": 76,
+      "WEED": false,
+      "HERB": {
+        "ill": false,
+        "pest": false,
+        "life_day": 0,
+        "harvest_day": 0,
+        "type": "potato",
+        "water": 100,
+        "level_fertilization": 100
+      }
+    },
+    {
+      "DAY": 70,
+      "WEED": false,
+      "HERB": false
+    },
+    {
+      "DAY": 70,
+      "WEED": true,
+      "HERB": false
+    },
+    {
+      "DAY": 66,
+      "WEED": false,
+      "HERB": false
+    }
+  ]
+}
