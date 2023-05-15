@@ -1,0 +1,148 @@
+<MyTextField@MDTextField>:
+    size_hint: 0.5, 0.1
+    input_type: "text"
+
+
+<MyNumberField@MyTextField>:
+    input_type: "number"
+    input_filter: "int"
+    max_text_length: 5
+
+<DialogContent>:
+
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "300dp"
+
+
+<SaveDialogContent>:
+    height: "50dp"
+
+    path: save_path
+
+    MyTextField:
+        id: save_path
+        hint_text: "enter file name"
+
+
+<UploadDialogContent>:
+    height: "50dp"
+
+    path: upload_path
+
+    MyTextField:
+        id: upload_path
+        hint_text: "enter file name"
+
+
+<InputDialogContent>:
+
+    height: "360dp"
+
+    fio: input_fio
+    line_up: input_line_up
+    position: input_position
+    titles: input_titles
+    sport_type: input_sport_type
+    rank: input_rank
+
+
+    MyTextField:
+        id: input_fio
+        hint_text: "Enter FIO"
+
+    MyTextField:
+        id: input_line_up
+        hint_text: "Enter line-up"
+
+    MyTextField:
+        id: input_position
+        hint_text: "Enter position"
+
+    MyNumberField:
+        id: input_titles
+        hint_text: "Enter titles"
+
+    MyTextField:
+        id: input_sport_type
+        hint_text: "Enter sport type"
+
+    MyTextField:
+        id: input_rank
+        hint_text: "Enter rank"
+
+
+<FilterDialogContent>:
+    
+    height: "360dp"
+
+
+    fio: filter_fio
+    line_up: filter_line_up
+    position: filter_position
+    titles: filter_titles
+    sport_type: filter_sport_type
+    rank: filter_rank
+
+
+    MyTextField:
+        id: filter_fio
+        hint_text: "Enter FIO"
+
+    MyTextField:
+        id: filter_line_up
+        hint_text: "Enter Line-Up"
+
+    MyTextField:
+        id: filter_position
+        hint_text: "Enter position"
+
+    MyTextField:
+        id: filter_titles
+        hint_text: "Enter titles"
+
+    MyTextField:
+        id: filter_sport_type
+        hint_text: "Enter sport type"
+
+    MyTextField:
+        id: filter_rank
+        hint_text: "Enter rank"
+
+
+<DeleteDialogContent>:
+    
+    height: "380dp"
+
+    fio: delete_fio
+    line_up: delete_line_up
+    position: delete_position
+    titles: delete_titles
+    sport_type: delete_sport_type
+    rank: delete_rank
+
+
+    MyTextField:
+        id: delete_fio
+        hint_text: "Enter FIO"
+
+    MyTextField:
+        id: delete_line_up
+        hint_text: "Enter line-up"
+
+    MyTextField:
+        id: delete_position
+        hint_text: "Enter position"
+
+    MyTextField:
+        id: delete_titles
+        hint_text: "Enter titles"
+
+    MyTextField:
+        id: delete_sport_type
+        hint_text: "Enter sport type"
+
+    MyTextField:
+        id: delete_rank
+        hint_text: "Enter rank"

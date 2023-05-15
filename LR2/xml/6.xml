@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+  <table>
+    <sportsman>
+      <name>Dylan Kathan</name>
+      <line_up>reserve</line_up>
+      <position>forward</position>
+      <titles>103</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Ha Rutski</name>
+      <line_up>main</line_up>
+      <position>midfielder</position>
+      <titles>27</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Priscilla Feria</name>
+      <line_up>main</line_up>
+      <position>defender</position>
+      <titles>5</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Steve Kolasinski</name>
+      <line_up>reserve</line_up>
+      <position>midfielder</position>
+      <titles>135</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Lauren Thompson</name>
+      <line_up>main</line_up>
+      <position>midfielder</position>
+      <titles>31</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Lester Turner</name>
+      <line_up>reserve</line_up>
+      <position>forward</position>
+      <titles>12</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Cynthia Marx</name>
+      <line_up>reserve</line_up>
+      <position>defender</position>
+      <titles>51</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Mary Noyes</name>
+      <line_up>main</line_up>
+      <position>forward</position>
+      <titles>66</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Heather Torres</name>
+      <line_up>main</line_up>
+      <position>midfielder</position>
+      <titles>59</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Willie Scaife</name>
+      <line_up>main</line_up>
+      <position>forward</position>
+      <titles>50</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Terry Mendez</name>
+      <line_up>main</line_up>
+      <position>forward</position>
+      <titles>101</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Anna Glass</name>
+      <line_up>n/a</line_up>
+      <position>forward</position>
+      <titles>100</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Jimmy Diaz</name>
+      <line_up>n/a</line_up>
+      <position>defender</position>
+      <titles>87</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Gladys Prater</name>
+      <line_up>n/a</line_up>
+      <position>midfielder</position>
+      <titles>38</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Belkis Briggs</name>
+      <line_up>n/a</line_up>
+      <position>goalkeeper</position>
+      <titles>102</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Sonia Bailey</name>
+      <line_up>reserve</line_up>
+      <position>midfielder</position>
+      <titles>44</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Julia Quezada</name>
+      <line_up>reserve</line_up>
+      <position>forward</position>
+      <titles>83</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Jason Jones</name>
+      <line_up>n/a</line_up>
+      <position>goalkeeper</position>
+      <titles>126</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Angela Comer</name>
+      <line_up>main</line_up>
+      <position>forward</position>
+      <titles>11</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Matt Mccormick</name>
+      <line_up>main</line_up>
+      <position>forward</position>
+      <titles>113</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Tameka Read</name>
+      <line_up>n/a</line_up>
+      <position>midfielder</position>
+      <titles>73</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Kiley Gray</name>
+      <line_up>n/a</line_up>
+      <position>goalkeeper</position>
+      <titles>85</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Corazon Davis</name>
+      <line_up>main</line_up>
+      <position>goalkeeper</position>
+      <titles>30</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Lisa May</name>
+      <line_up>reserve</line_up>
+      <position>forward</position>
+      <titles>1</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Leona Davis</name>
+      <line_up>reserve</line_up>
+      <position>goalkeeper</position>
+      <titles>16</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Laura Smith</name>
+      <line_up>reserve</line_up>
+      <position>midfielder</position>
+      <titles>80</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Matthew Kilian</name>
+      <line_up>main</line_up>
+      <position>defender</position>
+      <titles>114</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Brad Warren</name>
+      <line_up>n/a</line_up>
+      <position>goalkeeper</position>
+      <titles>15</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Milagro Gregg</name>
+      <line_up>main</line_up>
+      <position>defender</position>
+      <titles>21</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Juan Lynn</name>
+      <line_up>n/a</line_up>
+      <position>midfielder</position>
+      <titles>40</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Charles Jones</name>
+      <line_up>reserve</line_up>
+      <position>defender</position>
+      <titles>65</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Melinda Hood</name>
+      <line_up>reserve</line_up>
+      <position>midfielder</position>
+      <titles>128</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Philip Leung</name>
+      <line_up>main</line_up>
+      <position>goalkeeper</position>
+      <titles>68</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Jeffrey Blackmon</name>
+      <line_up>main</line_up>
+      <position>midfielder</position>
+      <titles>143</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Jane Ybarra</name>
+      <line_up>main</line_up>
+      <position>goalkeeper</position>
+      <titles>96</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Annette Wyman</name>
+      <line_up>n/a</line_up>
+      <position>midfielder</position>
+      <titles>132</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Connie Cline</name>
+      <line_up>reserve</line_up>
+      <position>goalkeeper</position>
+      <titles>17</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Elaine Smith</name>
+      <line_up>reserve</line_up>
+      <position>defender</position>
+      <titles>101</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Debbie Irwin</name>
+      <line_up>main</line_up>
+      <position>defender</position>
+      <titles>108</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Ericka Bedwell</name>
+      <line_up>n/a</line_up>
+      <position>defender</position>
+      <titles>3</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Ruth Holt</name>
+      <line_up>reserve</line_up>
+      <position>goalkeeper</position>
+      <titles>53</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Marcus Morris</name>
+      <line_up>reserve</line_up>
+      <position>forward</position>
+      <titles>85</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Christopher Pruitt</name>
+      <line_up>n/a</line_up>
+      <position>midfielder</position>
+      <titles>26</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Peter Ford</name>
+      <line_up>main</line_up>
+      <position>forward</position>
+      <titles>137</titles>
+      <sport_type>football</sport_type>
+      <rank>master</rank>
+    </sportsman>
+    <sportsman>
+      <name>Willie Burnside</name>
+      <line_up>n/a</line_up>
+      <position>goalkeeper</position>
+      <titles>2</titles>
+      <sport_type>football</sport_type>
+      <rank>3d</rank>
+    </sportsman>
+    <sportsman>
+      <name>Michael Marchese</name>
+      <line_up>n/a</line_up>
+      <position>defender</position>
+      <titles>39</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+    <sportsman>
+      <name>Rose Brice</name>
+      <line_up>n/a</line_up>
+      <position>midfielder</position>
+      <titles>30</titles>
+      <sport_type>football</sport_type>
+      <rank>CMS</rank>
+    </sportsman>
+    <sportsman>
+      <name>Kenneth Alves</name>
+      <line_up>main</line_up>
+      <position>defender</position>
+      <titles>125</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Don Ortiz</name>
+      <line_up>n/a</line_up>
+      <position>forward</position>
+      <titles>48</titles>
+      <sport_type>football</sport_type>
+      <rank>1st</rank>
+    </sportsman>
+    <sportsman>
+      <name>Nancy Basel</name>
+      <line_up>main</line_up>
+      <position>forward</position>
+      <titles>49</titles>
+      <sport_type>football</sport_type>
+      <rank>2nd</rank>
+    </sportsman>
+  </table>
