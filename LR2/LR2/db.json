@@ -1,0 +1,213 @@
+{
+    "students": [
+        {
+            "id": 12170004,
+            "name": "John Wright",
+            "group": 121702,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 2
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 4
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 5
+                }
+            ]
+        },
+        {
+            "id": 12170007,
+            "name": "Diane Carlson",
+            "group": 121702,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170008,
+            "name": "Mary Ruiz",
+            "group": 121702,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170009,
+            "name": "Paul Harris",
+            "group": 121703,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 10
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170050,
+            "name": "Karen Woods",
+            "group": 121704,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 9
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 3
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 7
+                }
+            ]
+        },
+        {
+            "id": 12170051,
+            "name": "Jackie Miller",
+            "group": 121705,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 2
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 4
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 10
+                }
+            ]
+        },
+        {
+            "id": 12170052,
+            "name": "Jasmine Powell",
+            "group": 121706,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 8
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 6
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 1
+                }
+            ]
+        },
+        {
+            "id": 12170053,
+            "name": "Logan Evans",
+            "group": 121707,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 5
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 9
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 1
+                }
+            ]
+        },
+        {
+            "id": 12170054,
+            "name": "Sierra Ramirez",
+            "group": 121708,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 6
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 7
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 2
+                }
+            ]
+        },
+        {
+            "id": 12170055,
+            "name": "Aaron Rodriguez",
+            "group": 121709,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 3
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 5
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 8
+                }
+            ]
+        },
+        {
+            "id": 12170056,
+            "name": "Maggie Lee",
+            "group": 121710,
+            "courses": [
+                {
+                    "name": "PPOIS",
+                    "mark": 4
+                },
+                {
+                    "name": "AOIS",
+                    "mark": 1
+                },
+                {
+                    "name": "MAOIS",
+                    "mark": 10
+                }
+            ]
+        }
+    ]
+}
