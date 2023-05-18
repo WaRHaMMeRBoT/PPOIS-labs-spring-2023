@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form1").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteName",
+                    type: "GET",
+                    data: {query1: $("#search_input1").val(), query2: $("#search_input2").val()},
+                    success: function(result) {
+                        $("#found-values1").empty();
+                        if (result.found_values1.length > 0) {
+                            $.each(result.found_values1, function(i, value) {
+                                $("#found-values1").append("<li>" + value.tournament_name  + "\t" +  value.date +
+                                    "\t" +  value.sport_name  + "\t" +  value.winner_name + "\t" + value.prize_money  +
+                                    "\t" +  value.winner_money + "</li>");
+                            });
+                        } else {
+                            $("#found-values1").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values1").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form2").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteSport",
+                    type: "GET",
+                    data: {query3: $("#search_input3").val(), query4: $("#search_input4").val()},
+                    success: function(result) {
+                        $("#found-values2").empty();
+                        if (result.found_values2.length > 0) {
+                            $.each(result.found_values2, function(i, value) {
+                                $("#found-values2").append("<li>" + value.tournament_name  + "\t" +  value.date +
+                                    "\t" +  value.sport_name  + "\t" +  value.winner_name + "\t" + value.prize_money  +
+                                    "\t" +  value.winner_money + "</li>");
+                            });
+                        } else {
+                            $("#found-values2").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values2").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form3").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteMoney",
+                    type: "GET",
+                    data: {query5: $("#search_input5").val(), query6: $("#search_input6").val(),
+                        query7: $("#search_input7").val(), query8: $("#search_input8").val()},
+                    success: function(result) {
+                        $("#found-values3").empty();
+                        if (result.found_values3.length > 0) {
+                            $.each(result.found_values3, function(i, value) {
+                                $("#found-values3").append("<li>" + value.tournament_name  + "\t" +  value.date +
+                                    "\t" +  value.sport_name  + "\t" +  value.winner_name + "\t" + value.prize_money  +
+                                    "\t" +  value.winner_money + "</li>");
+                            });
+                        } else {
+                            $("#found-values3").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values3").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h2>Список пользователей</h2>
+    <div>
+        <input type="hidden" id="userId" />
+        <p>
+            Название турнира:<br/>
+            <input id="tournamentName" />
+        </p>
+        <p>
+            Дата:<br />
+            <input id="Date" />
+        </p>
+        <p>
+            Спорт:<br />
+            <input id="sportName" />
+        </p>
+        <p>
+            Победитель:<br />
+            <input id="winnerName" />
+        </p>
+        <p>
+            Общие призовые:<br />
+            <input id="prizeMoney" type="number" />
+        </p>
+
+        <p>
+            <button id="saveBtn">Сохранить</button>
+        </p>
+        <button onclick="window.location.href='/new-page?value=1'" >Удаление по названию и дате</button>
+        <button onclick="window.location.href='/new-page?value=2'" >Удаление по виду спорта и имени победителя</button>
+        <button onclick="window.location.href='/new-page?value=3'" >Удаление по призовым</button>
+    </div>
+    <table id="myTable">
+        <thead><th>Название турнира</th> <th>Дата</th><th>Спорт</th><th>Победитель</th><th>Общие призовые</th><th>Призовые победителю</th></thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <h1>Поиск по названию и дате</h1>
+        <form id="search-form1">
+            <label>Название турнира</label>
+            <div>
+                <input id="search_input1" type="text" name="quere1" value="">
+            </div>
+            <label>Дата</label>
+            <div>
+                <input id="search_input2" type="text" name="quere2" value="">
+            </div>
+            <button type="submit" id="deleteBtn1">Найти</button>
+        </form>
+        <ul id="found-values1"></ul>
+
+    <h1>Поиск по виду спорта и имени победителя</h1>
+        <form id="search-form2">
+            <label>Название спорта</label>
+            <div>
+                <input id="search_input3" type="text" name="quere3" value="">
+            </div>
+            <label>Имя победителя</label>
+            <div>
+                <input id="search_input4" type="text" name="quere4" value="">
+            </div>
+            <button type="submit" id="deleteBtn2">Найти</button>
+        </form>
+        <ul id="found-values2"></ul>
+    <h1>Поиск по призовым</h1>
+        <form id="search-form3">
+            <label>Общие призовые </label>
+            <div>
+                <label>Верхний предел</label>
+                <input id="search_input5" type="number" name="quere5" value="0">
+            </div>
+            <div>
+                <label>Нижний предел&nbsp;</label>
+                <input id="search_input6" type="number" name="quere6" value="0">
+            </div>
+            <label>Призовые победителю</label>
+            <div>
+                <label>Верхний предел</label>
+                <input id="search_input7" type="number" name="quere7" value="0" >
+            </div>
+            <div>
+                <label>Нижний предел&nbsp;</label>
+                <input id="search_input8" type="number" name="quere8" value="0">
+            </div>
+            <button type="submit" id="deleteBtn3">Удалить</button>
+        </form>
+        <ul id="found-values3"></ul>
+    <script>
+        async function createUser(tournamentName, Date, sportName, winnerName, prizeMoney) {
+
+            const response = await fetch("/api/tournaments", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    tournament_name : tournamentName,
+                    date : Date,
+                    sport_name : sportName,
+                    winner_name : winnerName,
+                    prize_money : parseInt(prizeMoney, 10)
+                })
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+                document.querySelector("tbody").append(row(user));
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        function reset() {
+            document.getElementById("tournamentName").value =
+            document.getElementById("Date").value =
+            document.getElementById("sportName").value =
+            document.getElementById("winnerName").value =
+            document.getElementById("prizeMoney").value = "";
+        }
+
+        document.getElementById("saveBtn").addEventListener("click", async () => {
+            const tournament_name = document.getElementById("tournamentName").value;
+            const date = document.getElementById("Date").value;
+            const sport_name = document.getElementById("sportName").value;
+            const winner_name = document.getElementById("winnerName").value;
+            const prize_money = document.getElementById("prizeMoney").value;
+            await createUser(tournament_name, date, sport_name, winner_name, prize_money);
+            reset();
+
+        });
+        async function getUsers() {
+            const response = await fetch("/api/tournaments", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const users = await response.json();
+                const rows = document.querySelector("tbody");
+                users.forEach(user => rows.append(row(user)));
+            }
+        }
+        function row(user) {
+
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", user.id);
+
+            const tournament_nameTd = document.createElement("td");
+            tournament_nameTd.append(user.tournament_name);
+            tr.append(tournament_nameTd);
+
+            const dateTd = document.createElement("td");
+            dateTd.append(user.date);
+            tr.append(dateTd);
+
+            const sport_nameTd = document.createElement("td");
+            sport_nameTd.append(user.sport_name);
+            tr.append(sport_nameTd);
+
+            const winner_nameTd = document.createElement("td");
+            winner_nameTd.append(user.winner_name);
+            tr.append(winner_nameTd);
+
+            const prize_moneyTd = document.createElement("td");
+            prize_moneyTd.append(user.prize_money);
+            tr.append(prize_moneyTd);
+
+            const winner_moneyTd = document.createElement("td");
+            winner_moneyTd.append(user.winner_money);
+            tr.append(winner_moneyTd);
+
+            return tr;
+        }
+        getUsers();
+    </script>
+</body>
+</html>
