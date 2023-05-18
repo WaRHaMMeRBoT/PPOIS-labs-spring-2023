@@ -1,0 +1,11 @@
+9
+1
+Wolf,Glory,100,10,1.0,0|0,Female;Tree,Oak,1.1,1,0|0;Tree,Oak,3.1,11,0|0;Wolf,Lycan,890,11,3.3000000000000003,0|0,Male;Bison,Offspring of Balto and Glory,40,1,0.44000000000000006,0|0,Female;Bison,Offspring of Lycan and Glory,40,1,0.44000000000000006,0|0,Male
+Deer,Wild_Deer,90,11,1.1,0|1,Male;Deer,Wild_Deer,90,11,1.1,0|1,Male;Deer,Wild_Deer,90,11,1.1,0|1,Male;Deer,Wild_Deer,90,11,1.1,0|1,Male;Grass,Wild_Grass,1.1,1,0|1;Grass,Wild_Grass,1.1,1,0|1
+Grass,Wild_Grass,1.1,1,0|2;Deer,Wild_Deer,100,10,1.0,0|2,Female;Deer,Wild_Deer,100,10,1.0,0|2,Female
+;Bison,Offspring of Wild_Deer and Wild_Deer,40,1,0.44000000000000006,0|2,Male;Bison,Offspring of Wild_Deer and Wild_Deer,40,1,0.44000000000000006,0|2,FemaleGrass,Wild_Grass,1.1,1,1|0;Grass,Wild_Grass,1.1,1,1|0;Grass,Wild_Grass,1.1,1,1|0;Grass,Wild_Grass,1.1,1,1|0
+Grass,Wild_Grass,1.1,1,1|1;Grass,Wild_Grass,1.1,1,1|1;Grass,Wild_Grass,1.1,1,1|1;Grass,Wild_Grass,1.1,1,1|1
+Grass,Wild_Grass,1.1,1,1|2;Grass,Wild_Grass,1.1,1,1|2;Grass,Wild_Grass,1.1,1,1|2;Grass,Wild_Grass,1.1,1,1|2
+Grass,Wild_Grass,1.1,1,2|0;Mouse,Angel,100,0,0.1,2|0,Female
+;Bison,Offspring of Gerry and Angel,40,1,0.44000000000000006,2|0,FemaleGrass,Wild_Grass,1.1,1,2|1;Bison,Zubr_Female,100,0,2.0,2|1,Female
+;Bison,Offspring of Zubr and Zubr_Female,40,1,0.44000000000000006,2|1,MaleGrass,Wild_Grass,1.1,1,2|2;Owl,Hogwards_femail,100,0,0.5,2|2,Female;Bison,Offspring of Hogwards_mail and Hogwards_femail,40,1,0.44000000000000006,2|2,Male
