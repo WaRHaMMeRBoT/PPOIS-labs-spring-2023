@@ -1,0 +1,77 @@
+{
+    "accounts": [
+        {
+            "id": 0,
+            "login": "test",
+            "password": "test",
+            "balance": 300
+        },
+        {
+            "id": 1,
+            "login": "alex",
+            "password": "alex",
+            "balance": 250
+        },
+        {
+            "id": 2,
+            "login": "qwerty",
+            "password": "qwerty",
+            "balance": 100
+        },
+        {
+            "id": 3,
+            "login": "tmp",
+            "password": "tmp",
+            "balance": 0
+        }
+    ],
+    "cards": [
+        {
+            "number": "00000001",
+            "cvv": "089",
+            "date": "4/2028",
+            "pin": "1234",
+            "account_id": 0
+        },
+        {
+            "number": "00000002",
+            "cvv": "892",
+            "date": "4/2028",
+            "pin": "1234",
+            "account_id": 0
+        },
+        {
+            "number": "00000003",
+            "cvv": "220",
+            "date": "4/2028",
+            "pin": "0000",
+            "account_id": 1
+        },
+        {
+            "number": "00000004",
+            "cvv": "217",
+            "date": "4/2028",
+            "pin": "1111",
+            "account_id": 2
+        },
+        {
+            "number": "00000005",
+            "cvv": "510",
+            "date": "4/2028",
+            "pin": "1111",
+            "account_id": 3
+        }
+    ],
+    "repo": 3150,
+    "card_id_tf": 6,
+    "account_id_tf": 4,
+    "atm-state": {
+        "inserted": false,
+        "card.py-number": null,
+        "access": false
+    },
+    "bank-state": {
+        "logged": false,
+        "account-id": null
+    }
+}
