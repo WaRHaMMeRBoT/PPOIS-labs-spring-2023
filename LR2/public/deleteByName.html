@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form1").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteName",
+                    type: "GET",
+                    data: {query1: $("#search_input1").val(), query2: $("#search_input2").val()},
+                    success: function(result) {
+                        $("#found-values1").empty();
+                        if (result.found_values1.length > 0) {
+                            $.each(result.found_values1, function(i, value) {
+                                $("#found-values").append("<li>" + value.tournament_name  + "\t" +  value.date +
+                                    "\t" +  value.sport_name  + "\t" +  value.winner_name + "\t" + value.prize_money  +
+                                    "\t" +  value.winner_money + "</li>");
+                            });
+                        } else {
+                            $("#found-values1").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values1").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+        <h1>Удаление значений</h1>
+        <form id="search-form1">
+            <label>Название турнира</label>
+            <div>
+                <input id="search_input1" type="text" name="quere1" value="">
+            </div>
+            <label>Дата</label>
+            <div>
+                <input id="search_input2" type="text" name="quere2" value="">
+            </div>
+            <button type="submit" id="deleteBtn">Удалить</button>
+        </form>
+        <ul id="found-values1"></ul>
+        <button onclick="window.location.href='/'">Перейти на главную страницу</button>
+
+        <script>
+        async function deleteTournaments(search_input1, search_input2) {
+
+            const response = await fetch("/api/tournaments", {
+                method: "DELETE",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    value : 1,
+                    tournament_name : search_input1,
+                    date : search_input2
+                })
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+
+            } else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        document.getElementById("deleteBtn").addEventListener("click", async () => {
+            const tournament_name = document.getElementById("search_input1").value;
+            const date = document.getElementById("search_input2").value;
+            await new Promise(r => setTimeout(r, 50));
+            await deleteTournaments(tournament_name, date);
+        });
+        </script>
+
+</body>
+</html>
