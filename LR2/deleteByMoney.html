@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form3").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteMoney",
+                    type: "GET",
+                    data: {query5: $("#search_input1").val(), query6: $("#search_input2").val(),
+                        query7: $("#search_input3").val(), query8: $("#search_input4").val()},
+                    success: function(result) {
+                        $("#found-values3").empty();
+                        if (result.found_values3.length > 0) {
+                            $.each(result.found_values3, function(i, value) {
+                                $("#found-values3").append("<li>" + value.person_name  + "\t" +  value.date +
+                                    "\t" +  value.ill_hours  + "\t" +  value.other_reason + "\t" + value.no_reason  +
+                                    "\t" +  value.all_hours + "</li>");
+                            });
+                        } else {
+                            $("#found-values3").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values3").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body class="deleteByMoney">
+
+        <h1>Удаление значений</h1>
+        <form id="search-form3">
+            <label>Общие призовые </label>
+            <div>
+                <label>Верхний предел</label>
+                <input id="search_input1" type="number" name="quere5" value="0">
+            </div>
+            <div>
+                <label>Нижний предел&nbsp;</label>
+                <input id="search_input2" type="number" name="quere6" value="0">
+            </div>
+            <label>Призовые победителю</label>
+            <div>
+                <label>Верхний предел</label>
+                <input id="search_input3" type="number" name="quere7" value="0" >
+            </div>
+            <div>
+                <label>Нижний предел&nbsp;</label>
+                <input id="search_input4" type="number" name="quere8" value="0">
+            </div>
+            <button type="submit" id="deleteBtn">Удалить</button>
+        </form>
+        <ul id="found-values3"></ul>
+        <button onclick="window.location.href='/'">Перейти на главную страницу</button>
+
+        <script>
+        async function deletePersons(search_input1, search_input2, search_input3, search_input4) {
+
+            const response = await fetch("/api/persons", {
+                method: "DELETE",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    value : 3,
+                    no_reason : {high: search_input1, low: search_input2},
+                    all_hours : {high: search_input3, low: search_input4}
+                })
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+
+            } else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        document.getElementById("deleteBtn").addEventListener("click", async () => {
+            const prize_money1 = document.getElementById("search_input1").value;
+            const prize_money2 = document.getElementById("search_input2").value;
+            const winner_money1 = document.getElementById("search_input3").value;
+            const winner_money2 = document.getElementById("search_input4").value;
+            await new Promise(r => setTimeout(r, 50));
+            await deletePersons(prize_money1, prize_money2, winner_money1, winner_money2);
+        });
+        </script>
+
+</body>
+</html>
