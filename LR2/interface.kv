@@ -1,0 +1,327 @@
+
+#:kivy 2.0.0
+#:import hex kivy.utils.get_color_from_hex
+#:import sp kivy.metrics.sp
+
+<WindowManager>:
+	
+	MenuScreen:
+	SearchScreen:
+		id: search_scr
+	DeleteScreen:
+		id: delete_scr
+	AddScreen:
+		id: add_scr
+	DataScreen:
+		id: data_scr
+
+<DataScreen>:
+	name:'info'
+	canvas.before:
+        Color:
+            rgba: hex("#00ebd8")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+    BoxLayout:
+		orientation:'vertical'
+		padding:10
+		GridLayout:
+			size_hint:1,0.06
+		AnchorLayout:
+			id: data_layout
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:1,0.7
+
+<MenuScreen>:
+	name:'table'
+	canvas.before:
+    	Color:
+            rgba: hex("#00ebd8")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+		spacing: 5
+		orientation:'vertical'
+		MainWidget:
+			
+
+<MyLabel>:
+	
+	canvas.before:
+		Color:
+			rgba: hex("#eb00b0")
+		Rectangle:
+			pos: self.pos
+			size: self.size			
+<MyButton>:
+	background_color: hex( '#ffffff')
+	background_color: hex('#ff00d5')
+
+	
+<MyTextInput>:
+	multiline: False       
+	foreground_color: hex('#ffffff')
+	background_color: hex( '#eb72b0')
+
+<SearchScreen>:
+	name:'search'
+	fio: fio
+	accountNumber : accountNumber
+	address : address
+	mobileTelefon : mobileTelefon
+	homeTelefon : homeTelefon
+	canvas.before:
+        Color:
+            rgba: hex("#00ebd8")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+		GridLayout:
+			size_hint:1,0.06
+			row_force_default: True
+
+		AnchorLayout:
+			id: data_search
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.7,0.3
+		GridLayout:
+			size_hint:1,0.3
+			spacing:0,5
+			padding: 20
+			cols: 1
+			MyLabel:
+				size_hint:.2,.2
+				text:"Filling the gaps..."
+			GridLayout:
+				spacing:5,5
+				
+				padding: 1
+				cols: 2
+				rows: 6
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 40
+				MyLabel:
+					text:"FIO"
+				MyTextInput:
+					id:fio
+				MyLabel:
+					text: "account number"
+				MyTextInput:
+					id:accountNumber	
+				MyLabel:
+					text: "address"
+				MyTextInput:
+					id:address
+				MyLabel:
+					text: "mobile telephon"
+				MyTextInput:
+					id:mobileTelefon
+				MyLabel:
+					text: "home telephon"
+				MyTextInput:
+					id:homeTelefon
+			MyButton:
+				size_hint:.2,.2
+				text:"Search"			
+				on_press: 
+					root.on_press_button_search()
+					app.load_table_search()
+
+				
+			
+<DeleteScreen>:
+	name:'delete'
+	fio: fio
+	accountNumber : accountNumber
+	address : address
+	mobileTelefon : mobileTelefon
+	homeTelefon : homeTelefon
+	canvas.before:
+        Color:
+            rgba: hex("#00ebd8")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+		
+		
+		AnchorLayout:
+			id: data_delete
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.7,0.3
+		GridLayout:
+			spacing:0,5
+			size_hint:1,0.5
+			padding: 20
+			cols: 1
+			MyLabel:
+				size_hint:.2,.1
+				text:"Filling the gaps..."
+			GridLayout:
+				spacing:5,5
+				cols: 2
+				rows: 6
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 20
+				MyLabel:
+					text:"FIO"
+				MyTextInput:
+					id:fio
+				MyLabel:
+					text: "account number"
+				MyTextInput:
+					id:accountNumber	
+				MyLabel:
+					text: "address"
+				MyTextInput:
+					id:address
+				MyLabel:
+					text: "mobile telephon"
+				MyTextInput:
+					id:mobileTelefon
+				MyLabel:
+					text: "home telephon"
+				MyTextInput:
+					id:homeTelefon
+
+			MyButton:
+				size_hint:.2,.15
+				text:"delete"			
+				on_press: 
+					root.on_press_button_delete()
+					app.load_table()	
+					app.change_screen('info')	
+
+
+<AddScreen>:
+	name:'add'
+	fio: fio
+	accountNumber : accountNumber
+	address : address
+	mobileTelefon : mobileTelefon
+	homeTelefon : homeTelefon
+	canvas.before:
+        Color:
+            rgba: hex("#00ebd8")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+		
+		
+		AnchorLayout:
+			id: data_delete
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.7,0.3
+		GridLayout:
+			spacing:0,5
+			size_hint:1,0.5
+			padding: 20
+			cols: 1
+			MyLabel:
+				size_hint:.2,.1
+				text:"Filling the gaps..."
+			GridLayout:
+				spacing:5,5
+				cols: 2
+				rows: 6
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 20
+				MyLabel:
+					text:"FIO"
+				MyTextInput:
+					id:fio
+				MyLabel:
+					text: "account number"
+				MyTextInput:
+					id:accountNumber	
+				MyLabel:
+					text: "address"
+				MyTextInput:
+					id:address
+				MyLabel:
+					text: "mobile telephon"
+				MyTextInput:
+					id:mobileTelefon
+				MyLabel:
+					text: "home telephon"
+				MyTextInput:
+					id:homeTelefon
+
+			MyButton:
+				size_hint:.2,.15
+				text:"add"			
+				on_press: 
+					root.on_press_button_add()
+					app.load_table()	
+					app.change_screen('info')	
+
+<ActionBar>:
+	
+    pos_hint: {'top':1}
+    ActionView:
+		canvas.before:
+			Color:
+				rgba: hex("#eb00b0")
+			Rectangle:
+				pos: self.pos
+				size: self.size	
+        use_separator: True
+        ActionPrevious:
+            title: 'Action Bar'
+            with_previous: False
+        
+        ActionButton:
+            text: 'Show'
+            on_release: 
+				app.load_table()
+				app.change_screen('info')
+        ActionButton:
+            text: 'Search'
+			on_press: 
+				app.change_screen('search')
+				
+        ActionButton:
+            text: 'Delete'
+			on_press: 
+				app.change_screen('delete')
+				
+        ActionButton:
+            text: 'Add'
+            on_press: 
+				app.change_screen('add')
+
+<MainWidget>	
+	id:main
+	GridLayout:
+		spacing:0,5
+		padding: 20
+		cols: 1
+	MyButton:
+		size_hint:.3,.2
+		pos_hint:{'center_x':.5,'center_y':.5}
+		text:"Start"	
+		on_press:		
+			app.load_table()
+			app.change_screen('info')
+			
+
