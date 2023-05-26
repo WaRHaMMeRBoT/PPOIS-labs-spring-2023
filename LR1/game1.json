@@ -1,0 +1,1217 @@
+[
+	{
+		"deadly_worm_sleep_interval": 5,
+		"deadly_worm_sleep_counter": 5,
+		"ocean_horizontal_length": 7,
+		"ocean_vertical_length": 7
+	},
+	{
+		"seaweed_id_counter": 20,
+		"sedge_id_counter": 10,
+		"urut_id_counter": 10,
+		"carp_id_counter": 12,
+		"perch_id_counter": 6,
+		"beluga_id_counter": 12,
+		"shark_id_counter": 6
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed1",
+		"type": "seaweed",
+		"position": [
+			0,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed5",
+		"type": "seaweed",
+		"position": [
+			0,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed10",
+		"type": "seaweed",
+		"position": [
+			0,
+			0
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.1666666666666667,
+		"damage": 116.66666666666667,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "female_carp_9",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			0,
+			0
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.8,
+		"damage": 240.0,
+		"age": 0,
+		"hp": 350,
+		"nutritional_value": 600,
+		"food_energy": 200,
+		"id": "female_perch_2",
+		"sterile_period": 4,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "perch",
+		"position": [
+			0,
+			0
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 0.9714285714285714,
+		"damage": 340.0,
+		"age": 0,
+		"hp": 300,
+		"nutritional_value": 600,
+		"food_energy": 300,
+		"id": "male_shark_2",
+		"sterile_period": 8,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "shark",
+		"position": [
+			0,
+			1
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.0518518518518518,
+		"damage": 368.14814814814815,
+		"age": 0,
+		"hp": 300,
+		"nutritional_value": 600,
+		"food_energy": 300,
+		"id": "female_shark_1",
+		"sterile_period": 8,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "shark",
+		"position": [
+			0,
+			2
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.0,
+		"damage": 100.0,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "female_carp_7",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			0,
+			3
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.025,
+		"damage": 102.49999999999999,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "male_carp_0",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			0,
+			4
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 1.06,
+		"id": "urut5",
+		"type": "urut",
+		"position": [
+			0,
+			5
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.9666666666666667,
+		"damage": 96.66666666666667,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "female_carp_2",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			1,
+			0
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.8,
+		"damage": 160.0,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_8",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			1,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed17",
+		"type": "seaweed",
+		"position": [
+			1,
+			1
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 0.8952380952380953,
+		"damage": 179.04761904761907,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "male_beluga_4",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			1,
+			1
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 0.92,
+		"id": "urut9",
+		"type": "urut",
+		"position": [
+			1,
+			2
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.0153846153846153,
+		"damage": 304.6153846153846,
+		"age": 0,
+		"hp": 350,
+		"nutritional_value": 600,
+		"food_energy": 200,
+		"id": "male_perch_4",
+		"sterile_period": 4,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "perch",
+		"position": [
+			1,
+			2
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.7777777777777778,
+		"damage": 155.55555555555557,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_2",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			1,
+			3
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 0.8,
+		"id": "sedge6",
+		"type": "sedge",
+		"position": [
+			1,
+			4
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 1.0,
+		"id": "urut7",
+		"type": "urut",
+		"position": [
+			1,
+			4
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.1238095238095238,
+		"damage": 224.76190476190476,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "male_beluga_0",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			1,
+			4
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed6",
+		"type": "seaweed",
+		"position": [
+			1,
+			5
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 0.8857142857142857,
+		"damage": 310.0,
+		"age": 0,
+		"hp": 300,
+		"nutritional_value": 600,
+		"food_energy": 300,
+		"id": "male_shark_3",
+		"sterile_period": 8,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "shark",
+		"position": [
+			1,
+			5
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.8666666666666667,
+		"damage": 86.66666666666667,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "female_carp_5",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			1,
+			6
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.8444444444444444,
+		"damage": 295.55555555555554,
+		"age": 0,
+		"hp": 300,
+		"nutritional_value": 600,
+		"food_energy": 300,
+		"id": "female_shark_0",
+		"sterile_period": 8,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "shark",
+		"position": [
+			2,
+			0
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.0666666666666667,
+		"damage": 213.33333333333334,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_6",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			2,
+			3
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 1.2,
+		"id": "sedge1",
+		"type": "sedge",
+		"position": [
+			2,
+			5
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.1238095238095238,
+		"damage": 337.14285714285717,
+		"age": 0,
+		"hp": 350,
+		"nutritional_value": 600,
+		"food_energy": 200,
+		"id": "female_perch_1",
+		"sterile_period": 4,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "perch",
+		"position": [
+			2,
+			5
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.1333333333333333,
+		"damage": 113.33333333333333,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "female_carp_8",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			2,
+			6
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 1.16,
+		"id": "sedge9",
+		"type": "sedge",
+		"position": [
+			3,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 1.16,
+		"id": "sedge0",
+		"type": "sedge",
+		"position": [
+			3,
+			1
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.9111111111111111,
+		"damage": 182.22222222222223,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_3",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			3,
+			1
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed7",
+		"type": "seaweed",
+		"position": [
+			3,
+			3
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed19",
+		"type": "seaweed",
+		"position": [
+			3,
+			4
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.1285714285714286,
+		"damage": 395.0,
+		"age": 0,
+		"hp": 300,
+		"nutritional_value": 600,
+		"food_energy": 300,
+		"id": "male_shark_5",
+		"sterile_period": 8,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "shark",
+		"position": [
+			3,
+			4
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed11",
+		"type": "seaweed",
+		"position": [
+			3,
+			6
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed12",
+		"type": "seaweed",
+		"position": [
+			3,
+			6
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 0.92,
+		"id": "urut6",
+		"type": "urut",
+		"position": [
+			3,
+			6
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 1.06,
+		"id": "urut8",
+		"type": "urut",
+		"position": [
+			3,
+			6
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 1.12,
+		"id": "sedge4",
+		"type": "sedge",
+		"position": [
+			4,
+			0
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.8666666666666667,
+		"damage": 173.33333333333334,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_5",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			4,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed16",
+		"type": "seaweed",
+		"position": [
+			4,
+			1
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.0666666666666667,
+		"damage": 213.33333333333334,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_9",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			4,
+			1
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed3",
+		"type": "seaweed",
+		"position": [
+			4,
+			2
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 0.8,
+		"id": "urut2",
+		"type": "urut",
+		"position": [
+			4,
+			2
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.1238095238095238,
+		"damage": 337.14285714285717,
+		"age": 0,
+		"hp": 350,
+		"nutritional_value": 600,
+		"food_energy": 200,
+		"id": "female_perch_5",
+		"sterile_period": 4,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "perch",
+		"position": [
+			4,
+			2
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.8666666666666667,
+		"damage": 173.33333333333334,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_1",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			4,
+			2
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed4",
+		"type": "seaweed",
+		"position": [
+			4,
+			3
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.1428571428571428,
+		"damage": 228.57142857142856,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "male_beluga_7",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			4,
+			3
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed13",
+		"type": "seaweed",
+		"position": [
+			4,
+			4
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 0.925,
+		"damage": 92.5,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "male_carp_6",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			4,
+			4
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 0.9,
+		"damage": 315.0,
+		"age": 0,
+		"hp": 300,
+		"nutritional_value": 600,
+		"food_energy": 300,
+		"id": "male_shark_4",
+		"sterile_period": 8,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "shark",
+		"position": [
+			4,
+			4
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed18",
+		"type": "seaweed",
+		"position": [
+			4,
+			5
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 1.2,
+		"id": "sedge8",
+		"type": "sedge",
+		"position": [
+			4,
+			5
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.9333333333333333,
+		"damage": 93.33333333333333,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "female_carp_3",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			4,
+			5
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.125,
+		"damage": 112.5,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "male_carp_4",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			4,
+			5
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.1538461538461537,
+		"damage": 346.15384615384613,
+		"age": 0,
+		"hp": 350,
+		"nutritional_value": 600,
+		"food_energy": 200,
+		"id": "male_perch_3",
+		"sterile_period": 4,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "perch",
+		"position": [
+			4,
+			5
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 1.0,
+		"id": "urut0",
+		"type": "urut",
+		"position": [
+			5,
+			0
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.0615384615384615,
+		"damage": 318.46153846153845,
+		"age": 0,
+		"hp": 350,
+		"nutritional_value": 600,
+		"food_energy": 200,
+		"id": "male_perch_0",
+		"sterile_period": 4,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "perch",
+		"position": [
+			5,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed9",
+		"type": "seaweed",
+		"position": [
+			5,
+			1
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 0.8666666666666667,
+		"damage": 173.33333333333334,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_11",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			5,
+			1
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed15",
+		"type": "seaweed",
+		"position": [
+			5,
+			2
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 0.96,
+		"id": "sedge7",
+		"type": "sedge",
+		"position": [
+			5,
+			3
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.0888888888888888,
+		"damage": 217.77777777777777,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 200,
+		"food_energy": 200,
+		"id": "female_beluga_10",
+		"sterile_period": 3,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "beluga",
+		"position": [
+			5,
+			3
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed2",
+		"type": "seaweed",
+		"position": [
+			5,
+			6
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 1.075,
+		"damage": 107.5,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "male_carp_11",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			5,
+			6
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed0",
+		"type": "seaweed",
+		"position": [
+			6,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 0.88,
+		"id": "sedge5",
+		"type": "sedge",
+		"position": [
+			6,
+			0
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed14",
+		"type": "seaweed",
+		"position": [
+			6,
+			1
+		]
+	},
+	{
+		"age": 0,
+		"hp": 5,
+		"nutritional_value": 30,
+		"power_coefficient": 1.0,
+		"id": "seaweed8",
+		"type": "seaweed",
+		"position": [
+			6,
+			2
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 0.84,
+		"id": "urut1",
+		"type": "urut",
+		"position": [
+			6,
+			3
+		]
+	},
+	{
+		"gender": "male",
+		"power_coefficient": 0.925,
+		"damage": 92.5,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "male_carp_10",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			6,
+			3
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 0.92,
+		"id": "sedge2",
+		"type": "sedge",
+		"position": [
+			6,
+			5
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 50,
+		"power_coefficient": 0.96,
+		"id": "sedge3",
+		"type": "sedge",
+		"position": [
+			6,
+			5
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 0.82,
+		"id": "urut3",
+		"type": "urut",
+		"position": [
+			6,
+			5
+		]
+	},
+	{
+		"gender": "female",
+		"power_coefficient": 1.0,
+		"damage": 100.0,
+		"age": 0,
+		"hp": 200,
+		"nutritional_value": 250,
+		"food_energy": 150,
+		"id": "female_carp_1",
+		"sterile_period": 5,
+		"parents": [
+			"Selitsky",
+			"Selitsky"
+		],
+		"type": "carp",
+		"position": [
+			6,
+			5
+		]
+	},
+	{
+		"age": 0,
+		"hp": 10,
+		"nutritional_value": 100,
+		"power_coefficient": 1.06,
+		"id": "urut4",
+		"type": "urut",
+		"position": [
+			6,
+			6
+		]
+	}
+]
