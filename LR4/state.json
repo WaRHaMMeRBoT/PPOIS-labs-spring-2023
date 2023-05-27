@@ -1,0 +1,49 @@
+{
+    "weather": {
+        "_is_sunny": true
+    },
+    "fields": [
+        {
+            "field_pk": 0,
+            "weed": false,
+            "tree": false,
+            "seed": true,
+            "plant": "PearSeed",
+            "health": 83,
+            "hydration_level": 85,
+            "age": 1,
+            "pests_damage": 17,
+            "illness_damage": 10
+        },
+        {
+            "field_pk": 1,
+            "weed": false,
+            "tree": false,
+            "seed": false,
+            "plant": "Tomato",
+            "health": 91,
+            "hydration_level": 85,
+            "age": 1,
+            "pests_damage": 19,
+            "illness_damage": 0
+        },
+        {
+            "field_pk": 2,
+            "weed": true,
+            "tree": false,
+            "seed": false
+        },
+        {
+            "field_pk": 3,
+            "weed": false,
+            "tree": false,
+            "seed": true,
+            "plant": "PearSeed",
+            "health": 83,
+            "hydration_level": 85,
+            "age": 1,
+            "pests_damage": 17,
+            "illness_damage": 10
+        }
+    ]
+}
