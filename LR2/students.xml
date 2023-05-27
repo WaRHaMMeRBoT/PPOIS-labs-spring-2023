@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<students>
+	<student id="0">
+		<name>Барышева Анна Игоревна</name>
+		<group>120604</group>
+		<ill_hours>4</ill_hours>
+		<other_reason>2</other_reason>
+		<no_reason>0</no_reason>
+		<all_hours>6</all_hours>
+	</student>
+	<student id="1">
+		<name>Шпадарук Егор Сергеевич</name>
+		<group>120603</group>
+		<ill_hours>12</ill_hours>
+		<other_reason>20</other_reason>
+		<no_reason>0</no_reason>
+		<all_hours>32</all_hours>
+	</student>
+	<student id="2">
+		<name>Нафольский Станислав Валерьевич</name>
+		<group>120602</group>
+		<ill_hours>0</ill_hours>
+		<other_reason>0</other_reason>
+		<no_reason>0</no_reason>
+		<all_hours>0</all_hours>
+	</student>
+	<student id="3">
+		<name>Резникова Ирина Владимировна</name>
+		<group>162901</group>
+		<ill_hours>0</ill_hours>
+		<other_reason>0</other_reason>
+		<no_reason>4</no_reason>
+		<all_hours>4</all_hours>
+	</student>
+	<student id="4">
+		<name>Кривецкий Алексей Эдуардович</name>
+		<group>121702</group>
+		<ill_hours>36</ill_hours>
+		<other_reason>0</other_reason>
+		<no_reason>0</no_reason>
+		<all_hours>36</all_hours>
+	</student>
+	<student id="5">
+		<name>Валерьев Иван Михайлович</name>
+		<group>121701</group>
+		<ill_hours>0</ill_hours>
+		<other_reason>0</other_reason>
+		<no_reason>0</no_reason>
+		<all_hours>0</all_hours>
+	</student>
+</students>
