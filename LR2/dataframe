@@ -1,0 +1,57 @@
+product_name,manufacturers_name,manufacturer_unp,quantity_in_stock,stock_address
+iPhone 13, Apple Inc., 174946420,100, 123 Main St.
+Galaxy S21, Samsung Electronics, 194001621,250, 456 Oak Ave.
+AirPods Pro, Apple Inc., 174946420,75, 789 Elm St.
+ThinkPad X1 Carbon, Lenovo Group, 193705121,30, 101 Maple St.
+Xbox Series X, Microsoft Corporation, 194179583,50, 222 Cedar St.
+PlayStation 5, Sony Corporation, 192000317,65, 333 Pine St.
+Kindle Paperwhite, Amazon.com Inc., 176783862,150, 444 Spruce St.
+PowerShot G5 X Mark II, Canon Inc., 209607128,20, 555 Walnut St.
+Bose QuietComfort 35 II, Bose Corporation, 202020202,45, 666 Cherry St.
+Fitbit Charge 5, Fitbit Inc.,206679607,90, 777 Birch St.
+Nikon D850, Nikon Corporation,200005027,15, 888 Maple St.
+Surface Laptop 4, Microsoft Corporation, 194179583,40, 999 Pine St.
+HomePod mini, Apple Inc.,174946420,50, 1010 Oak St.
+Galaxy Tab S7, Samsung Electronics, 194001621,25, 1111 Cedar St.
+Pixel 6, Google LLC,194295541,80, 1212 Spruce St.
+MacBook Pro, Apple Inc.,174946420,35, 1313 Walnut St.
+Alienware m15 R5, Dell Technologies Inc., 201679624,10, 1414 Cherry St.
+Oculus Quest 2, Meta Platforms Inc., 175922304,55, 1515 Birch St.
+Echo Dot (4th Gen), Amazon.com Inc., 176783862,120, 1616 Maple St.
+Surface Pro 8, Microsoft Corporation, 194179583,30, 1717 Pine St.
+iPad Pro, Apple Inc.,174946420,55, 1818 Oak St.
+Galaxy Watch 4, Samsung Electronics, 194001621,40, 1919 Cedar St.
+Nest Thermostat, Google LLC, 194295541,85, 2020 Spruce St.
+MacBook Air, Apple Inc., 174946420,25, 2121 Walnut St.
+Yoga 9i, Lenovo Group, 193705121,15, 2222 Maple St.
+PlayStation VR, Sony Corporation, 192000317,20, 2323 Pine St.
+AirTag, Apple Inc., 174946420,60, 2424 Oak St.
+G Pro X Wireless Headset, Logitech International S.A., 169940393,30, 2525 Cedar St.
+Flex 5G, Lenovo Group, 193705121,5, 2626 Spruce St.
+Bose SoundLink Revolve, Bose Corporation, 202020202,25, 2727 Walnut St.
+Galaxy Buds Pro, Samsung Electronics, 194001621,50, 2828 Maple St.
+Surface Go 3, Microsoft Corporation, 194179583,20, 2929 Pine St.
+Phantom 4 Pro V2.0, DJI Technology Co. Ltd., 91310000750950683B,10, 3030 Oak St.
+Spectre x360, HP Inc., 251011380,15, 3131 Cedar St.
+AmazonBasics Microwave, Amazon.com Inc., 176783862,30, 3232 Spruce St.
+iPhone SE, Apple Inc., 174946420,70, 3333 Walnut St.
+Flip 3, Samsung Electronics, 194001621,40, 3434 Maple St.
+Inspiron 16 Plus, Dell Technologies Inc., 201679624,20, 3535 Pine St.
+DJI OM 5, DJI Technology Co. Ltd., 91310000750950683B,25, 3636 Oak St.
+Fire HD 10, Amazon.com Inc., 176783862,45, 3737 Cedar St.
+Yoga AIO 7, Lenovo Group, 193705121,10, 3838 Spruce St.
+AirPods, Apple Inc., 174946420,80, 3939 Walnut St.
+JBL Flip 5, Harman International Industries Inc., 200755127,35, 4040 Maple St.
+Versa 3, Fitbit Inc., 206679607,60, 4141 Pine St.
+Galaxy A52 5G, Samsung Electronics, 194001621,30, 4242 Oak St.
+Ultimate Ears WONDERBOOM 2, Logitech International S.A., 169940393,20, 4343 Cedar St.
+Dell G5 15, Dell Technologies Inc., 201679624,10, 4444 Spruce St.
+HomePod, Apple Inc., 174946420,30, 4545 Walnut St.
+Arlo Pro 4, Arlo Technologies Inc., 812348811,15, 4646 Maple St.
+Arlo Pro 1203, Arlo Technologies Inc., 812348811,15, 4646 Maple St.
+Arlo Pro 1204, Arlo Technologies Inc., 812348811,15, 4646 Maple St.
+Arlo Pro 1205, Arlo Technologies Inc., 812348811,15, 4646 Maple St.
+Arlo Pro 1206, Arlo Technologies Inc., 812348811,15, 4646 Maple St.
+Arlo Pro 1207, Arlo Technologies Inc., 812348811,15, 4646 Maple St.
+Arlo Pro 1208, Arlo Technologies Inc., 812348811,15, 4646 Maple St.
+yty,teraeye,1299999,12,Нет адреса
