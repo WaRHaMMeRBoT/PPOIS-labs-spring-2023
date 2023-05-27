@@ -1,0 +1,15 @@
+{
+	"ball_acceleration_interval": 6,
+	"level_records": {
+		"Player2": 102,
+		"Soshka": 67,
+		"Player1": 66,
+		"Valera345": 76
+	},
+	"bricks_location_params": {
+		"row_count": 2,
+		"brick_width": 60,
+		"offset_y": 80
+	},
+	"max_effects_amount": 20
+}
