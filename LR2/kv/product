@@ -1,0 +1,47 @@
+ScreenManager:
+    AppMainScreen:
+        name: 'main'
+    FindProductScreen:
+        name: 'find_product'
+    AllProductScreen:
+        name: 'all_product'
+    AddProductScreen:
+        name: 'add_product'
+    DeleteProductScreen:
+        name: 'delete_product'
+
+<AppMainScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        spacing: 15
+        padding: 100
+        MDRectangleFlatButton:
+            text: "Список всех товаров"
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            size_hint: .35,.4
+            on_release: root.manager.current = 'all_product'
+            font_size: 32
+        MDRectangleFlatButton:
+            text: "Добавления товара"
+            size_hint: .35,.4
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_release: root.manager.current = 'add_product'
+            font_size: 32
+        MDRectangleFlatButton:
+            text: "Поиск товара по параметрам"
+            size_hint: .35,.4
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_release: root.manager.current = 'find_product'
+            font_size: 32
+        MDRectangleFlatButton:
+            text: "Удаление товара"
+            size_hint: .35,.4
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_release: root.manager.current = 'delete_product'
+            font_size: 32
+        MDRectangleFlatButton:
+            text: "Выход"
+            size_hint: .35,.4
+            pos_hint: {'center_x': .5, 'center_y': .5}
+            on_release: app.stop()
+            font_size: 32

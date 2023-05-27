@@ -1,0 +1,91 @@
+ScreenManager:
+    AppMainScreen:
+        name: 'main'
+    FindProductScreen:
+        name: 'find_product'
+    AllProductScreen:
+        name: 'all_product'
+    AddProductScreen:
+        name: 'add_product'
+    DeleteProductScreen:
+        name: 'delete_product'
+
+<FindProductScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        MDGridLayout:
+            cols: 5
+            rows: 2
+            padding: 50
+            spacing: 20
+            adaptive_height: True
+            pos_hint_y: 0
+            MDLabel:
+                halign: "center"
+                text: "Имя продукта"
+                pos_hint: .1,1.
+            MDLabel:
+                halign: "center"
+                text: "Название производителя"
+            MDLabel:
+                halign: "center"
+                text: "УНП"
+            MDLabel:
+                halign: "center"
+                text: "Остаток на складе"
+            MDLabel:
+                halign: "center"
+                text: "Адрес склада"
+            MDTextField:
+                id: product_name
+                mode: "rectangle"
+                hint_text: "Имя продукта"
+                max_text_length: 50
+                required: True
+                multiline: False
+                on_text: root.filter()
+
+            MDTextField:
+                id: manufacturers_name
+                mode: "rectangle"
+                max_text_length: 100
+                multiline: False
+                on_text: root.filter()
+            MDTextField:
+                id: manufacturer_unp
+                hint_text: 'УНП'
+                input_filter: "int"
+                on_text: root.filter()
+                pos_hint: {'center_x': .5, 'center_y': .5}
+
+            MDTextField:
+                id: quantity_in_stock
+                mode: "rectangle"
+                hint_text: "Остаток на складе"
+                input_filter: "int"
+                multiline: False
+                on_text: root.filter()
+            MDTextField:
+                id: stock_address
+                mode: "rectangle"
+                hint_text: "Адрес"
+                multiline: False
+                on_text: root.filter()
+        MDLabel:
+            text: 'Отображены все записи'
+            id: records_amount_label
+            pos_hint_y: 0
+            size_hint: 1.,.05
+            pos_hint: {'center_x': 1., 'center_y': .5}
+            font_size: 24
+        MDLabel:
+            text: ''
+            size_hint: 1.,.8
+        MDBoxLayout:
+            MDRectangleFlatButton:
+                adaptive_size: False
+                size_hint: .1,.1
+                pos_hint: {'center_x': .5, 'center_y': .07}
+                text: "Назад"
+                on_release: root.manager.current = 'main'

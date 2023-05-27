@@ -1,0 +1,23 @@
+ScreenManager:
+    AppMainScreen:
+        name: 'main'
+    FindProductScreen:
+        name: 'find_product'
+    AllProductScreen:
+        name: 'all_product'
+    AddProductScreen:
+        name: 'add_product'
+    DeleteProductScreen:
+        name: 'delete_product'
+
+<DeleteProductScreen>:
+    MDBoxLayout:
+        MDBoxLayout:
+            spacing: 10
+            padding: 30
+            MDRectangleFlatButton:
+                adaptive_size: False
+                size_hint: .1,.1
+                pos_hint: {'center_x': 1., 'center_y': .11}
+                text: "Удалить записи"
+                on_release: root.delete()

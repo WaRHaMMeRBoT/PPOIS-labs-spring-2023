@@ -1,0 +1,19 @@
+ScreenManager:
+    AppMainScreen:
+        name: 'main'
+    FindProductScreen:
+        name: 'find_product'
+    AllProductScreen:
+        name: 'all_product'
+    AddProductScreen:
+        name: 'add_product'
+    DeleteProductScreen:
+        name: 'delete_product'
+
+<AllProductScreen>:
+    MDRectangleFlatButton:
+        adaptive_size: False
+        size_hint: .1,.1
+        pos_hint: {'center_x': .5, 'center_y': .07}
+        text: "Назад"
+        on_release: root.manager.current = 'main'
