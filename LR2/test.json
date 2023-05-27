@@ -1,0 +1,12 @@
+{
+    "books": [
+        {
+            "name": "Uspenskay",
+            "author": "Uspenskay",
+            "publishing_house": "SSSR",
+            "number_of_volumes": 2,
+            "total_volumes": 2000,
+            "circulation": 1000
+        }
+    ]
+}
