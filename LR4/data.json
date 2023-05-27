@@ -1,0 +1,14 @@
+{
+  "money": 505,
+  "garden_bed_kol": 1,
+  "day": 2,
+  "weather": "sun",
+  "tree": [],
+  "garden_bed": [
+    {
+      "DAY": 0,
+      "WEED": false,
+      "HERB": false
+    }
+  ]
+}
