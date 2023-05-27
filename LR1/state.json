@@ -1,0 +1,38 @@
+{
+    "weather": {
+        "_is_sunny": false,
+        "_is_rainy": false
+    },
+    "fields": [
+        {
+            "field_pk": 0,
+            "weed": false,
+            "tree": false,
+            "seed": false,
+            "plant": "Potato",
+            "health": 100,
+            "hydration_level": 100,
+            "age": 0,
+            "pests_damage": 0,
+            "illness_damage": 0
+        },
+        {
+            "field_pk": 1,
+            "weed": false,
+            "tree": false,
+            "seed": false,
+            "plant": "Potato",
+            "health": 100,
+            "hydration_level": 100,
+            "age": 0,
+            "pests_damage": 0,
+            "illness_damage": 0
+        },
+        {
+            "field_pk": 2,
+            "weed": true,
+            "tree": false,
+            "seed": false
+        }
+    ]
+}
