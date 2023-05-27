@@ -1,0 +1,109 @@
+{
+	"general_params": {
+		"background_image": "./images/backgrounds/back.jpg",
+		"screen_width": 1000,
+		"screen_height": 700,
+		"frame_rate": 86,
+		"effect_duration": 10,
+		"initial_lives": 4,
+		"background_music_duration": 198,
+		"sounds_effects": {
+			"brick_hit": "./sounds/sound_effects/brick_hit.mp3",
+			"paddle_hit": "./sounds/sound_effects/paddle_hit.mp3",
+			"minus_hp": "./sounds/sound_effects/mistake.mp3",
+			"death": "./sounds/sound_effects/game_over.mp3",
+			"effect_done": "./sounds/sound_effects/bonus.mp3",
+			"level_complete": "./sounds/sound_effects/win.mp3",
+			"bonus_taken": "./sounds/sound_effects/bonus.mp3",
+			"start": "./sounds/sound_effects/start.mp3",
+			"new_record": "./sounds/sound_effects/win.mp3",
+			"win": "./sounds/sound_effects/win.mp3",
+			"background_music": "./sounds/background_music/menu_music.mp3"
+		},
+		"level_open_flags": {
+			"LEVEL 1": true,
+			"LEVEL 2": true,
+			"LEVEL 3": true,
+			"LEVEL 4": true,
+			"LEVEL 5": true,
+			"LEVEL 6": true,
+			"LEVEL 7": true,
+			"LEVEL 8": true,
+			"LEVEL 9": true,
+			"LEVEL 10": true
+		},
+		"help_messages": {
+			"start_message": "Welcome, this area is intended for a better understanding of the game. If something is not clear to you, you can always refer here.",
+			"general_info": "Welcome to Arcanoid!!! \n The goal of the game is to knock out the maximum score by breaking the bricks with a ball that cannot be dropped. \n The ball must be caught with a paddle controlled by the right and left arrows. \n Difficulty increases with each level by increasing the rows and increasing the number of bricks per row, as well as reducing the number of bonuses. \n\t\t Good luck",
+			"bricks_info": "Some bricks have additional properties. By breaking these bricks you get bonuses: blue ones to change the speed, pink ones to change the length of the paddle, red ones add an attempt, yellow ones add multiple points at once."
+		}
+	},
+	"objects_params": {
+		"menu_offset_x": 20,
+		"menu_offset_y": 300,
+		"menu_button_w": 66,
+		"menu_button_h": 36,
+		"menu_button_interval": 14,
+		"button_text_color": [
+			255,
+			255,
+			255
+		],
+		"button_normal_back_color": [
+			153,
+			77,
+			186
+		],
+		"button_hover_back_color": [
+			129,
+			147,
+			239
+		],
+		"button_pressed_back_color": [
+			69,
+			95,
+			229
+		],
+		"brick_width": 50,
+		"brick_height": 20,
+		"brick_color": [
+			181,
+			69,
+			229
+		],
+		"ball_speed": 3,
+		"ball_radius": 8,
+		"ball_color": [
+			227,
+			168,
+			105
+		],
+		"ball_acceleration": 1,
+		"paddle_width": 80,
+		"paddle_height": 10,
+		"paddle_color": [
+			240,
+			248,
+			255
+		],
+		"paddle_speed": 7
+	},
+	"info_panels_params": {
+		"status_offset_y": 5,
+		"text_color": [
+			0,
+			0,
+			0
+		],
+		"lives_right_offset": 20,
+		"lives_offset": 880,
+		"score_offset": 20
+	},
+	"text_message_params": {
+		"font_name": "Comic",
+		"font_size": 25,
+		"death_message_duration": 5,
+		"start_message_duration": 2,
+		"win_message_duration": 4
+	}
+}

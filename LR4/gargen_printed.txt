@@ -1,0 +1,12 @@
+Weather: Sunny
+1.
+	Plant: PearSeed                             
+	Age: 1                                       	Health: 83                                   	Hydration level: 85                          	Illness damage: 10                           	Pests damage: 17                            
+2.
+	Plant: Tomato                               
+	Age: 1                                       	Health: 91                                   	Hydration level: 85                          	Illness damage: 0                            	Pests damage: 19                            
+3.
+	Plant: Weed                                  	Health: 100                                 
+4.
+	Plant: PearSeed                             
+	Age: 1                                       	Health: 83                                   	Hydration level: 85                          	Illness damage: 10                           	Pests damage: 17                            

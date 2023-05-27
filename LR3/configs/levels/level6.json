@@ -1,0 +1,12 @@
+{
+	"ball_acceleration_interval": 10,
+	"level_records": {
+		"Player2": 85
+	},
+	"bricks_location_params": {
+		"row_count": 7,
+		"brick_width": 50,
+		"offset_y": 55
+	},
+	"max_effects_amount": 30
+}

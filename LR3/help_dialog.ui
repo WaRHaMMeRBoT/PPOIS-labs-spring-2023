@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>helpDialog</class>
+ <widget class="QDialog" name="helpDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Help dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(187, 141, 239);</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(187, 141, 239);</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textArea">
+   <property name="geometry">
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(187, 141, 239);</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="helpComboBox">
+   <property name="geometry">
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(187, 141, 239);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>What do you want to know?</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>General information about the game</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bricks particular qualities</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
