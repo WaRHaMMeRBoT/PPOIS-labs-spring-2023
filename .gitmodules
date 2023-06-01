@@ -10,3 +10,4 @@
 [submodule "LR4"]
 	path = LR4
 	url = https://github.com/qaip/garden-manager
+	branch = 94ff19a8e169f3c3a36dd9c048b7139fbcec93b5
