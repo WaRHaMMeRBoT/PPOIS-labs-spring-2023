@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/mainstyle.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/input.css"/>
+    <title>ArcticMonkeysSongs</title>
+
+    <link rel="shortcut icon" href="../static/pics/ArcticMonkeys.png" type="image/png">
+
+</head>
+<body id="page">
+
+<header>
+	<div class="overlay">
+        <img id="pic" src="../static/pics/ArcticMonkeys.png" alt=""/>
+        <h1>Listen Arctic Monkeys Songs</h1>
+    </div>
+</header>
+
+<form method="POST">
+    <div id="find">
+            <div class="page">
+                <div class="field field_v1">
+                    <label for="first-name" class="ha-screen-reader" >First name</label>
+
+                        <input id="first-name" class="field__input" name="song" placeholder="e.g. Brianstorm" onclick="playSong('{{path}}')">
+
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">Monkeys' song</span>
+                    </span>
+                </div>
+            </div>
+    </div>
+</form>
+
+
+</body>
+</html>
