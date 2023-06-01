@@ -7,3 +7,6 @@
 [submodule "LR3"]
 	path = LR3
 	url = https://github.com/qaip/arkanoid
+[submodule "LR4"]
+	path = LR4
+	url = https://github.com/qaip/garden-manager
