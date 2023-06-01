@@ -4,3 +4,10 @@
 [submodule "LR2"]
 	path = LR2
 	url = https://github.com/qaip/mno-clients
+[submodule "LR3"]
+	path = LR3
+	url = https://github.com/qaip/arkanoid
+[submodule "LR4"]
+	path = LR4
+	url = https://github.com/qaip/garden-manager
+	branch = 94ff19a8e169f3c3a36dd9c048b7139fbcec93b5
