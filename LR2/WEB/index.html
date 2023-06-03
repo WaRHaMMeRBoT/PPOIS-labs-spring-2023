@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form1").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteName",
+                    type: "GET",
+                    data: {query1: $("#search_input1").val(), query2: $("#search_input2").val()},
+                    success: function(result) {
+                        $("#found-values1").empty();
+                        if (result.found_values1.length > 0) {
+                            $.each(result.found_values1, function(i, value) {
+                                $("#found-values1").append("<li>" + value.person_name  + "\t" +  value.date +
+                                    "\t" +  value.ill_hours  + "\t" +  value.other_reason + "\t" + value.no_reason  +
+                                    "\t" +  value.all_hours + "</li>");
+                            });
+                        } else {
+                            $("#found-values1").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values1").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form2").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteSport",
+                    type: "GET",
+                    data: {query3: $("#search_input3").val(), query4: $("#search_input4").val()},
+                    success: function(result) {
+                        $("#found-values2").empty();
+                        if (result.found_values2.length > 0) {
+                            $.each(result.found_values2, function(i, value) {
+                                $("#found-values2").append("<li>" + value.person_name  + "\t" +  value.date +
+                                    "\t" +  value.ill_hours  + "\t" +  value.other_reason + "\t" + value.no_reason  +
+                                    "\t" +  value.all_hours + "</li>");
+                            });
+                        } else {
+                            $("#found-values2").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values2").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#search-form3").on("submit", function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: "/deleteMoney",
+                    type: "GET",
+                    data: {query5: $("#search_input5").val(), query6: $("#search_input6").val(),
+                        query7: $("#search_input7").val(), query8: $("#search_input8").val()},
+                    success: function(result) {
+                        $("#found-values3").empty();
+                        if (result.found_values3.length > 0) {
+                            $.each(result.found_values3, function(i, value) {
+                                $("#found-values3").append("<li>" + value.person_name  + "\t" +  value.date +
+                                    "\t" +  value.ill_hours  + "\t" +  value.other_reason + "\t" + value.no_reason  +
+                                    "\t" +  value.all_hours + "</li>");
+                            });
+                        } else {
+                            $("#found-values3").append("<li>Ничего не найдено</li>");
+                        }
+                    },
+                    error: function() {
+                        $("#found-values3").empty().append("<li>Ошибка при выполнении запроса</li>");
+                    }
+                });
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h2>Список студентов</h2>
+    <div>
+        <input type="hidden" id="userId" />
+        <p>
+            Имя студента:<br/>
+            <input id="personName" />
+        </p>
+        <p>
+            Группа:<br />
+            <input id="Date" />
+        </p>
+        <p>
+            Часы по болезни:<br />
+            <input id="sportName" />
+        </p>
+        <p>
+            Часы по заявлению:<br />
+            <input id="winnerName" />
+        </p>
+        <p>
+            Часы по неуважительной:<br />
+            <input id="prizeMoney" type="number" />
+        </p>
+
+        <p>
+            <button id="saveBtn">Сохранить</button>
+        </p>
+        <button onclick="window.location.href='/new-page?value=1'" >Удаление по имени и группе</button>
+        <button onclick="window.location.href='/new-page?value=2'" >Удаление по уважительным часам</button>
+        <button onclick="window.location.href='/new-page?value=3'" >Удаление по всем часам</button>
+    </div>
+    <table id="myTable">
+        <thead><th>Имя студента</th> <th>Группа</th><th>Часы по болезни</th><th>Часы по уважительной причине</th><th>Часы по неуважительной причине</th><th>Все часы</th></thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <h1>Поиск по имени и группе</h1>
+        <form id="search-form1">
+            <label>Имя студента</label>
+            <div>
+                <input id="search_input1" type="text" name="quere1" value="">
+            </div>
+            <label>Группа</label>
+            <div>
+                <input id="search_input2" type="text" name="quere2" value="">
+            </div>
+            <button type="submit" id="deleteBtn1">Найти</button>
+        </form>
+        <ul id="found-values1"></ul>
+
+    <h1>Поиск по уважительной причине</h1>
+        <form id="search-form2">
+            <label>Часов по болезни</label>
+            <div>
+                <input id="search_input3" type="text" name="quere3" value="">
+            </div>
+            <label>Часов по заявлению</label>
+            <div>
+                <input id="search_input4" type="text" name="quere4" value="">
+            </div>
+            <button type="submit" id="deleteBtn2">Найти</button>
+        </form>
+        <ul id="found-values2"></ul>
+    <h1>Поиск по всем часам</h1>
+        <form id="search-form3">
+            <label>Неуважительные часы </label>
+            <div>
+                <label>Верхний предел</label>
+                <input id="search_input5" type="number" name="quere5" value="0">
+            </div>
+            <div>
+                <label>Нижний предел&nbsp;</label>
+                <input id="search_input6" type="number" name="quere6" value="0">
+            </div>
+            <label>Все часы</label>
+            <div>
+                <label>Верхний предел</label>
+                <input id="search_input7" type="number" name="quere7" value="0" >
+            </div>
+            <div>
+                <label>Нижний предел&nbsp;</label>
+                <input id="search_input8" type="number" name="quere8" value="0">
+            </div>
+            <button type="submit" id="deleteBtn3">Найти</button>
+        </form>
+        <ul id="found-values3"></ul>
+    <script>
+        async function createUser(personName, Date, sportName, winnerName, prizeMoney) {
+
+            const response = await fetch("/api/students", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    person_name : personName,
+                    date : Date,
+                    ill_hours : sportName,
+                    other_reason : winnerName,
+                    no_reason : parseInt(prizeMoney, 10)
+                })
+            });
+            if (response.ok === true) {
+                const user = await response.json();
+                document.querySelector("tbody").append(row(user));
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        function reset() {
+            document.getElementById("personName").value =
+            document.getElementById("Date").value =
+            document.getElementById("sportName").value =
+            document.getElementById("winnerName").value =
+            document.getElementById("prizeMoney").value = "";
+        }
+
+        document.getElementById("saveBtn").addEventListener("click", async () => {
+            const person_name = document.getElementById("personName").value;
+            const date = document.getElementById("Date").value;
+            const ill_hours = document.getElementById("sportName").value;
+            const other_reason = document.getElementById("winnerName").value;
+            const no_reason = document.getElementById("prizeMoney").value;
+            await createUser(person_name, date, ill_hours, other_reason, no_reason);
+            reset();
+
+        });
+        async function getUsers() {
+            const response = await fetch("/api/students", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const users = await response.json();
+                const rows = document.querySelector("tbody");
+                users.forEach(user => rows.append(row(user)));
+            }
+        }
+        function row(user) {
+
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", user.id);
+
+            const person_nameTd = document.createElement("td");
+            person_nameTd.append(user.person_name);
+            tr.append(person_nameTd);
+
+            const dateTd = document.createElement("td");
+            dateTd.append(user.date);
+            tr.append(dateTd);
+
+            const sport_nameTd = document.createElement("td");
+            sport_nameTd.append(user.ill_hours);
+            tr.append(sport_nameTd);
+
+            const winner_nameTd = document.createElement("td");
+            winner_nameTd.append(user.other_reason);
+            tr.append(winner_nameTd);
+
+            const prize_moneyTd = document.createElement("td");
+            prize_moneyTd.append(user.no_reason);
+            tr.append(prize_moneyTd);
+
+            const winner_moneyTd = document.createElement("td");
+            winner_moneyTd.append(user.all_hours);
+            tr.append(winner_moneyTd);
+
+            return tr;
+        }
+        getUsers();
+    </script>
+</body>
+</html>
