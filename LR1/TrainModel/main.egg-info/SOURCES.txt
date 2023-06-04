@@ -1,0 +1,13 @@
+setup.py
+Main.egg-info/PKG-INFO
+Main.egg-info/SOURCES.txt
+Main.egg-info/dependency_links.txt
+Main.egg-info/entry_points.txt
+Main.egg-info/requires.txt
+Main.egg-info/top_level.txt
+main.egg-info/PKG-INFO
+main.egg-info/SOURCES.txt
+main.egg-info/dependency_links.txt
+main.egg-info/entry_points.txt
+main.egg-info/requires.txt
+main.egg-info/top_level.txt
