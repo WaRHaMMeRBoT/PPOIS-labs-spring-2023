@@ -1,0 +1,213 @@
+<?xml version="1.0" ?>
+  <table>
+    <stock>
+      <name>Teddy</name>
+      <date_of_birth>31.5.2017</date_of_birth>
+      <date_of_last_visit>24.0.2023</date_of_last_visit>
+      <veterinary_name>William Curry</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Kenny</name>
+      <date_of_birth>4.4.2015</date_of_birth>
+      <date_of_last_visit>8.5.2023</date_of_last_visit>
+      <veterinary_name>John Anderson</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Alex</name>
+      <date_of_birth>30.9.2020</date_of_birth>
+      <date_of_last_visit>21.4.2023</date_of_last_visit>
+      <veterinary_name>Kelly Queja</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Kenny</name>
+      <date_of_birth>8.11.2021</date_of_birth>
+      <date_of_last_visit>16.0.2023</date_of_last_visit>
+      <veterinary_name>Mary Schwipps</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Alonso</name>
+      <date_of_birth>12.0.2020</date_of_birth>
+      <date_of_last_visit>31.5.2023</date_of_last_visit>
+      <veterinary_name>Lois Herbert</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Teddy</name>
+      <date_of_birth>7.11.2021</date_of_birth>
+      <date_of_last_visit>20.2.2023</date_of_last_visit>
+      <veterinary_name>Joaquin Ross</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Max</name>
+      <date_of_birth>20.0.2018</date_of_birth>
+      <date_of_last_visit>20.1.2023</date_of_last_visit>
+      <veterinary_name>Leonard Seyler</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Barsik</name>
+      <date_of_birth>19.4.2017</date_of_birth>
+      <date_of_last_visit>28.0.2023</date_of_last_visit>
+      <veterinary_name>Donald Czelusniak</veterinary_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Milo</name>
+      <date_of_birth>9.6.2016</date_of_birth>
+      <date_of_last_visit>1.8.2023</date_of_last_visit>
+      <veterinary_name>Harold Lipka</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Milo</name>
+      <date_of_birth>17.8.2021</date_of_birth>
+      <date_of_last_visit>17.7.2023</date_of_last_visit>
+      <veterinary_name>Constance Jones</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Cooper</name>
+      <date_of_birth>16.11.2018</date_of_birth>
+      <date_of_last_visit>4.7.2023</date_of_last_visit>
+      <veterinary_name>Mary Wilson</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Barsik</name>
+      <date_of_birth>31.8.2021</date_of_birth>
+      <date_of_last_visit>22.9.2023</date_of_last_visit>
+      <veterinary_name>Daniel Christian</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Sanya</name>
+      <date_of_birth>8.3.2015</date_of_birth>
+      <date_of_last_visit>22.9.2023</date_of_last_visit>
+      <veterinary_name>Brian Hill</veterinary_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Alonso</name>
+      <date_of_birth>22.4.2018</date_of_birth>
+      <date_of_last_visit>28.10.2023</date_of_last_visit>
+      <veterinary_name>James Powell</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Marry</name>
+      <date_of_birth>31.9.2015</date_of_birth>
+      <date_of_last_visit>7.4.2023</date_of_last_visit>
+      <veterinary_name>Gilbert Ortega</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Teddy</name>
+      <date_of_birth>21.4.2017</date_of_birth>
+      <date_of_last_visit>15.4.2023</date_of_last_visit>
+      <veterinary_name>Samatha Desousa</veterinary_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Jerry</name>
+      <date_of_birth>24.2.2017</date_of_birth>
+      <date_of_last_visit>9.12.2023</date_of_last_visit>
+      <veterinary_name>Charles Stanton</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Teddy</name>
+      <date_of_birth>14.2.2019</date_of_birth>
+      <date_of_last_visit>31.12.2023</date_of_last_visit>
+      <veterinary_name>Pierre Luevano</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Molly</name>
+      <date_of_birth>11.6.2015</date_of_birth>
+      <date_of_last_visit>3.3.2023</date_of_last_visit>
+      <veterinary_name>Bill Parker</veterinary_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Milo</name>
+      <date_of_birth>31.2.2020</date_of_birth>
+      <date_of_last_visit>24.5.2023</date_of_last_visit>
+      <veterinary_name>Martha Hardy</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Max</name>
+      <date_of_birth>2.7.2021</date_of_birth>
+      <date_of_last_visit>5.10.2023</date_of_last_visit>
+      <veterinary_name>Alice Montes</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>2.5.2020</date_of_birth>
+      <date_of_last_visit>17.8.2023</date_of_last_visit>
+      <veterinary_name>Huey Byington</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Milo</name>
+      <date_of_birth>9.1.2016</date_of_birth>
+      <date_of_last_visit>28.0.2023</date_of_last_visit>
+      <veterinary_name>Warren Stokes</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>20.5.2021</date_of_birth>
+      <date_of_last_visit>19.11.2023</date_of_last_visit>
+      <veterinary_name>Amanda Mangino</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>30.5.2020</date_of_birth>
+      <date_of_last_visit>4.8.2023</date_of_last_visit>
+      <veterinary_name>Becky Ogata</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Milo</name>
+      <date_of_birth>21.2.2016</date_of_birth>
+      <date_of_last_visit>11.1.2023</date_of_last_visit>
+      <veterinary_name>Bonnie Lipps</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>10.8.2019</date_of_birth>
+      <date_of_last_visit>8.10.2023</date_of_last_visit>
+      <veterinary_name>Michele Stella</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Cooper</name>
+      <date_of_birth>20.10.2021</date_of_birth>
+      <date_of_last_visit>12.1.2023</date_of_last_visit>
+      <veterinary_name>Diana Odell</veterinary_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Barsik</name>
+      <date_of_birth>15.12.2015</date_of_birth>
+      <date_of_last_visit>1.1.2023</date_of_last_visit>
+      <veterinary_name>Elmer Clark</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Barsik</name>
+      <date_of_birth>15.9.2020</date_of_birth>
+      <date_of_last_visit>6.5.2023</date_of_last_visit>
+      <veterinary_name>Jonas Fife</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+  </table>

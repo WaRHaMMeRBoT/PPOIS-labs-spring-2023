@@ -1,0 +1,129 @@
+#:kivy 2.0.0
+<MyTextField@MDTextField>:
+    size_hint: 0.4, 0.1
+    input_type: "text"
+
+
+<MyNumberField@MyTextField>:
+    input_type: "text"
+
+
+<DialogContent>:
+
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "300dp"
+
+
+<SaveDialogContent>:
+    height: "50dp"
+
+    path: save_path
+
+    MyTextField:
+        id: save_path
+        hint_text: "enter file name"
+
+
+<UploadDialogContent>:
+    height: "50dp"
+
+    path: upload_path
+
+    MyTextField:
+        id: upload_path
+        hint_text: "enter file name"
+
+
+<InputDialogContent>:
+
+    height: "460dp"
+    name: input_name
+    date_of_birth: input_date_of_birth
+    date_of_last_visit: input_date_of_last_visit
+    veterinary_name: input_veterinary_name
+    diagnosis: input_diagnosis
+
+    MyTextField:
+        id: input_name
+        hint_text: "Enter name"
+
+    MyTextField:
+        id: input_date_of_birth
+        hint_text: "Enter date of birth"
+
+    MyTextField:
+        id: input_date_of_last_visit
+        hint_text: "Enter enter date of last visit"
+
+    MyNumberField:
+        id: input_veterinary_name
+        hint_text: "Enter name of veterinary"
+
+    MyTextField:
+        id: input_diagnosis
+        hint_text: "Enter diagnosis"
+
+
+
+<FilterDialogContent>:
+    
+    height: "460dp"
+    name: filter_name
+    date_of_birth: filter_date_of_birth
+    date_of_last_visit: filter_date_of_last_visit
+    veterinary_name: filter_veterinary_name
+    diagnosis: filter_diagnosis
+
+    MyTextField:
+        id: filter_name
+        hint_text: "Enter name"
+
+    MyTextField:
+        id: filter_date_of_birth
+        hint_text: "Enter date of birth"
+
+    MyTextField:
+        id: filter_date_of_last_visit
+        hint_text: "Enter enter date of last visit"
+
+    MyNumberField:
+        id: filter_veterinary_name
+        hint_text: "Enter name of veterinary"
+
+    MyTextField:
+        id: filter_diagnosis
+        hint_text: "Enter diagnosis"
+
+<DeleteDialogContent>:
+    
+    height: "460dp"
+    name: delete_name
+    date_of_birth: delete_date_of_birth
+    date_of_last_visit: delete_date_of_last_visit
+    veterinary_name: delete_veterinary_name
+    diagnosis: delete_diagnosis
+
+    MyTextField:
+        id: delete_name
+        hint_text: "Enter name"
+
+    MyTextField:
+        id: delete_date_of_birth
+        hint_text: "Enter date of birth"
+
+    MyTextField:
+        id: delete_date_of_last_visit
+        hint_text: "Enter enter date of last visit"
+
+    MyNumberField:
+        id: delete_veterinary_name
+        hint_text: "Enter name of veterinary"
+
+    MyTextField:
+        id: delete_diagnosis
+        hint_text: "Enter diagnosis"
+
+
+
