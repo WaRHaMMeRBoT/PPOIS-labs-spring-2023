@@ -1,0 +1,56 @@
+<data>
+   <item>
+       <students_name>Ivan</students_name>
+       <fathers_name>Dmitry</fathers_name>
+       <fathers_salary>1000</fathers_salary>
+       <mothers_name>Svetlana</mothers_name>
+       <mothers_salary>2000</mothers_salary>
+       <brothers>3</brothers>
+       <sisters>0</sisters>
+   </item>
+    <item>
+       <students_name>Sherlock</students_name>
+       <fathers_name>Jhon</fathers_name>
+       <fathers_salary>10000</fathers_salary>
+       <mothers_name>Mery</mothers_name>
+       <mothers_salary>12000</mothers_salary>
+       <brothers>1</brothers>
+       <sisters>1</sisters>
+   </item>
+    <item>
+       <students_name>Peter</students_name>
+       <fathers_name>Tony</fathers_name>
+       <fathers_salary>100000</fathers_salary>
+       <mothers_name>Ginevra</mothers_name>
+       <mothers_salary>100000</mothers_salary>
+       <brothers>1</brothers>
+       <sisters>0</sisters>
+   </item>
+    <item>
+       <students_name>Andrew</students_name>
+       <fathers_name>Ben</fathers_name>
+       <fathers_salary>1500</fathers_salary>
+       <mothers_name>May</mothers_name>
+       <mothers_salary>1500</mothers_salary>
+       <brothers>0</brothers>
+       <sisters>0</sisters>
+   </item>
+    <item>
+       <students_name>Tony</students_name>
+       <fathers_name>Howard</fathers_name>
+       <fathers_salary>10000</fathers_salary>
+       <mothers_name>Maria</mothers_name>
+       <mothers_salary>12000</mothers_salary>
+       <brothers>0</brothers>
+       <sisters>0</sisters>
+   </item>
+    <item>
+       <students_name>Wednesday Addams</students_name>
+       <fathers_name>Gomez Addams</fathers_name>
+       <fathers_salary>10000</fathers_salary>
+       <mothers_name>Morticia Addams</mothers_name>
+       <mothers_salary>12000</mothers_salary>
+       <brothers>2</brothers>
+       <sisters>2</sisters>
+   </item>
+<item><students_name>Tom</students_name><fathers_name>Howard</fathers_name><fathers_salary>4524</fathers_salary><mothers_name>Emily</mothers_name><mothers_salary>6836</mothers_salary><brothers>0</brothers><sisters>0</sisters></item></data>

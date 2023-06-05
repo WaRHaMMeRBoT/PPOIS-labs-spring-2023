@@ -1,0 +1,328 @@
+#:kivy 2.0.0
+#:import hex kivy.utils.get_color_from_hex
+#:import sp kivy.metrics.sp
+
+<WindowManager>:
+	MenuScreen:
+	SearchScreen:
+		id: search_scr
+	DeleteScreen:
+		id: delete_scr
+	DataScreen:
+		id: data_scr
+
+<DataScreen>:
+	name:'info'
+	canvas.before:
+        Color:
+            rgba: hex("#D7FEFF")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+		orientation:'vertical'
+		padding:10
+		GridLayout:
+			size_hint:1,0.3
+			cols: 3
+			row_force_default: True
+			row_default_height: 60
+			row_default_weight: 30
+			MyButton:
+				text: 'Удалить'
+				on_press: app.change_screen('delete')
+			MyButton:
+				text: 'Искать'
+				on_press: app.change_screen('search')
+			MyButton:
+				text: 'Добавить'
+				on_press: app.change_screen('table')
+		AnchorLayout:
+			id: data_layout
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:1,0.7
+
+<MenuScreen>:
+	name:'table'
+	canvas.before:
+        Color:
+            rgba: hex("#D7FEFF")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+		spacing: 6
+		orientation:'vertical'
+		GridLayout:
+		    size_hint: 1,.2
+			cols: 3
+			row_force_default: True
+			row_default_height: 60
+			row_default_weight: 30
+			MyButton:
+				text: 'Поиск'
+				on_press: app.change_screen('search')
+			MyButton:
+				text: 'Удалить'
+				on_press: app.change_screen('delete')
+			MyButton:
+				text: 'Таблица'
+				on_release:
+					app.change_screen('info')
+					app.load_table()
+		MainWidget:
+
+<MyLabel>:
+	rgba: hex("##800000")
+	canvas.before:
+		Color:
+			rgba: hex("##800000")
+		Rectangle:
+			pos: self.pos
+			size: self.size
+<MyButton>:
+	background_color: hex( '#B4DBD4')
+
+<MyTextInput>:
+	multiline: False
+	foreground_color: hex('#D7FEFF')
+	background_color: hex( '#FF5050')
+
+<SearchScreen>:
+	name:'search'
+	students_name : students_name
+	fathers_name: fathers_name
+	fathers_salary: fathers_salary
+	mothers_name: mothers_name
+	mothers_salary: mothers_salary
+	brothers: brothers
+	sisters: sisters
+	canvas.before:
+        Color:
+            rgba: hex("#D7FEFF")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	BoxLayout:
+		cols:1
+		spacing: 6
+		orientation:'vertical'
+		GridLayout:
+			size_hint:1,0.1
+			cols:3
+			row_force_default: True
+			row_default_height: 60
+			row_default_weight: 30
+			MyButton:
+				text: 'Таблица'
+				rgba: hex("#000000")
+				on_release:
+					app.load_table()
+					app.change_screen('info')
+			MyButton:
+				text: 'Добавить'
+				on_press: app.change_screen('table')
+			MyButton:
+				text: 'Удалить'
+				on_press: app.change_screen('delete')
+		AnchorLayout:
+			id: data_search
+			pos_hint:{'center_x':.5,'center_y':.2}
+			size_hint:0.8,0.5
+		GridLayout:
+			size_hint:1,1
+			pos_hint:{'center_x':.5,'center_y':.5}
+			spacing:0,8
+			padding:40
+			cols: 1
+			MyLabel:
+				size_hint:.1,.1
+				text:"Введите информацию"
+				rgba: hex("#000000")
+			GridLayout:
+				spacing:3
+				cols: 2
+				rows: 7
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 20
+				MyLabel:
+					text: "Имя студента"
+				MyTextInput:
+					id:students_name
+				MyLabel:
+					text: "Имя отца"
+				MyTextInput:
+					id:fathers_name
+				MyLabel:
+					text: "Зарплата отца"
+				MyTextInput:
+					id:fathers_salary
+				MyLabel:
+					text: "Имя матери"
+				MyTextInput:
+					id:mothers_name
+				MyLabel:
+					text:"Зарплата матери"
+				MyTextInput:
+					id:mothers_salary
+				MyLabel:
+					text:"Братья"
+				MyTextInput:
+					id:brothers
+				MyLabel:
+    				text:"Сёстры"
+	    		MyTextInput:
+		    		id:sisters
+			MyButton:
+				size_hint:.2,.2
+				text:"Искать"
+				on_press:
+					root.on_press_button_search()
+					app.load_table_search()
+
+<DeleteScreen>:
+	name:'delete'
+	students_name : students_name
+	fathers_name: fathers_name
+	fathers_salary: fathers_salary
+	mothers_name: mothers_name
+	mothers_salary: mothers_salary
+	brothers: brothers
+	sisters: sisters
+	canvas.before:
+        Color:
+            rgba: hex("#D7FEFF")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	BoxLayout:
+		cols:1
+		spacing: 6
+		orientation:'vertical'
+		GridLayout:
+			size_hint:1,0.1
+			cols:3
+			row_force_default: True
+			row_default_height: 60
+			row_default_weight: 30
+			MyButton:
+				text: 'Добавить'
+				on_press: app.change_screen('table')
+			MyButton:
+				text: 'Таблица'
+				on_release:
+					app.change_screen('info')
+					app.load_table()
+			MyButton:
+				text: 'Искать'
+				on_press: app.change_screen('search')
+		AnchorLayout:
+			id: data_search
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.8,0.5
+		GridLayout:
+			size_hint:1,1
+			spacing:0,8
+			padding: 40
+			cols: 1
+			MyLabel:
+				size_hint:.2,.1
+				text:"Введите информацию"
+			GridLayout:
+				spacing:6,6
+				cols: 2
+				rows: 7
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 20
+				MyLabel:
+					text: "Имя студента"
+				MyTextInput:
+					id:students_name
+				MyLabel:
+					text: "Имя отца"
+				MyTextInput:
+					id:fathers_name
+				MyLabel:
+					text: "Зарплата отца"
+				MyTextInput:
+					id:fathers_salary
+				MyLabel:
+					text: "Имя матери"
+				MyTextInput:
+					id:mothers_name
+				MyLabel:
+					text:"Зарплата матери"
+				MyTextInput:
+					id:mothers_salary
+				MyLabel:
+					text:"Братья"
+				MyTextInput:
+					id:brothers
+				MyLabel:
+				    text:"Сёстры"
+			    MyTextInput:
+				    id:sisters
+			MyButton:
+				size_hint:.2,.2
+				text:"Удалить"
+				on_press:
+					root.on_press_button_delete()
+					app.load_table_delete()
+
+<MainWidget>:
+	id:main
+	students_name : students_name
+	fathers_name: fathers_name
+	fathers_salary: fathers_salary
+	mothers_name: mothers_name
+	mothers_salary: mothers_salary
+	brothers: brothers
+	sisters: sisters
+	GridLayout:
+		spacing:1,2.5
+		padding:20
+		cols: 1
+		MyLabel:
+			text:"Введите информацию"
+			size_hint:.2,.1
+		GridLayout:
+			spacing:6,6
+			cols: 2
+			rows: 7
+			row_force_default: True
+			row_default_height: 60
+			row_default_weight: 20
+			MyLabel:
+				text: "Имя студента"
+			MyTextInput:
+				id:students_name
+			MyLabel:
+				text: "Имя отца"
+			MyTextInput:
+				id:fathers_name
+			MyLabel:
+				text: "Зарплата отца"
+			MyTextInput:
+				id:fathers_salary
+			MyLabel:
+				text: "Имя матери"
+			MyTextInput:
+				id:mothers_name
+			MyLabel:
+				text:"Зарплата матери"
+			MyTextInput:
+				id:mothers_salary
+			MyLabel:
+				text:"Братья"
+			MyTextInput:
+				id:brothers
+			MyLabel:
+				text:"Сёстры"
+			MyTextInput:
+				id:sisters
+		MyButton:
+			size_hint:.3,.15
+			text:"Сохранить"
+			on_press: root.on_press_button_add()
