@@ -1,0 +1,22 @@
+StudentsScreenManager:
+    StudentsAppMainScreen:
+        name: 'main'
+    AddStudentScreen:
+        name: 'add_student'
+    AllStudentScreen:
+        name: 'all_student'
+    FindStudentScreen:
+        name: 'find_student'
+    DeleteStudentScreen:
+        name: 'delete_student'
+<DeleteStudentScreen>:
+    MDBoxLayout:
+        MDBoxLayout:
+            spacing: 10
+            padding: 30
+            MDRectangleFlatButton:
+                adaptive_size: False
+                size_hint: .1,.1
+                pos_hint: {'center_x': 1., 'center_y': .11}
+                text: "Удалить записи"
+                on_release: root.delete()
