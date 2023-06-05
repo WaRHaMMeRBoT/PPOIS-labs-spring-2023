@@ -1,0 +1,315 @@
+#:kivy 2.0.0
+#:import hex kivy.utils.get_color_from_hex
+#:import sp kivy.metrics.sp
+
+<WindowManager>:
+	MenuScreen:
+	SearchScreen:
+		id: search_scr
+	DeleteScreen:
+		id: delete_scr
+	DataScreen:
+		id: data_scr
+
+<DataScreen>:
+	name:'info'
+	canvas.before:
+        Color:
+            rgba: hex("#F2F2C2")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+		orientation:'vertical'
+		padding:10
+		GridLayout:
+			size_hint:1,0.3
+			cols: 2
+			row_force_default: True
+			row_default_height: 52
+			row_default_weight: 30
+			MyButton:
+				text: 'Back to delete'
+				on_press: app.change_screen('delete')
+			MyButton:
+				text: 'Back to search'
+				on_press: app.change_screen('search')
+		AnchorLayout:
+			id: data_layout
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:1,0.7
+
+<MenuScreen>:
+	name:'table'
+	canvas.before:
+        Color:
+            rgba: hex("#F2F2C2")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+		spacing: 5
+		orientation:'vertical'
+		GridLayout:
+			cols: 2
+			row_force_default: True
+			row_default_height: 52
+			row_default_weight: 30
+			MyButton:
+				text: 'Back to search'
+				on_press: app.change_screen('search')
+			MyButton:
+				text: 'Back to delete'
+				on_press: app.change_screen('delete')
+		MainWidget:
+
+<MyLabel>:
+	rgba: hex("#9FC9C9")
+	canvas.before:
+		Color:
+			rgba: hex("#9FC9C9")
+		Rectangle:
+			pos: self.pos
+			size: self.size
+<MyButton>:
+	background_color: hex( '#B4DBD4')
+
+<MyTextInput>:
+	multiline: False
+	foreground_color: hex('#F2F2C2')
+	background_color: hex( '#EEE8AE')
+
+<SearchScreen>:
+	name:'search'
+	fathers_name: fathers_name
+	students_name : students_name
+	fathers_salary: fathers_salary
+	mothers_name: mothers_name
+	mothers_salary: mothers_salary
+	number_of_sisters: number_of_sisters
+	number_of_brothers: number_of_brothers
+	canvas.before:
+        Color:
+            rgba: hex("#F2F2C2")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+		GridLayout:
+			size_hint:1,0.2
+			cols:2
+			row_force_default: True
+			row_default_height: 60
+			row_default_weight: 30
+			MyButton:
+				text: 'Back to info'
+				on_release:
+					app.load_table()
+					app.change_screen('info')
+			MyButton:
+				text: 'Back to table'
+				on_press: app.change_screen('table')
+		AnchorLayout:
+			id: data_search
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.7,0.3
+		GridLayout:
+			size_hint:1,0.5
+			spacing:0,5
+			padding: 20
+			cols: 1
+			GridLayout:
+				spacing:5,5
+				cols: 2
+				rows: 8
+				row_force_default: True
+				row_default_height: 52
+				row_default_weight: 20
+				MyLabel:
+					text: "Fathers_name"
+				MyTextInput:
+					id:fathers_name
+					multiline: False
+				MyLabel:
+					text: "Students name"
+				MyTextInput:
+					id:students_name
+					multiline: False
+				MyLabel:
+					text: "Fathers salary"
+				MyTextInput:
+					id:fathers_salary
+					multiline:False
+				MyLabel:
+					text: "Mothers name"
+				MyTextInput:
+					id:mothers_name
+					multiline:False
+				MyLabel:
+					text:"Mothers salary"
+				MyTextInput:
+					id:mothers_salary
+				MyLabel:
+					text:"Number of sisters"
+				MyTextInput:
+					id:number_of_sisters
+				MyLabel:
+					text: "Number of brothers"
+				MyTextInput:
+					id:number_of_brothers
+					multiline:False
+			MyButton:
+				size_hint:.3,.2
+				text:"Search"
+				on_press:
+					root.on_press_button_search()
+					app.load_table_search()
+
+
+<DeleteScreen>:
+	name:'delete'
+	fathers_name: fathers_name
+	students_name : students_name
+	fathers_salary: fathers_salary
+	mothers_name: mothers_name
+	mothers_salary: mothers_salary
+	number_of_sisters: number_of_sisters
+	number_of_brothers: number_of_brothers
+	canvas.before:
+        Color:
+            rgba: hex("#F2F2C2")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+
+		GridLayout:
+			size_hint:1,0.2
+			cols:2
+			row_force_default: True
+			row_default_height: 52
+			row_default_weight: 30
+			MyButton:
+				text: 'Back to table'
+				on_press: app.change_screen('table')
+			MyButton:
+				text: 'Back to info'
+				on_release:
+					app.change_screen('info')
+					app.load_table()
+		AnchorLayout:
+			id: data_delete
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.7,0.3
+		GridLayout:
+			spacing:0,5
+			size_hint:1,0.5
+			padding: 20
+			cols: 1
+			GridLayout:
+				spacing:5,5
+				cols: 2
+				rows: 8
+				row_force_default: True
+				row_default_height: 52
+				row_default_weight: 20
+				MyLabel:
+					text: "Fathers name"
+				MyTextInput:
+					id:fathers_name
+				MyLabel:
+					text: "Students_name "
+				MyTextInput:
+					id:students_name
+				MyLabel:
+					text: "Fathers salary"
+				MyTextInput:
+					id:fathers_salary
+					multiline:False
+				MyLabel:
+					text: "Mothers name"
+				MyTextInput:
+					id:mothers_name
+					multiline:False
+				MyLabel:
+					text:"Mothers salary"
+				MyTextInput:
+					id:mothers_salary
+				MyLabel:
+					text:"Number of sisters"
+				MyTextInput:
+					id:number_of_sisters
+				MyLabel:
+					text: "Number of brothers"
+				MyTextInput:
+					id:number_of_brothers
+					multiline:False
+			MyButton:
+				size_hint:.3,.2
+				text:"Delete"
+				on_press:
+					root.on_press_button_delete()
+					app.load_table_delete()
+
+<MainWidget>:
+	id:main
+	fathers_name: fathers_name
+	students_name : students_name
+	fathers_salary: fathers_salary
+	mothers_name: mothers_name
+	mothers_salary: mothers_salary
+	number_of_sisters: number_of_sisters
+	number_of_brothers: number_of_brothers
+	GridLayout:
+		spacing:0,5
+		padding: 20
+		cols: 1
+		GridLayout:
+			spacing:5,5
+			cols: 2
+			rows: 8
+			row_force_default: True
+			row_default_height: 52
+			row_default_weight: 20
+
+			MyLabel:
+				text: "Fathers name"
+			MyTextInput:
+				id:fathers_name
+			MyLabel:
+				text: "Students name"
+			MyTextInput:
+				id:students_name
+			MyLabel:
+				text: "Fathers salary"
+			MyTextInput:
+				id:fathers_salary
+				multiline:False
+			MyLabel:
+				text: "Mothers name"
+			MyTextInput:
+				id:mothers_name
+				multiline:False
+			MyLabel:
+				text:"Mothers salary"
+			MyTextInput:
+				id:mothers_salary
+			MyLabel:
+				text:"Number of sisters"
+			MyTextInput:
+				id:number_of_sisters
+			MyLabel:
+				text: "Number of brothers"
+			MyTextInput:
+				id:number_of_brothers
+				multiline:False
+		MyButton:
+			size_hint:.3,.2
+			text:"Save"
+			on_press: root.on_press_button_add()

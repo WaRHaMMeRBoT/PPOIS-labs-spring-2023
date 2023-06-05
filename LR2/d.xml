@@ -1,0 +1,47 @@
+<data>
+   <item>
+       <fathers_name>Zaharov Anton Nikolaev</fathers_name>
+       <students_name>Zaharov Ivan Antonovic</students_name>
+       <fathers_salary>3200</fathers_salary>
+       <mothers_name>Zaharova Alexandra Artemovna</mothers_name>
+       <mothers_salary>5000</mothers_salary>
+       <number_of_sisters>3</number_of_sisters>
+       <number_of_brothers>2</number_of_brothers>
+   </item>
+   <item>
+       <fathers_name>Ivanov Ivan Andreevic</fathers_name>
+       <students_name>Ivanov Ivan Ivanovic</students_name>
+       <fathers_salary>7000</fathers_salary>
+       <mothers_name>Ivanova Svetlana Fyodorovna</mothers_name>
+       <mothers_salary>9000</mothers_salary>
+       <number_of_sisters>1</number_of_sisters>
+       <number_of_brothers>0</number_of_brothers>
+   </item>
+   <item>
+       <fathers_name>Cvilev Vladimir Vladimirovic</fathers_name>
+       <students_name>Cvilev Alexander Vladimirovic</students_name>
+       <fathers_salary>14000</fathers_salary>
+       <mothers_name>Cvileva Lidiya Viktorovna</mothers_name>
+       <mothers_salary>23000</mothers_salary>
+       <number_of_sisters>0</number_of_sisters>
+       <number_of_brothers>4</number_of_brothers>
+   </item>
+   <item>
+       <fathers_name>Samodumkin Pyotr Fyodorovic</fathers_name>
+       <students_name>Samodumkin Fyodor Petrovic</students_name>
+       <fathers_salary>21000</fathers_salary>
+       <mothers_name>Samodumkina Mariya Kirillovna</mothers_name>
+       <mothers_salary>22000</mothers_salary>
+       <number_of_sisters>3</number_of_sisters>
+       <number_of_brothers>1</number_of_brothers>
+   </item>
+   <item>
+       <fathers_name>Promchuck Gleb Grigoryevic</fathers_name>
+       <students_name>Promchuck Roman Glebovic</students_name>
+       <fathers_salary>21000</fathers_salary>
+       <mothers_name>Promchuck Natalya Alekseyevna</mothers_name>
+       <mothers_salary>22000</mothers_salary>
+       <number_of_sisters>3</number_of_sisters>
+       <number_of_brothers>1</number_of_brothers>
+   </item>
+  </data>
