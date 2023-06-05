@@ -1,0 +1,6 @@
+Enter card number
+
+Get account balance
+Get money in cash
+Put money on the phone
+Get card back
