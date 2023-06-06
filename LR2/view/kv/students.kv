@@ -1,0 +1,50 @@
+StudentsScreenManager:
+    StudentsAppMainScreen:
+        name: 'main'
+    AddStudentScreen:
+        name: 'add_student'
+    AllStudentScreen:
+        name: 'all_student'
+    FindStudentScreen:
+        name: 'find_student'
+    DeleteStudentScreen:
+        name: 'delete_student'
+<StudentsAppMainScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+        spacing: 15
+        padding: 100
+        MDLabel:
+            text: "Выберите дейтсвие из списка ниже"
+            halign: "center"
+            font_size: 36
+        MDRectangleFlatButton:
+            text: "Список всех студентов"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .7,.2
+            on_release: root.manager.current = 'all_student'
+            font_size: 20
+        MDRectangleFlatButton:
+            text: "Добавить студента в список"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .7,.2
+            on_release: root.manager.current = 'add_student'
+            font_size: 20
+        MDRectangleFlatButton:
+            text: "Поиск студентов по параметрам"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .7,.2
+            on_release: root.manager.current = 'find_student'
+            font_size: 20
+        MDRectangleFlatButton:
+            text: "Удаление студентов по параметрам"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .7,.2
+            on_release: root.manager.current = 'delete_student'
+            font_size: 20
+        MDRectangleFlatButton:
+            text: "Выход"
+            pos_hint: {'center_x': .5, 'center_y': 1.}
+            size_hint: .7,.2
+            on_release: app.stop()
+            font_size: 20
