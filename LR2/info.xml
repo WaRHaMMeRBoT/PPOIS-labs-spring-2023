@@ -1,0 +1,57 @@
+<info>
+    <tournament>
+        <tournaname>SnakeEye</tournaname>
+        <date>12.07.2019</date>
+        <sport>archery</sport>
+        <winner>Sveta</winner>
+        <prize>5</prize>
+    </tournament>
+    <tournament>
+        <tournaname>FlyingBalls</tournaname>
+        <date>11.04.2015</date>
+        <sport>quidditch</sport>
+        <winner>Harry</winner>
+        <prize>12</prize>
+    </tournament>
+    <tournament>
+        <tournaname>FastArm</tournaname>
+        <date>23.05.2022</date>
+        <sport>tennis</sport>
+        <winner>Igor</winner>
+        <prize>1</prize>
+    </tournament>
+    <tournament>
+        <tournaname>Moving ball</tournaname>
+        <date>22.04.2022</date>
+        <sport>table tennis</sport>
+        <winner>Sandy</winner>
+        <prize>300</prize>
+    </tournament>
+    <tournament>
+        <tournaname>Unicorn</tournaname>
+        <date>30.08.2024</date>
+        <sport>badminton</sport>
+        <winner>Nick</winner>
+        <prize>50</prize>
+    </tournament>
+    <tournament>
+        <tournaname>Why am I here?</tournaname>
+        <date>11.05.1999</date>
+        <sport>golf</sport>
+        <winner>John</winner>
+        <prize>0</prize>
+    </tournament>
+    <tournament>
+        <tournaname>Red dot</tournaname>
+        <date>21.06.2019</date>
+        <sport>darts</sport>
+        <winner>Zhenya</winner>
+        <prize>5000</prize>
+    </tournament><tournament>
+        <tournaname>Black circle</tournaname>
+        <date>04.08.2016</date>
+        <sport>hockey</sport>
+        <winner>Aylin</winner>
+        <prize>670</prize>
+    </tournament>
+    <tournament><tournaname>Like a fish</tournaname><date>12.11.2019</date><sport>swimming</sport><winner>Jerry</winner><prize>780</prize></tournament><tournament><tournaname>Fast turtles</tournaname><date>25.10.2017</date><sport>running</sport><winner>Richard</winner><prize>95</prize></tournament><tournament><tournaname>Power of mind</tournaname><date>27.09.2015</date><sport>chess</sport><winner>Kate</winner><prize>150</prize></tournament><tournament><tournaname>Through dirt and forest</tournaname><date>17.08.2018</date><sport>cycling</sport><winner>Gary</winner><prize>985</prize></tournament><tournament><tournaname>Angels of death</tournaname><date>08.04.2013</date><sport>motorcycling</sport><winner>Tim</winner><prize>1700</prize></tournament><tournament><tournaname>Wooden chair</tournaname><date>14.07.2009</date><sport>racing</sport><winner>Sidney</winner><prize>6000</prize></tournament><tournament><tournaname>Win or die</tournaname><date>30.05.2023</date><sport>knife fight</sport><winner>Ira</winner><prize>5000</prize></tournament><tournament><tournaname>Through forth demention</tournaname><date>01.01.2030</date><sport>timetraveling</sport><winner>Howking</winner><prize>10000</prize></tournament><tournament><tournaname>Lightning</tournaname><date>14.11.2010</date><sport>chess</sport><winner>Cegelnik</winner><prize>780</prize></tournament><tournament><tournaname>Think faster</tournaname><date>27.09.2014</date><sport>chess</sport><winner>James</winner><prize>350</prize></tournament><tournament><tournaname>Black circle</tournaname><date>13.10.2015</date><sport>hockey</sport><winner>Ilona</winner><prize>765</prize></tournament><tournament><tournaname>Nerds rule</tournaname><date>03.07.2013</date><sport>chess</sport><winner>Polina</winner><prize>430</prize></tournament><tournament><tournaname>Above the net</tournaname><date>07.08.2016</date><sport>volleyball</sport><winner>Anya</winner><prize>215</prize></tournament></info>
