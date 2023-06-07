@@ -1,0 +1,649 @@
+#:import Factory kivy.factory.Factory
+
+ScreenManager:
+    id: screen_manager
+    MenuScreen:
+        id: menu_screen
+        name: 'Меню'
+        manager: screen_manager
+    MainScreen:
+        id: main_screen
+        name: 'Главный экран'
+        manager: screen_manager
+    GardenScreen:
+        id: garden_screen
+        name: 'Садовый участок'
+        manager: screen_manager
+
+<MenuScreen>
+
+    BoxLayout_customed:
+        orientation: "vertical"
+        padding: 50
+        spacing: 30
+
+        Label:
+            font_size: 40
+            text: "--- Меню ---"
+            color: 1, 1, 1, 1
+
+        RoundedButton:
+            on_press:
+            color: 1, 1, 1
+            text: "Продолжить моделирование"
+            font_size: 24
+            disabled: False
+            on_release: app.controller.get_data_from_file()
+            on_release: root.manager.current = 'Главный экран'
+
+        RoundedButton:
+            color: 1, 1, 1
+            text: "Новая модель"
+            font_size: 24
+            disabled: False
+            on_release: app.update_data()
+            on_release: root.manager.current = 'Главный экран'
+
+        RoundedButton:
+            color: 1, 1, 1
+            text: "Выход"
+            font_size: 24
+            disabled: False
+            on_press: app.exit()
+
+<MainScreen>:
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: 0, 0, 0, 0
+
+        MDTopAppBar:
+            title: "TopAppBar"
+            md_bg_color: .31, .33, .83, 1
+            size_hint: 1, .06
+            specific_text_color: 1, 1, 1, 1
+            elevation: 10
+            right_action_items:
+                [
+                ["content-save", lambda x: app.controller.set_data_in_file(status), "Сохранить в файл"],
+                ]
+
+        GridLayout_2:
+            id: gl_2
+            size_hint: 1, .3
+            cols: 6
+            padding: 10, 10, 10, 20
+            canvas:
+                Rectangle:
+                    source: 'pictures/field.jpg'
+                    size: self.size
+                    pos: self.pos
+
+            Button:
+                id: tree_1
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_2
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_3
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_4
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_5
+                background_normal: 'pictures/lol.png'
+
+            BoxLayout:
+                canvas:
+                    Rectangle:
+                        source: 'pictures/board.png'
+                        size: 180, 220
+                        pos: 817, 460
+
+                BoxLayout:
+                    orientation: 'vertical'
+                    padding: 18
+
+                    Label:
+                        id: weather
+                        text: 'Погода: '
+                        font_size: 15
+                        color: .19, .13, .04, 1
+
+                    Label:
+                        id: tree_kol
+                        text: 'Кол-во деревьев: 0'
+                        font_size: 15
+                        color: .19, .13, .04, 1
+
+                    Label:
+                        id: money
+                        text: 'Деньги: 0'
+                        font_size: 15
+                        color: .19, .13, .04, 1
+
+                    Label:
+                        id: garden_bed_kol
+                        text: 'Кол-во грядок: 0'
+                        font_size: 15
+                        color: .19, .13, .04, 1
+
+                    Label:
+                        id: day
+                        text: 'День: 0'
+                        font_size: 15
+                        color: .19, .13, .04, 1
+
+        BoxLayout_customed:
+            orientation: 'vertical'
+            size_hint: 1, .6
+
+            GridLayout:
+                cols: 7
+                size_hint: 1, .37
+
+                Cell_1:
+                    id: cell_1
+
+                Cell_1:
+                    id: cell_2
+
+                Cell_1:
+                    id: cell_3
+
+                Cell_1:
+                    id: cell_4
+
+                Cell_1:
+                    id: cell_5
+
+                Cell_1:
+                    id: cell_6
+
+                Cell_1:
+                    id: cell_7
+
+
+            GridLayout_3:
+                cols: 2
+                spacing: 10
+                size_hint: 1, .63
+                padding: 10, 20, 10, 10
+
+                RoundedButton:
+                    color: 1, 1, 1
+                    text: 'Добавить грядку'
+                    font_size: 20
+                    disabled: False
+                    on_release: app.controller.add_garden_bed(status)
+
+                RoundedButton:
+                    color: 1, 1, 1
+                    text: 'Следющий день'
+                    font_size: 20
+                    disabled: False
+                    on_release: app.controller.next_day(status)
+
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Полить грядку'
+                        font_size: 20
+                        size_hint: .66 , 1
+                        disabled: False
+                        on_release: app.controller.watering(input_water_num, status)
+
+
+                    Label:
+                        text: '№'
+                        color: 1, 1, 1, 1
+                        font_size: 30
+                        size_hint: .07 , 1
+
+                    TextInput:
+                        id: input_water_num
+                        size_hint: .08, 1
+                        color: .51, .45, .89, 1
+                        multiline: False
+                        font_size: 17
+
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Прополоть грядку'
+                        font_size: 20
+                        size_hint: .66 , 1
+                        disabled: False
+                        on_release: app.controller.weeding(input_weed_num, status)
+
+                    Label:
+                        text: '№'
+                        color: 1, 1, 1, 1
+                        font_size: 30
+                        size_hint: .07, 1
+
+                    TextInput:
+                        id: input_weed_num
+                        size_hint: .08, 1
+                        color: .51, .13, .89, 1
+                        multiline: False
+                        font_size: 17
+
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Удобрить грядку'
+                        font_size: 20
+                        size_hint: .66 , 1
+                        disabled: False
+                        on_release: app.controller.fertilize(input_f_num, status)
+
+
+                    Label:
+                        text: '№'
+                        color: 1, 1, 1, 1
+                        font_size: 30
+                        size_hint: .07 , 1
+
+                    TextInput:
+                        id: input_f_num
+                        size_hint: .08, 1
+                        color: .51, .45, .89, 1
+                        multiline: False
+                        font_size: 17
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Посадить дерево'
+                        font_size: 20
+                        size_hint: .66 , 1
+                        disabled: False
+                        on_release: app.controller.plant_tree(spinner_tree, status)
+
+
+                    Spinner:
+                        id: spinner_tree
+                        text: '>'
+                        size_hint: .24, 1
+                        font_size: 20
+                        values: ['peer', 'apple']
+                        background_color: (0, 0, 0, 0)
+                        background_normal: ''
+                        canvas.before:
+                            Color:
+                                rgba: .15, .15, .48, 1
+                            RoundedRectangle:
+                                size: self.size
+                                pos: self.pos
+                                radius: [10]
+                        dropdown_cls: Factory.CustomDropdown
+                        option_cls: Factory.CustomSpinnerOptions
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Посадить растение'
+                        font_size: 20
+                        size_hint: .36, 1
+                        disabled: False
+                        on_release: app.controller.plant_cultivated_plant(call_plant ,input_plant_num, status)
+
+
+                    Spinner:
+                        id: call_plant
+                        text: '>'
+                        size_hint: .20, 1
+                        font_size: 20
+                        values: ['potato', 'tomato', 'pepper']
+                        background_color: (0, 0, 0, 0)
+                        background_normal: ''
+                        canvas.before:
+                            Color:
+                                rgba: .15, .15, .48, 1
+                            RoundedRectangle:
+                                size: self.size
+                                pos: self.pos
+                                radius: [10]
+                        dropdown_cls: Factory.CustomDropdown
+                        option_cls: Factory.CustomSpinnerOptions
+
+                    Label:
+                        text: '№'
+                        color: 1, 1, 1, 1
+                        font_size: 30
+                        size_hint: .07 , 1
+
+                    TextInput:
+                        id: input_plant_num
+                        size_hint: .07, 1
+                        color: .51, .45, .89, 1
+                        multiline: False
+                        font_size: 17
+
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Вылечить'
+                        font_size: 20
+                        size_hint: .36, 1
+                        disabled: False
+                        on_release: app.controller.treatment(treatment ,input_tr_num, status)
+
+
+                    Spinner:
+                        id: treatment
+                        text: '>'
+                        size_hint: .20, 1
+                        font_size: 20
+                        values: ['tree', 'cult']
+                        background_color: (0, 0, 0, 0)
+                        background_normal: ''
+                        canvas.before:
+                            Color:
+                                rgba: .15, .15, .48, 1
+                            RoundedRectangle:
+                                size: self.size
+                                pos: self.pos
+                                radius: [10]
+                        dropdown_cls: Factory.CustomDropdown
+                        option_cls: Factory.CustomSpinnerOptions
+
+                    Label:
+                        text: '№'
+                        color: 1, 1, 1, 1
+                        font_size: 30
+                        size_hint: .07 , 1
+
+                    TextInput:
+                        id: input_tr_num
+                        size_hint: .07, 1
+                        color: .51, .45, .89, 1
+                        multiline: False
+                        font_size: 17
+
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Собрать урожай'
+                        font_size: 20
+                        size_hint: .36, 1
+                        disabled: False
+                        on_release: app.controller.harvesting(harvest ,input_harv_num, status)
+
+
+                    Spinner:
+                        id: harvest
+                        text: '>'
+                        size_hint: .20, 1
+                        font_size: 20
+                        values: ['tree', 'cult']
+                        background_color: (0, 0, 0, 0)
+                        background_normal: ''
+                        canvas.before:
+                            Color:
+                                rgba: .15, .15, .48, 1
+                            RoundedRectangle:
+                                size: self.size
+                                pos: self.pos
+                                radius: [10]
+                        dropdown_cls: Factory.CustomDropdown
+                        option_cls: Factory.CustomSpinnerOptions
+
+                    Label:
+                        text: '№'
+                        color: 1, 1, 1, 1
+                        font_size: 30
+                        size_hint: .07 , 1
+
+                    TextInput:
+                        id: input_harv_num
+                        size_hint: .07, 1
+                        color: .51, .45, .89, 1
+                        multiline: False
+                        font_size: 17
+
+                BoxLayout_customed:
+                    spacing: 10
+
+                    RoundedButton:
+                        color: 1, 1, 1
+                        text: 'Обработать'
+                        font_size: 20
+                        size_hint: .36, 1
+                        disabled: False
+                        on_release: app.controller.kill_pest(pest ,input_pest_num, status)
+
+
+                    Spinner:
+                        id: pest
+                        text: '>'
+                        size_hint: .20, 1
+                        font_size: 20
+                        values: ['tree', 'cult']
+                        background_color: (0, 0, 0, 0)
+                        background_normal: ''
+                        canvas.before:
+                            Color:
+                                rgba: .15, .15, .48, 1
+                            RoundedRectangle:
+                                size: self.size
+                                pos: self.pos
+                                radius: [10]
+                        dropdown_cls: Factory.CustomDropdown
+                        option_cls: Factory.CustomSpinnerOptions
+
+                    Label:
+                        text: '№'
+                        color: 1, 1, 1, 1
+                        font_size: 30
+                        size_hint: .07 , 1
+
+                    TextInput:
+                        id: input_pest_num
+                        size_hint: .07, 1
+                        color: .51, .45, .89, 1
+                        multiline: False
+                        font_size: 17
+
+        BoxLayout_customed:
+            padding: 20, 10, 20, 15
+            size_hint: 1, .11
+            orientation: 'vertical'
+
+            Label:
+                id: status
+                text: '* статус *'
+                font_size: 20
+                color: .15, .15, .48, 1
+                canvas.before:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+
+
+<GardenScreen>:
+
+    BoxLayout_customed:
+        orientation: 'vertical'
+
+        GridLayout_3:
+            id: gl_2
+            cols: 5
+            size_hint: 1, .4
+            padding: 10, 10, 10, 60
+            canvas:
+                Rectangle:
+                    source: 'pictures/grass.png'
+                    size: self.size
+                    pos: self.pos
+
+            Button:
+                id: tree_1
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_2
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_3
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_4
+                background_normal: 'pictures/lol.png'
+
+            Button:
+                id: tree_5
+                background_normal: 'pictures/lol.png'
+
+
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, .7
+
+            GridLayout:
+                id: plants
+                padding: 10
+                spacing: 5
+                rows: 2
+                cols: 6
+
+                Cell_1:
+                    id: cell_1
+
+                Cell_1:
+                    id: cell_2
+
+                Cell_1:
+                    id: cell_3
+
+                Cell_1:
+                    id: cell_4
+
+                Cell_1:
+                    id: cell_5
+
+                Cell_1:
+                    id: cell_6
+
+                Cell_1:
+                    id: cell_7
+
+                Cell_1:
+                    id: cell_8
+
+                Cell_1:
+                    id: cell_9
+
+                Cell_1:
+                    id: cell_10
+
+                Cell_1:
+                    id: cell_11
+
+                Cell_1:
+                    id: cell_12
+
+
+        RoundedButton:
+            size_hint: 1, .1
+            text: 'Закрыть'
+            font_size: 15
+            color: 1, 1, 1, 1
+            on_release: root.manager.current = 'Главный экран'
+
+
+<BoxLayout_customed@BoxLayout>
+    canvas.before:
+        Color:
+            rgba: .31, .33, .83, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+
+<GridLayout@GridLayout>
+    canvas.before:
+        Color:
+            rgba: .81, .76, .07, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<GridLayout_2@GridLayout>
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<GridLayout_3@GridLayout>
+    canvas:
+        Color:
+            rgba: .31, .33, .83, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+
+<RoundedButton@Button>
+    background_color: (0, 0, 0, 0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: .17, .18, .63, 1
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+
+<CustomSpinnerOptions@SpinnerOption>:
+    background_color: .15, .15, .48, 1
+    background_normal: ''
+
+
+<CustomDropdown@DropDown>:
+    max_height: 120
+    bar_width: 5
+    bar_color: .15, .15, .48, 1
+    effect_cls: 'ScrollEffect'
+    scroll_type: ['bars', 'content']
+
+<Cell_1@Button>:
+    background_color: .49, .69, .14, 1
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: .49, .69, .14, 1
+
