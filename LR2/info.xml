@@ -1,0 +1,23 @@
+<info>
+    <train>
+        <number_of_train>201C</number_of_train>
+        <departure>Moskow</departure>
+        <arrival>Vitebsk</arrival>
+        <departure_data_time>14.09 22:56</departure_data_time>
+        <arrival_data_time>15.09 03:45</arrival_data_time>
+    </train>
+    <train>
+        <number_of_train>314A</number_of_train>
+        <departure>Bereza</departure>
+        <arrival>Rogochov</arrival>
+        <departure_data_time>13.07 15:06</departure_data_time>
+        <arrival_data_time>13.07 17:12</arrival_data_time>
+    </train>
+    <train>
+        <number_of_train>404B</number_of_train>
+        <departure>Mogilev</departure>
+        <arrival>Peterburg</arrival>
+        <departure_data_time>01.02 04:14</departure_data_time>
+        <arrival_data_time>02.02 22:56</arrival_data_time>
+    </train>
+<train><number_of_train>935B</number_of_train><departure>Mogilev</departure><arrival>Minsk</arrival><departure_data_time>14.05 13:45</departure_data_time><arrival_data_time>14.05 19:05</arrival_data_time></train></info>

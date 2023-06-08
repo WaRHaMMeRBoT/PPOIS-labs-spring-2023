@@ -1,0 +1,406 @@
+#:kivy 2.0.0
+#:import hex kivy.utils.get_color_from_hex
+#:import sp kivy.metrics.sp
+
+<WindowManager>:
+	MenuScreen:
+	SearchScreen:
+		id: search_scr
+	DeleteScreen:
+		id: delete_scr
+	AddScreen:
+		id: add_scr
+	DataScreen:
+		id: data_scr
+
+<DataScreen>:
+	name:'info'
+	canvas.before:
+        Color:
+            rgba: hex("#00ebd8")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+    BoxLayout:
+		orientation:'vertical'
+		padding:10
+		GridLayout:
+			size_hint:1,0.06
+		AnchorLayout:
+			id: data_layout
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:1,0.7
+
+<MenuScreen>:
+	name:'table'
+	canvas.before:
+    	Color:
+            rgba: hex("#00ebd8")
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    BoxLayout:
+		spacing: 5
+		orientation:'vertical'
+		MainWidget:
+
+<SearchScreen>:
+	name:'search'
+	numbertrain: numbertrain
+	departure: departure
+	arrival: arrival
+	mindatatimedeparture: mindatatimedeparture
+	maxdatatimedeparture: maxdatatimedeparture
+	mindatatimearrival: mindatatimearrival
+	maxdatatimearrival: maxdatatimearrival
+	time: time 
+	canvas.before:
+        Color:
+            rgba: 0.988, 0.427, 0.831, 0.7
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+		GridLayout:
+			size_hint: 1, 0.06
+			row_force_default: True
+		AnchorLayout:
+			id: data_search
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:1, 0.25
+		GridLayout:
+			size_hint:1,0.35
+			spacing:0,5
+			padding: 20
+			cols: 1
+			GridLayout:
+				spacing:5,5
+				padding: 1
+				cols: 2
+				rows: 8
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 40
+			    ColorfulLabel:
+				    background_color: 1, 0.329, 0.811, 1
+					text: "Номер поезда"
+				TextInput:
+					id: numbertrain
+				ColorfulLabel:
+				    background_color: 1, 0.329, 0.811, 1
+					text: "Станция отправления"
+				TextInput:
+					id:departure
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text: "Станция прибытия"
+				TextInput:
+					id:arrival
+		
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Минимальная дата и время отправления"
+				TextInput:
+					id:mindatatimedeparture
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Максимальная дата и время отправления"
+				TextInput:
+					id:maxdatatimedeparture
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Минимальная дата и время прибытия"
+				TextInput:
+					id:mindatatimearrival
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Максимальная дата и время прибытия"
+				TextInput:
+					id:maxdatatimearrival
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Время в пути"
+				TextInput:
+					id:time	
+			Button:
+			    theme_text_color: 'Custom'
+				color: 0, 0, 0, 1
+				font_name: 'Comic'
+			    background_normal: ''
+				background_color: 1, 0, 0.717, 1
+				size_hint: 0.1, 0.2
+				text:"Search"			
+				on_press: 
+					root.search_button()
+					app.load_search_table()
+
+
+<DeleteScreen>:
+	name:'delete'
+	numbertrain: numbertrain
+	departure: departure
+	arrival: arrival
+	mindatatimedeparture: mindatatimedeparture
+	maxdatatimedeparture: maxdatatimedeparture
+	mindatatimearrival: mindatatimearrival
+	maxdatatimearrival: maxdatatimearrival
+	time: time 
+	canvas.before:
+        Color:
+            rgba: 0.988, 0.427, 0.831, 0.7
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+		AnchorLayout:
+			id: data_delete
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.7,0.3
+		GridLayout:
+			spacing:0,5
+			size_hint:1,0.5
+			padding: 20
+			cols: 1
+			GridLayout:
+				spacing:5,5
+				cols: 2
+				rows: 8
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 20
+				ColorfulLabel:
+				    background_color: 1, 0.329, 0.811, 1
+					text: "Номер поезда"
+				TextInput:
+					id: numbertrain
+				ColorfulLabel:
+				    background_color: 1, 0.329, 0.811, 1
+					text: "Станция отправления"
+				TextInput:
+					id:departure
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text: "Станция прибытия"
+				TextInput:
+					id:arrival
+		
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Минимальная дата и время отправления"
+				TextInput:
+					id:mindatatimedeparture
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Максимальная дата и время отправления"
+				TextInput:
+					id:maxdatatimedeparture
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Минимальная дата и время прибытия"
+				TextInput:
+					id:mindatatimearrival
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Максимальная дата и время прибытия"
+				TextInput:
+					id:maxdatatimearrival
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Время в пути"
+				TextInput:
+					id:time
+            Button:
+			    theme_text_color: 'Custom'
+				color: 0, 0, 0, 1
+				font_name: 'Comic'
+			    background_normal: ''
+				background_color: 1, 0, 0.717, 1
+				size_hint: 0.2, 0.15
+				text:"delete"			
+				on_press: 
+					root.delete_button()
+					app.load_table()	
+					app.change_screen('info')
+
+<AddScreen>:
+	name:'add'
+	numbertrain: numbertrain
+	departure: departure
+	arrival: arrival
+	datatimedeparture: datatimedeparture
+	datatimearrival: datatimearrival
+	canvas.before:
+        Color:
+            rgba: 0.988, 0.427, 0.831, 0.7
+        Rectangle:
+            size: self.size
+            pos: self.pos
+	ActionBar:
+	BoxLayout:
+		cols:1
+		spacing: 5
+		orientation:'vertical'
+		AnchorLayout:
+			id: data_delete
+			pos_hint:{'center_x':.5,'center_y':.5}
+			size_hint:0.7,0.3
+		GridLayout:
+			spacing:0,5
+			size_hint:1,0.5
+			padding: 20
+			cols: 1
+			GridLayout:
+				spacing:5,5
+				cols: 2
+				rows: 5
+				row_force_default: True
+				row_default_height: 30
+				row_default_weight: 20
+				ColorfulLabel:
+				    background_color: 1, 0.329, 0.811, 1
+					text: "Номер поезда"
+				TextInput:
+					id: numbertrain
+				ColorfulLabel:
+				    background_color: 1, 0.329, 0.811, 1
+					text: "Станция отправления"
+				TextInput:
+					id:departure
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text: "Станция прибытия"
+				TextInput:
+					id:arrival
+		
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Дата и время отправления"
+				TextInput:
+					id:datatimedeparture
+
+				ColorfulLabel:
+					background_color: 1, 0.329, 0.811, 1
+					text:"Дата и время прибытия"
+				TextInput:
+					id:datatimearrival
+				
+
+			Button:
+			    theme_text_color: 'Custom'
+				color: 0, 0, 0, 1
+				font_name: 'Comic'
+			    background_normal: ''
+				background_color: 1, 0, 0.717, 1
+				size_hint: 0.2, 0.15
+				text:"add"			
+				on_press: 
+					root.add_button()
+					app.load_table()	
+					app.change_screen('info')
+
+<ActionBar>:
+    pos_hint: {'top':1}
+    ActionView:
+		canvas.before:
+			Color:
+				rgba: 1, 1, 1, 1
+			Rectangle:
+				pos: self.pos
+				size: self.size	
+        use_separator: True
+        ActionPrevious:
+            title: 'Options'
+            with_previous: False
+        
+        ActionButton:
+			theme_text_color: 'Custom'
+			color: 0,0,0,1
+			font_name: 'Comic'
+            text: 'Table'
+			canvas.before:
+				Color:
+					rgba: 0.988, 0.427, 0.831, 0.7
+				Rectangle:
+					pos: self.pos
+					size: self.size	
+            on_release: 
+				app.load_table()
+				app.change_screen('info')
+        ActionButton:
+			id: search_button
+			theme_text_color: 'Custom'
+			color: 0,0,0,1
+			font_name: 'Comic'
+            text: 'Search'
+			background_normal: ''
+			background_color: 1, 0.231, 0.78, 1
+			on_press: 
+				app.change_screen('search')
+				
+        ActionButton:
+		    theme_text_color: 'Custom'
+			color: 0,0,0,1
+			font_name: 'Comic'
+            text: 'Delete'
+			canvas.before:
+				Color:
+					rgba: 0.949, 0.074, 0.701, 1
+				Rectangle:
+					pos: self.pos
+					size: self.size	
+			on_press: 
+				app.change_screen('delete')
+				
+        ActionButton:
+		    theme_text_color: 'Custom'
+			color: 0, 0, 0, 1
+			font_name: 'Comic'
+			canvas.before:
+				Color:
+					rgba: 0.67, 0, 0.478, 1
+				Rectangle:
+					pos: self.pos
+					size: self.size	
+            text: 'Add'
+            on_press: 
+				app.change_screen('add')
+
+<MainWidget>	
+	id: main
+	GridLayout:
+		spacing:0,5
+		padding: 20
+		cols: 1
+	Button:
+	    background_normal: ''
+		background_color: 0.988, 0.427, 0.831, 0.7
+		size_hint: 1, 1
+		pos_hint:{'center_x':.5,'center_y':.5}
+		text:"press any key to continue"	
+		font_name: 'Comic'
+		font_size: 50
+		on_press:		
+			app.load_table()
+			app.change_screen('info')
+
+<ColorfulLabel>:
+	background_normal: ''
+	background_color: 0.988, 0.427, 0.831, 0.7
+	theme_text_color: 'Custom'
+	color: 0,0,0,1
+	font_name: 'Comic'
+	canvas.before:
+		Color:
+			rgba: root.background_color
+		Rectangle:
+			pos: self.pos
+			size: self.size	
