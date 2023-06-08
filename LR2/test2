@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "Address": "Belskogo 13",
+            "Appointment date": "12.12.2023",
+            "Birth date": "01.01.2001",
+            "Conclusion": "Flu",
+            "Doctor's name": "Wattson",
+            "Patient's name": "Vova"
+        },
+        {
+            "Address": "2",
+            "Appointment date": "4",
+            "Birth date": "3",
+            "Conclusion": "6",
+            "Doctor's name": "5",
+            "Patient's name": "1"
+        }
+    ]
+}
