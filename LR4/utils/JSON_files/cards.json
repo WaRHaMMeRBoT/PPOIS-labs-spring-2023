@@ -1,0 +1,44 @@
+[
+      {
+            "card_id": "4567098234563091",
+            "card_acc": "mila5678",
+            "expiration_date": "09/25",
+            "is_blocked": true
+      },
+      {
+            "card_id": "4901267058334450",
+            "card_acc": "58tcv",
+            "expiration_date": "03/24",
+            "is_blocked": false
+      },
+      {
+            "card_id": "3178400821765555",
+            "card_acc": "blok5",
+            "expiration_date": "07/26",
+            "is_blocked": true
+      },
+      {
+            "card_id": "4901267077482450",
+            "card_acc": "blok5",
+            "expiration_date": "09/25",
+            "is_blocked": false
+      },
+      {
+            "card_id": "4900600050001111",
+            "card_acc": "grun1234",
+            "expiration_date": "03/22",
+            "is_blocked": false
+      },
+      {
+            "card_id": "3600770584239515",
+            "card_acc": "senua",
+            "expiration_date": "06/23",
+            "is_blocked": false
+      },
+      {
+            "card_id": "4000500060007000",
+            "card_acc": "superYa",
+            "expiration_date": "03/25",
+            "is_blocked": false
+      }
+]

@@ -1,0 +1,146 @@
+#:kivy 2.0.0
+<MyTextField@MDTextField>:
+    size_hint: 0.4, 0.1
+    input_type: "text"
+
+
+<MyNumberField@MyTextField>:
+    input_type: "text"
+
+
+<DialogContent>:
+
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hint_y: None
+    height: "300dp"
+
+
+<SaveDialogContent>:
+    height: "50dp"
+
+    path: save_path
+
+    MyTextField:
+        id: save_path
+        hint_text: "enter file name"
+
+
+<UploadDialogContent>:
+    height: "50dp"
+
+    path: upload_path
+
+    MyTextField:
+        id: upload_path
+        hint_text: "enter file name"
+
+
+<InputDialogContent>:
+
+    height: "460dp"
+    name: input_name
+    address: input_address
+    date_of_birth: input_date_of_birth
+    date_of_visit: input_date_of_visit
+    doctor_name: input_doctor_name
+    conclusion: input_conclusion
+
+    MyTextField:
+        id: input_name
+        hint_text: "Enter name"
+
+    MyTextField:
+        id: input_address
+        hint_text: "Enter address"
+
+    MyTextField:
+        id: input_date_of_birth
+        hint_text: "Enter enter date of last visit"
+
+    MyTextField:
+        id: input_date_of_visit
+        hint_text: "Enter date of visit"
+
+    MyTextField:
+        id: input_doctor_name
+        hint_text: "Enter doctor name"
+
+    MyTextField:
+        id: input_conclusion
+        hint_text: "Enter conclusion"
+
+
+
+
+
+<FilterDialogContent>:
+    
+    height: "460dp"
+    name: filter_name
+    address: filter_address
+    date_of_birth: filter_date_of_birth
+    date_of_visit: filter_date_of_visit
+    doctor_name: filter_doctor_name
+    conclusion: filter_conclusion
+
+    MyTextField:
+        id: filter_name
+        hint_text: "Enter name"
+
+    MyTextField:
+        id: filter_address
+        hint_text: "Enter address"
+
+    MyTextField:
+        id: filter_date_of_birth
+        hint_text: "Enter enter date of birth"
+
+    MyTextField:
+        id: filter_date_of_visit
+        hint_text: "Enter date of visit"
+
+    MyTextField:
+        id: filter_doctor_name
+        hint_text: "Enter doctor name"
+
+    MyTextField:
+        id: filter_conclusion
+        hint_text: "Enter conclusion"
+
+<DeleteDialogContent>:
+    
+    height: "460dp"
+    name: delete_name
+    address: delete_address
+    date_of_birth: delete_date_of_last_visit
+    date_of_visit: delete_date_of_visit
+    doctor_name: delete_doctor_name
+    conclusion: delete_conclusion
+
+    MyTextField:
+        id: delete_name
+        hint_text: "Enter name"
+
+    MyTextField:
+        id: delete_address
+        hint_text: "Enter address"
+
+    MyTextField:
+        id: delete_date_of_birth
+        hint_text: "Enter enter date of last visit"
+
+    MyTextField:
+        id: delete_date_of_visit
+        hint_text: "Enter date of visit"
+
+    MyTextField:
+        id: delete_doctor_name
+        hint_text: "Enter doctor name"
+
+    MyTextField:
+        id: delete_conclusion
+        hint_text: "Enter conclusion"
+
+
+

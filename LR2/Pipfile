@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+altgraph = "==0.17.2"
+certifi = "==2021.10.8"
+charset-normalizer = "==2.0.12"
+docutils = "==0.18.1"
+future = "==0.18.2"
+idna = "==3.3"
+keyboard = "==0.13.5"
+kivy = "==2.0.0"
+"kivy-deps.angle" = "==0.3.2"
+"kivy-deps.glew" = "==0.3.1"
+"kivy-deps.sdl2" = "==0.3.1"
+kivy-examples = "==2.0.0"
+kivy-garden = "==0.1.4"
+kivymd = "==0.104.2"
+names = "==0.3.0"
+pefile = "==2021.9.3"
+pillow = "==9.0.1"
+pygments = "==2.11.2"
+pyinstaller = "==4.9"
+pyinstaller-hooks-contrib = "==2022.2"
+pypiwin32 = "==223"
+pywin32 = "==303"
+pywin32-ctypes = "==0.2.0"
+requests = "==2.27.1"
+urllib3 = "==1.26.8"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.6"
