@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" action="{% url 'deleting' %}">
+    {% csrf_token %}
+    <div class="shadow-lg p-3 mb-5 bg-body rounded" style="margin:40px;">
+        <div class="text-center">
+            <center><h3>Deleting users</h3></center>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">name</span>
+                <input type="text" name="name" class="form-control" placeholder="name" aria-label="username"
+                       aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon2">address</span>
+                <input type="text" class="form-control" name="address"
+                       placeholder="address"
+                       aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon3">Date of birth</span>
+                <input type="text" class="form-control" name="date_of_birth"
+                       placeholder="Date of birth"
+                       aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon4">Date of visit</span>
+                <input type="text" class="form-control" name="date_of_visit"
+                       placeholder="Date of visit"
+                       aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon5">Name of doctor</span>
+                <input type="text" class="form-control" name="name_of_doctor"
+                       placeholder="name of doctor"
+                       aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon6">conclusion</span>
+                <input type="text" class="form-control" name="conclusion"
+                       placeholder="Conclusion"
+                       aria-describedby="basic-addon3">
+            </div>
+            <button type="submit" class="btn btn-dark" style="margin-top:30px;">Submit</button>
+        </div>
+    </div>
+</form>
+{% endblock %}

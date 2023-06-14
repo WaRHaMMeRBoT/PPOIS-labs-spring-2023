@@ -1,0 +1,403 @@
+<?xml version="1.0" ?>
+  <table>
+    <stock>
+      <name>Randy Ewing</name>
+      <address>Grodno</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Anthony Martinez</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Dennis Hall</name>
+      <address>Grodno</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>Deanna Reeves</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Ellen Knight</name>
+      <address>Minsk</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Leila Johnson</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Susan East</name>
+      <address>Gomel</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>Melissa Battey</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Gloria Clark</name>
+      <address>Grodno</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Bertha Perry</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Norman Smith</name>
+      <address>Grodno</address>
+      <date_of_birth>19.03.2001</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Rachel Trujillo</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Jeremiah Reeves</name>
+      <address>Vitebsk</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Brian Harland</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>James Flanigan</name>
+      <address>Minsk</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Martha Lanza</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Mabel Ramirez</name>
+      <address>Brest</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Beth Bell</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Julie Forrest</name>
+      <address>Minsk</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Latrice Buck</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Marshall Hodge</name>
+      <address>Grodno</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Ruth Smith</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Richard Miranda</name>
+      <address>Minsk</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Joseph Wingate</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Noah Cornell</name>
+      <address>Vitebsk</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Erasmo Read</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Anne Blackmon</name>
+      <address>Gomel</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Andrew Holloman</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Robert Aguilar</name>
+      <address>Vitebsk</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Sara Horton</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Allan Stanhope</name>
+      <address>Minsk</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Alva Horner</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Rebecca Baker</name>
+      <address>Gomel</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Philip Cox</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>William Johnson</name>
+      <address>Gomel</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>David Christian</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Maurice Carollo</name>
+      <address>Minsk</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Monica Wood</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Kurt Payne</name>
+      <address>Gomel</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Marion Reeder</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Manuel Ollig</name>
+      <address>Grodno</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>Thomas Saldivar</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Christina Rockmore</name>
+      <address>Brest</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>Pauline Scott</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Sharon Chavez</name>
+      <address>Grodno</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>Ty Webb</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Eva Williams</name>
+      <address>Grodno</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Betty Williams</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Anna Bailey</name>
+      <address>Gomel</address>
+      <date_of_birth>19.03.2001</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Ivy Bowers</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Maria Gott</name>
+      <address>Gomel</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>Michael Dansby</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Roy Anderson</name>
+      <address>Grodno</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Oscar Smith</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>John Lake</name>
+      <address>Gomel</address>
+      <date_of_birth>19.03.2001</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Derek Bakken</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Richelle Griffith</name>
+      <address>Gomel</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Kevin Pease</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Alice Singleton</name>
+      <address>Vitebsk</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Marsha Hunter</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Mary Johnson</name>
+      <address>Minsk</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Peter Rangel</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Robert Johnson</name>
+      <address>Brest</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Susanne Wright</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Jane Bryant</name>
+      <address>Gomel</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>David Nelson</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Kimberly Buczek</name>
+      <address>Gomel</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>Lucille Watkins</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Tamara Rios</name>
+      <address>Gomel</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Michael Smith</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Stacey Patterson</name>
+      <address>Vitebsk</address>
+      <date_of_birth>19.03.2001</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Andrew Pakele</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Terry Curtis</name>
+      <address>Grodno</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>John Wetzel</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Johnny Foust</name>
+      <address>Minsk</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Ricky Gustafson</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Dorothy Bennett</name>
+      <address>Vitebsk</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Joseph Peck</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Clifford Whitehead</name>
+      <address>Vitebsk</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Marie Pangallo</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Huong Andrews</name>
+      <address>Brest</address>
+      <date_of_birth>19.03.2001</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Mary Clay</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Marsha Quinn</name>
+      <address>Grodno</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Wilfred Desrochers</doctor_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>George Williams</name>
+      <address>Gomel</address>
+      <date_of_birth>19.03.2001</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Daisy Ellis</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Christopher Karins</name>
+      <address>Minsk</address>
+      <date_of_birth>12.01.2000</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Edward Payne</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Pamela Thurlow</name>
+      <address>Grodno</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Joyce Holcombe</doctor_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>John Koenen</name>
+      <address>Minsk</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>20.02.2023</date_of_visit>
+      <doctor_name>Helen Randall</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Felicia Khalid</name>
+      <address>Grodno</address>
+      <date_of_birth>15.03.2007</date_of_birth>
+      <date_of_visit>15.03.2023</date_of_visit>
+      <doctor_name>Regina Diaz</doctor_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Ruth Swenson</name>
+      <address>Grodno</address>
+      <date_of_birth>21.10.2002</date_of_birth>
+      <date_of_visit>22.01.2022</date_of_visit>
+      <doctor_name>Gloria Ochoa</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Keith Combs</name>
+      <address>Vitebsk</address>
+      <date_of_birth>20.12.2009</date_of_birth>
+      <date_of_visit>21.01.2023</date_of_visit>
+      <doctor_name>Johnny Zepeda</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Brian Hooten</name>
+      <address>Brest</address>
+      <date_of_birth>19.03.2001</date_of_birth>
+      <date_of_visit>19.03.23</date_of_visit>
+      <doctor_name>John Ferreira</doctor_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+  </table>
