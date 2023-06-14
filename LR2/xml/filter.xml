@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+  <table>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>19.03.20</date_of_birth>
+      <date_of_last_visit>15.03.2023</date_of_last_visit>
+      <veterinary_name>Angela Capellan</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>20.12.2019</date_of_birth>
+      <date_of_last_visit>15.03.2023</date_of_last_visit>
+      <veterinary_name>Jennifer Hudson</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>15.03.2017</date_of_birth>
+      <date_of_last_visit>21.01.2023</date_of_last_visit>
+      <veterinary_name>Charles Sisler</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>15.03.2017</date_of_birth>
+      <date_of_last_visit>21.01.2023</date_of_last_visit>
+      <veterinary_name>James Varner</veterinary_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>20.12.2019</date_of_birth>
+      <date_of_last_visit>20.02.2023</date_of_last_visit>
+      <veterinary_name>Christopher Grosbier</veterinary_name>
+      <diagnosis>Kidney Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>15.03.2017</date_of_birth>
+      <date_of_last_visit>19.03.23</date_of_last_visit>
+      <veterinary_name>Mary Perez</veterinary_name>
+      <diagnosis>Arthritis</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>15.03.2017</date_of_birth>
+      <date_of_last_visit>20.02.2023</date_of_last_visit>
+      <veterinary_name>Michael Gross</veterinary_name>
+      <diagnosis>Lymphoma</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>21.10.2022</date_of_birth>
+      <date_of_last_visit>19.03.23</date_of_last_visit>
+      <veterinary_name>Barrett Faucher</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+    <stock>
+      <name>Tom</name>
+      <date_of_birth>20.12.2019</date_of_birth>
+      <date_of_last_visit>20.02.2023</date_of_last_visit>
+      <veterinary_name>John Blanton</veterinary_name>
+      <diagnosis>Heart Disease</diagnosis>
+    </stock>
+  </table>
