@@ -1,0 +1,52 @@
+{
+  "sky_color": "#5c94fc",
+
+  "tubes": [
+    {"x": 28, "y": 10},
+    {"x": 37, "y": 9},
+    {"x": 46, "y": 8},
+    {"x": 55, "y": 8},
+    {"x": 163, "y": 10},
+    {"x": 179, "y": 10}
+  ],
+
+  "flag": {"x": 6336, "y": 48},
+
+  "mobs": [
+   
+    {
+      "player_x_pos": 0,
+      "type": "koopa",
+      "pos": [
+        {"x": 735, "y": 352, "direction": false},
+        {"x": 1290, "y": 352, "direction": true},
+        {"x": 1630, "y": 352, "direction": false},
+        {"x": 1670, "y": 352, "direction": false},
+        {"x": 5575, "y": 352, "direction": false},
+        {"x": 5625, "y": 352, "direction": false}
+      ]
+    },
+    {
+      "player_x_pos": 2080,
+      "type": "goomba",
+      "pos": [
+        {"x": 2495, "y": 224, "direction": false},
+        {"x": 2560, "y": 96,  "direction": false}
+      ]
+    },
+    {
+      "player_x_pos": 2460,
+      "type": "goomba",
+      "pos": [
+        {"x": 3200, "y": 352, "direction": false},
+        {"x": 3250, "y": 352, "direction": false},
+        {"x": 3700, "y": 352, "direction": false},
+        {"x": 3750, "y": 352, "direction": false},
+        {"x": 4060, "y": 352, "direction": false},
+        {"x": 4110, "y": 352, "direction": false},
+        {"x": 4190, "y": 352, "direction": false},
+        {"x": 4240, "y": 352, "direction": false}
+      ]
+    }
+  ]
+}
