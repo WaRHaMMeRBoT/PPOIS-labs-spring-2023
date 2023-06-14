@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sportsmens><sportsmen><id>1</id><sportsmen_name>Иванов Иван Иванович</sportsmen_name><compound>Доктор наук</compound><position>Доцент</position><tituls>20</tituls><type_of_sport>ИИТ</type_of_sport><rank>ФИТУ</rank></sportsmen><sportsmen><id>2</id><sportsmen_name>Андреев Андрей Андреевич</sportsmen_name><compound>Кандидат наук</compound><position>Профессор</position><tituls>15</tituls><type_of_sport>Защиты Информации</type_of_sport><rank>ФРЭ</rank></sportsmen></sportsmens>
